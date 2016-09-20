@@ -1,14 +1,17 @@
 angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
 
-.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+.run(['$rootScope', '$state', '$stateParams', '$window', '$location', function ($rootScope, $state, $stateParams, $window, $location) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
     $rootScope.stateIsLoading = false;
+    $window.ga('create', 'UA-XXXXXXXX-X', 'auto');
+    $window.ga('set', 'title', 'IHAS');
     $rootScope.$on('$stateChangeStart', function() {
         $rootScope.stateIsLoading = true;
     });
-    $rootScope.$on('$stateChangeSuccess', function() {
+    $rootScope.$on('$stateChangeSuccess', function(event) {
         $rootScope.stateIsLoading = false;
+        $window.ga('send', 'pageview', $location.path());
     });
     $rootScope.$on('$stateChangeError', function() {
         $rootScope.stateIsLoading = true;
