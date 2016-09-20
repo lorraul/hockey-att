@@ -1,0 +1,129 @@
+body {
+    background-color: #1a1a1a;
+    color: #d9d9d9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav img {
+    height: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.navbar-brand, .navbar {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.navbar-brand-img {
+    float: left;
+    margin-right: 10px;
+}
+
+.loading-pos {
+    width: 100px;
+    margin:0 auto;
+    margin-top:50px;
+}
+
+.row {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #333333;
+}
+
+.merged-row {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.row ul {
+    margin-top: 10px;
+}
+
+#title {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+
+.divider-space {
+    content: "&nbsp;";
+}
+
+#total {
+    font-size: 20px;
+}
+
+.pagetitle {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 40px;
+}
+
+.pagetitle img {
+    height: 40px;
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+}
+
+.translation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.team-label {
+    float: left;
+    width: 170px;
+    overflow: hidden;
+}
+
+/*
+Loading spin 
+Source: http://bootsnipp.com/snippets/featured/glyphicon-animate-rotation-and-flip
+*/
+.gly-spin {
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
