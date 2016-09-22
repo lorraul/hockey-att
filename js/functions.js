@@ -98,7 +98,7 @@ function getMonthNr(month){
     }
 }
 
-//capitalize forst letter of string
+//capitalize first letter of string
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
