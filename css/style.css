@@ -82,6 +82,12 @@ footer {
     overflow: hidden;
 }
 
+.country-label {
+    float: left;
+    width: 120px;
+    overflow: hidden;
+}
+
 /*
 Loading spin 
 Source: http://bootsnipp.com/snippets/featured/glyphicon-animate-rotation-and-flip

@@ -1,0 +1,13 @@
+<div class="row" id="team-home-away">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+        Average attendance by team (home and away):<br>
+        <span class="translation">Átlag nézőszám csapatok szerint (hazai és vendég)</span>
+    </div>
+    
+    <div ng-repeat="team in teams">
+        <div class="team-label">{{team[2]}}:</div> <div class="team-stat">{{data[0]}}</div>
+    </div>
+    
+    {{data}}<br>
+    {{teams}}
+</div>

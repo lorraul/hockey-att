@@ -1,0 +1,22 @@
+<div class="row" id="country">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+        Average attendance by country:<br>
+        <span class="translation">Átlag nézőszám országok szerint</span>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
+        <div ng-repeat-start="country in countries | teamsColumn:0" class="country-label"><span class="flag-icon flag-icon-{{country.two}}"></span> {{country.name}}:</div> <div class="team-stat" ng-repeat-end>{{data[0][countries.indexOf(country)]}}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 col-md-3">
+        <div ng-repeat-start="country in countries | teamsColumn:1" class="country-label"><span class="flag-icon flag-icon-{{country.two}}"></span> {{country.name}}:</div> <div class="team-stat" ng-repeat-end>{{data[0][countries.indexOf(country)]}}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 col-md-4">
+        <div ng-repeat-start="country in countries | teamsColumn:2" class="country-label"><span class="flag-icon flag-icon-{{country.two}}"></span> {{country.name}}:</div> <div class="team-stat" ng-repeat-end>{{data[0][countries.indexOf(country)]}}</div>
+    </div>
+    
+    <div class="col-xs-12 divider-space">&nbsp;</div>
+    
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"><canvas id="bar" class="chart chart-bar" chart-data="data" chart-labels="labels" chart-options="options" chart-colors="colors"> </canvas></div>
+</div>

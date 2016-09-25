@@ -25,7 +25,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         name: 'mol',
         url: '/mol',
         controller: 'MolCtrl',
-        templateUrl: 'templates/mol.html',
+        templateUrl: 'pages/mol.html',
         data: { pageTitle: 'MOL Liga - Ice Hockey Attendance Stats' },
         resolve: {
             AttendanceDataRes: function(AttendanceData) { return AttendanceData(1); }
@@ -35,7 +35,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         name: 'lnh',
         url: '/lnh',
         controller: 'LnhCtrl',
-        templateUrl: 'templates/lnh.html',
+        templateUrl: 'pages/lnh.html',
         data: { pageTitle: 'LNH - Ice Hockey Attendance Stats' },
         resolve: {
             AttendanceDataRes: function(AttendanceData) { return AttendanceData(3); }
@@ -45,7 +45,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         name: 'ebel',
         url: '/ebel',
         controller: 'EbelCtrl',
-        templateUrl: 'templates/ebel.html',
+        templateUrl: 'pages/ebel.html',
         data: { pageTitle: 'EBEL - Ice Hockey Attendance Stats' },
         resolve: {
             AttendanceDataRes: function(AttendanceData) { return AttendanceData(4); }
@@ -97,4 +97,66 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
     }
 }])
 
+.factory('globalChartOptions', function () {
+    var gridLines = {color: '#262626', lineWidth: 1};
+    var scaleLabelColor = '#d9d9d9';
+    var horizontalLineStyle = 'rgba(255,102,102,0.4)',
+        horizontalLineText = 'Average'; 
+    return {
+        barChart: function(averageValue){
+            return {
+                horizontalLine: [{
+                  "y": averageValue,
+                  "style": horizontalLineStyle,
+                  "text": horizontalLineText
+                }],
+                scales: {
+                    xAxes: [{
+                        gridLines: gridLines,
+                        barPercentage: 0.5,
+                        ticks: {
+                            fontColor: scaleLabelColor,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: gridLines,
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            };
+        },
+        lineChart: function(averageValue){
+            return {
+                horizontalLine: [{
+                  "y": averageValue,
+                  "style": horizontalLineStyle,
+                  "text": horizontalLineText
+                }],
+                scales: {
+                    xAxes: [{
+                        gridLines: gridLines,
+                        ticks: {
+                            fontColor: scaleLabelColor
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: gridLines,
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            };
+        },
+        monthChartColors: [{
+            borderColor: '#1aa3ff',
+            borderWidth: 3,
+            pointRadius: 3,
+            pointBackgroundColor: '#8db600',
+            pointBorderColor: '#8db600',
+        }]
+    }
+})
 ;

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row" id="title">
+        <div class="col-xs-12 col-sm-6 pagetitle"><img src="img/mol.png"> MOL Liga 2016/17</div>
+        <div class="col-xs-12 col-sm-6"><a ng-href="{{gamesLink}}">Games</a> - Last update: {{updated}}</div>
+    </div>
+    
+    <total-average data="dataTotal"></total-average>
+    
+    <country data="dataCountry" labels="labelsCountry" options="optionsBarChart" colors="colorsCountry" countries="countries"></country>
+    
+    <month data="dataMonth" labels="labelsMonth" options="optionsLineChart" colors="colorsMonth" months="months"></month>
+    
+    <team-home data="dataHome" labels="labelsTeams" options="optionsBarChart" colors="colorsTeams" teams="teams"></team-home>
+    
+    <team-away data="dataAway" labels="labelsTeams" options="optionsBarChart" colors="colorsTeams" teams="teams"></team-away>
+    
+    <sources data="sources"></sources>
+
+</div>

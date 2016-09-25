@@ -82,23 +82,23 @@ function getLatestDate(dateArray){
 
 function getMonthNr(month){
     switch (month) {
-            case 'january': return 0; break;
-            case 'february': return 1; break;
-            case 'march': return 2; break;
-            case 'april': return 3; break;
-            case 'may': return 4; break;
-            case 'june': return 5; break;
-            case 'july': return 6; break;
-            case 'august': return 7; break;
-            case 'september': return 8; break;
-            case 'october': return 9; break;
-            case 'november': return 10; break;
-            case 'december': return 11; break;
+            case 'January': return 0; break;
+            case 'February': return 1; break;
+            case 'March': return 2; break;
+            case 'April': return 3; break;
+            case 'May': return 4; break;
+            case 'June': return 5; break;
+            case 'July': return 6; break;
+            case 'August': return 7; break;
+            case 'September': return 8; break;
+            case 'October': return 9; break;
+            case 'November': return 10; break;
+            case 'December': return 11; break;
             default: return 'invalid month label';
     }
 }
 
-//capitalize first letter of string
+//capitalize first letter of a string
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
