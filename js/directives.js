@@ -73,7 +73,10 @@ angular.module('molApp')
         templateUrl: 'partials/team-home-away.html',
         scope: {
             data: '=',
-            teams: '='
+            teams: '=',
+            labels: '=',
+            options: '=',
+            colors: '='
         }
     };
 })

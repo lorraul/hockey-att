@@ -156,10 +156,12 @@ angular.module('molApp')
 
         returnObject.dataHome = [[]];
         returnObject.dataAway = [[]];
+        returnObject.dataHomeAway = [[]];
 
         for (var i in ligueData.teams){
             returnObject.dataHome[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long));
             returnObject.dataAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long));
+            returnObject.dataHomeAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
         }
         return returnObject;
     }

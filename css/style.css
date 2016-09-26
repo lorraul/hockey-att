@@ -33,6 +33,10 @@ footer {
     border-bottom: 1px dashed #333333;
 }
 
+footer .row {
+    border: 0;
+}
+
 .merged-row {
     padding-bottom: 0;
     border-bottom: 0;

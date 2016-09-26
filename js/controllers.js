@@ -103,6 +103,7 @@ angular.module('molApp')
         ]
     };
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
+    console.log($scope.ligueStats);
 }])
 
 .controller("LnhCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
@@ -268,4 +269,7 @@ angular.module('molApp')
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
 }])
 
+.controller("NhlCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
+
+}])
 ;

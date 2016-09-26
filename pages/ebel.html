@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row" id="title">
         <div class="col-xs-12 col-sm-6 pagetitle"><img src="img/ebel.png"> EBEL 2016/17</div>
-        <div class="col-xs-12 col-sm-6"><a ng-href="{{gamesLink}}">Games</a> - Last update: {{ligueStats.updated}}</div>
+        <div class="col-xs-12 col-sm-6"><a ng-href="{{ligueStats.gamesLink}}">Games</a> - Last update: {{ligueStats.updated}}</div>
     </div>
     
     <total-average data="ligueStats.dataTotal"></total-average>
@@ -9,6 +9,8 @@
     <country data="ligueStats.dataCountry" labels="ligueStats.labelsCountry" options="ligueStats.optionsBarChart" colors="ligueStats.colorsCountry" countries="ligueData.countries"></country>
     
     <month data="ligueStats.dataMonth" labels="ligueStats.labelsMonth" options="ligueStats.optionsLineChart" colors="ligueStats.colorsMonth" months="ligueData.months"></month>
+    
+    <team-home-away data="ligueStats.dataHomeAway" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams"></team-home-away>
     
     <team-home data="ligueStats.dataHome" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams"></team-home>
     
