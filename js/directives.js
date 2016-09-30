@@ -39,6 +39,20 @@ angular.module('molApp')
     };
 })
 
+.directive('stage', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/stage.html',
+        scope: {
+            stages: '=',
+            data: '=',
+            labels: '=',
+            options: '=',
+            colors: '='
+        }
+    };
+})
+
 .directive('teamHome', function(){
     return {
         restrict: 'E',

@@ -29,6 +29,24 @@ angular.module('molApp')
             }
         ],
         months: ['September','October','November','December','January','February','March'],
+        stages: [
+            {
+                short: 'RS',
+                long: 'Regular season'
+            },
+            {
+                short: 'QF',
+                long: 'Quarterfinals'
+            },
+            {
+                short: 'SF',
+                long: 'Semifinals'
+            },
+            {
+                short: 'FIN',
+                long: 'Final'
+            }
+        ],
         teams: [
             {
                 short: 'Bra',
@@ -103,13 +121,26 @@ angular.module('molApp')
         ]
     };
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
-    console.log($scope.ligueStats);
 }])
 
 .controller("LnhCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
         countries: [],
         months: ['September','October','November','December','January','February','March'],
+        stages: [
+            {
+                short: 'RS',
+                long: 'Regular season'
+            },
+            {
+                short: 'SF',
+                long: 'Semifinals'
+            },
+            {
+                short: 'FIN',
+                long: 'Final'
+            }
+        ],
         teams: [
         {
             short: 'Bra',
@@ -188,6 +219,24 @@ angular.module('molApp')
             }
         ],
         months: ['September','October','November','December','January','February','March'],
+        stages: [
+            {
+                short: 'RS',
+                long: 'Regular season'
+            },
+            {
+                short: 'QF',
+                long: 'Quarterfinals'
+            },
+            {
+                short: 'SF',
+                long: 'Semifinals'
+            },
+            {
+                short: 'FIN',
+                long: 'Final'
+            }
+        ],
         teams: [
             {
                 short: 'Bla',

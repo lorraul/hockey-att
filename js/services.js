@@ -93,7 +93,7 @@ angular.module('molApp')
                 }
             };
         },
-        monthChartColors: [{
+        lineChartColors: [{
             borderColor: '#1aa3ff',
             borderWidth: 3,
             pointRadius: 3,
@@ -136,13 +136,21 @@ angular.module('molApp')
         }
 
         //month stats
-        returnObject.colorsMonth = globalChartOptions.monthChartColors;
-
+        returnObject.colorsMonth = globalChartOptions.lineChartColors;
         returnObject.labelsMonth = [];
         returnObject.dataMonth = [[]];    
         for (var i in ligueData.months){
             returnObject.labelsMonth.push(ligueData.months[i]);
             returnObject.dataMonth[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'date', ligueData.months[i])));
+        }
+        
+        //stage stats
+        returnObject.colorsStage = globalChartOptions.lineChartColors;
+        returnObject.labelsStage = [];
+        returnObject.dataStage = [[]]; 
+        for (var i in ligueData.stages){
+            returnObject.labelsStage.push(ligueData.stages[i].short);
+            returnObject.dataStage[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'stage', ligueData.stages[i].short)));
         }
 
         //team stats    
