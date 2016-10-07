@@ -58,6 +58,16 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         templateUrl: 'pages/nhl.html',
         data: { pageTitle: 'NHL - Ice Hockey Attendance Stats' }
     })
+    .state({
+        name: 'mk',
+        url: '/mk',
+        controller: 'MkCtrl',
+        templateUrl: 'pages/mk.html',
+        data: { pageTitle: 'MK - Ice Hockey Attendance Stats' },
+        resolve: {
+            AttendanceDataRes: function(AttendanceData) { return AttendanceData(5); }
+        }
+    })
 
   $urlRouterProvider.otherwise('/mol');
 })

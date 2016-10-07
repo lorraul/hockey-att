@@ -321,4 +321,78 @@ angular.module('molApp')
 .controller("NhlCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
 
 }])
+
+.controller("MkCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
+    $scope.ligueData = {
+        months: ['October','November','December','January'],
+        stages: [
+            {
+                short: 'QF',
+                long: 'Qualifications'
+            },
+            {
+                short: 'SF',
+                long: 'Semifinals'
+            },
+            {
+                short: 'FIN',
+                long: 'Final'
+            }
+        ],
+        teams: [
+            {
+                short: 'Deb',
+                long: 'Debreceni HK',
+                label: 'Debrecen',
+                color: '#8db600'
+            },
+            {
+                short: 'Dab',
+                long: 'Duna\xFAjv\xE1rosi Ac\xE9lbik\xE1k',
+                label: 'Duna\xFAjv\xE1ros',
+                color: '#8db600'
+            },
+            {
+                short: 'Hkb',
+                long: 'Hokiklub Budapest',
+                label: 'Hokiklub',
+                color: '#8db600'
+            },
+            {
+                short: 'Mis',
+                long: 'DVTK Jegesmedv\xE9k',
+                label: 'Miskolc',
+                color: '#8db600'
+            },
+            {
+                short: 'Feh',
+                long: 'Feh\xE9rv\xE1r AV19',
+                label: 'Feh\xE9rv\xE1r',
+                color: '#8db600'
+            },
+            {
+                short: 'Fer',
+                long: 'Ferencv\xE1rosi TC',
+                label: 'Ferencv\xE1ros',
+                color: '#8db600'
+            },
+            {
+                short: 'Mac',
+                long: 'MAC Budapest',
+                label: 'MAC',
+                color: '#8db600'
+            },
+            {
+                short: 'Ute',
+                long: '\xDAjpesti TE',
+                label: '\xDAjpest',
+                color: '#8db600'
+            }
+        ],
+        sources: [
+            'Official game sheets: http://icehockey.hu/oldalak/felnott_bajnoksagok/ewhl'
+        ]
+    };
+    $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
+}])
 ;
