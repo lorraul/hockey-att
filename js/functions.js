@@ -35,7 +35,7 @@ function getAverage(valueArray){
         }
     }
     
-    if (nrEl == 0) return '-';
+    if (nrEl == 0) return 'no data';
     
     return Math.round(sum/nrEl); 
 };
@@ -61,7 +61,7 @@ function getMax(objectArray, property){
 //get object from objectarray with property being min
 function getMin(objectArray, property){
     var returnObject;
-    var minVal = objectArray[0][property];
+    var minVal = getMax(objectArray, property).attendance;
     for (var i in objectArray){
         if (parseInt(objectArray[i][property]) < minVal){
             returnObject = objectArray[i];

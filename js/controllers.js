@@ -116,8 +116,7 @@ angular.module('molApp')
             }
         ],
         sources: [
-            'Official game sheets: http://icehockey.hu/oldalak/mol_liga/menetrend',
-            'Game reports from http://hkb.rs/ and http://www.hockeyserbia.com/ for HK Beograd home games.'
+            'Official game sheets: http://icehockey.hu/oldalak/mol_liga/menetrend'
         ]
     };
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
