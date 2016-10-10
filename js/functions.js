@@ -47,6 +47,7 @@ function isNumeric(n) {
 
 //get object from objectarray with property being max
 function getMax(objectArray, property){
+	if (objectArray.length == 0) return {};
     var returnObject;
     var maxVal = 0;
     for (var i in objectArray){

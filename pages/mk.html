@@ -10,12 +10,12 @@
     
     <stage data="ligueStats.dataStage" labels="ligueStats.labelsStage" options="ligueStats.optionsLineChart" colors="ligueStats.colorsStage" stages="ligueData.stages"></stage>
     
-    <team-home-away data="ligueStats.dataHomeAway" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams"></team-home-away>
+    <team-home-away data="ligueStats.dataHomeAway" dataall="ligueStats.dataHomeAwayAll" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home-away>
     
-    <team-home data="ligueStats.dataHome" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams"></team-home>
+    <team-home data="ligueStats.dataHome" dataall="ligueStats.dataHomeAll" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home>
     
-    <team-away data="ligueStats.dataAway" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams"></team-away>
-    
+    <team-away data="ligueStats.dataAway" dataall="ligueStats.dataAwayAll" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-away>
+	
     <sources data="ligueData.sources"></sources>
 
 </div>

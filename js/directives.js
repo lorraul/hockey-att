@@ -59,10 +59,12 @@ angular.module('molApp')
         templateUrl: 'partials/team-home.html',
         scope: {
             data: '=',
+			dataAll: '=dataall',
             teams: '=',
             labels: '=',
             options: '=',
-            colors: '='
+            colors: '=',
+			chartLabels: '=chartlabels'
         }
     };
 })
@@ -73,10 +75,12 @@ angular.module('molApp')
         templateUrl: 'partials/team-away.html',
         scope: {
             data: '=',
+			dataAll: '=dataall',
             teams: '=',
             labels: '=',
             options: '=',
-            colors: '='
+            colors: '=',
+			chartLabels: '=chartlabels'
         }
     };
 })
@@ -87,10 +91,12 @@ angular.module('molApp')
         templateUrl: 'partials/team-home-away.html',
         scope: {
             data: '=',
+			dataAll: '=dataall',
             teams: '=',
             labels: '=',
             options: '=',
-            colors: '='
+            colors: '=',
+			chartLabels: '=chartlabels'
         }
     };
 })

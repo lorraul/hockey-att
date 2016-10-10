@@ -104,7 +104,7 @@ angular.module('molApp')
 })
 
 .factory('ligueStats', ['globalChartOptions', function (globalChartOptions) {
-    return function (AttendanceDataRes, ligueData){
+    return function (AttendanceDataRes, ligueData, teamChartsBy){
         var returnObject = {};
         //meta
         var latestDate = getLatestDate(getColumn(AttendanceDataRes.dataArray, 'date'));
@@ -153,24 +153,68 @@ angular.module('molApp')
             returnObject.dataStage[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'stage', ligueData.stages[i].short)));
         }
 
-        //team stats    
-        returnObject.colorsTeams = [{backgroundColor: [], borderColor: []}];
-        returnObject.labelsTeams = [];
-        for (var i in ligueData.teams){
-            returnObject.colorsTeams[0].backgroundColor.push(ligueData.teams[i].color);
-            returnObject.colorsTeams[0].borderColor.push(ligueData.teams[i].color);
-            returnObject.labelsTeams.push(ligueData.teams[i].label);
-        }
+        //team stats   
+		if (typeof teamChartsBy == 'undefined'){
+			returnObject.colorsTeams = [{backgroundColor: [], borderColor: []}];
+			returnObject.labelsTeams = [[]];
+			for (var i in ligueData.teams){
+				returnObject.colorsTeams[0].backgroundColor.push(ligueData.teams[i].color);
+				returnObject.colorsTeams[0].borderColor.push(ligueData.teams[i].color);
+				returnObject.labelsTeams[0].push(ligueData.teams[i].label);
+			}
 
-        returnObject.dataHome = [[]];
-        returnObject.dataAway = [[]];
-        returnObject.dataHomeAway = [[]];
+			returnObject.dataHome = [[]];
+			returnObject.dataAway = [[]];
+			returnObject.dataHomeAway = [[]];
 
-        for (var i in ligueData.teams){
-            returnObject.dataHome[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long));
-            returnObject.dataAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long));
-            returnObject.dataHomeAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
-        }
+			for (var i in ligueData.teams){
+				returnObject.dataHome[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long));
+				returnObject.dataAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long));
+				returnObject.dataHomeAway[0][i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
+			}
+			returnObject.dataHomeAll = returnObject.dataHome[0];
+			returnObject.dataAwayAll = returnObject.dataAway[0];
+			returnObject.dataHomeAwayAll = returnObject.dataHomeAway[0];
+			returnObject.teamChartsBy = [''];
+		} else {
+			returnObject.colorsTeams = [];
+			returnObject.labelsTeams = [];
+			returnObject.dataHome = [];
+			returnObject.dataAway = [];
+			returnObject.dataHomeAway = [];
+			returnObject.dataHomeAll = [];
+			returnObject.dataAwayAll = [];
+			returnObject.dataHomeAwayAll = [];
+			returnObject.teamChartsBy = [];
+			for (var h in teamChartsBy) {
+				returnObject.colorsTeams.push({backgroundColor: [], borderColor: []});
+				returnObject.labelsTeams.push([]);
+				returnObject.dataHome.push([]);
+				returnObject.dataAway.push([]);
+				returnObject.dataHomeAway.push([]);
+				returnObject.teamChartsBy.push(teamChartsBy[h].long);
+			}
+			
+			for (var j in teamChartsBy){
+				for (var i in ligueData.teams){
+					if (ligueData.teams[i].division == teamChartsBy[j].short){
+						returnObject.colorsTeams[j].backgroundColor.push(ligueData.teams[i].color);
+						returnObject.colorsTeams[j].borderColor.push(ligueData.teams[i].color);
+						returnObject.labelsTeams[j].push(ligueData.teams[i].label);
+						returnObject.dataHomeAway[j].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long))));
+						returnObject.dataHome[j].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)));
+						returnObject.dataAway[j].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
+					}
+				}
+			}
+			
+			for (var i in ligueData.teams){
+				returnObject.dataHomeAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long));
+				returnObject.dataAwayAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long));
+				returnObject.dataHomeAwayAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
+			}
+		}
+		
         return returnObject;
     }
 }])
