@@ -318,7 +318,319 @@ angular.module('molApp')
 }])
 
 .controller("NhlCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
-
+	$scope.ligueData = {
+		countries: [
+            {
+                name: 'Canada',
+                two: 'ca',
+                three: 'CAN',
+                color: '#db0404'
+            },
+            {
+                name: 'United States',
+                two: 'us',
+                three: 'USA',
+                color: '#093c8e'
+            }
+        ],
+        months: ['October','November','December','January','February','March','April','May','June'],
+        stages: [
+			{
+                short: 'RS',
+                long: 'Regular Season'
+            },
+            {
+                short: 'FR',
+                long: 'PO First Round'
+            },
+            {
+                short: 'SR',
+                long: 'PO Second Round'
+            },
+			{
+                short: 'CF',
+                long: 'Conference Finals'
+            },
+            {
+                short: 'FIN',
+                long: 'Finals'
+            }
+        ],
+		conference: [
+			{
+				short: 'Eastern',
+				long: 'Eastern Conference'
+			},
+			{
+				short: 'Western',
+				long: 'Western Conference'
+			}
+		],
+		division: [
+			{
+				short: 'Atlantic',
+				long: 'Atlantic Division'
+			},
+			{
+				short: 'Metropolitan',
+				long: 'Metropolitan Division'
+			},
+			{
+				short: 'Central',
+				long: 'Central Division'
+			},
+			{
+				short: 'Pacific',
+				long: 'Pacific Division'
+			}
+		],
+        teams: [
+			{
+                short: 'Ana',
+                long: 'Anaheim Ducks',
+                label: 'Anaheim',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#093c8e'
+            },
+			{
+                short: 'Ari',
+                long: 'Arizona Coyotes',
+                label: 'Arizona',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#093c8e'
+            },
+			{
+                short: 'Bos',
+                long: 'Boston Bruins',
+                label: 'Boston',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#093c8e'
+            },
+			{
+                short: 'Buf',
+                long: 'Buffalo Sabres',
+                label: 'Buffalo',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#093c8e'
+            },
+			{
+                short: 'Cal',
+                long: 'Calgary Flames',
+                label: 'Calgary',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#db0404'
+            },
+			{
+                short: 'Car',
+                long: 'Carolina Hurricanes',
+                label: 'Carolina',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Chi',
+                long: 'Chicago Blackhawks',
+                label: 'Chicago',
+				conference: 'Western',
+				division: 'Central',
+                color: '#093c8e'
+            },
+			{
+                short: 'Col',
+                long: 'Colorado Avalanche',
+                label: 'Colorado',
+				conference: 'Western',
+				division: 'Central',
+                color: '#093c8e'
+            },
+			{
+                short: 'Clb',
+                long: 'Columbus Blue Jackets',
+                label: 'Columbus',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Dal',
+                long: 'Dallas Stars',
+				conference: 'Western',
+				division: 'Central',
+                label: 'Dallas',
+                color: '#093c8e'
+            },
+			{
+                short: 'Det',
+                long: 'Detroit Red Wings',
+                label: 'Detroit',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#093c8e'
+            },
+			{
+                short: 'Edm',
+                long: 'Edmonton Oilers',
+                label: 'Edmonton',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#db0404'
+            },
+			{
+                short: 'Flo',
+                long: 'Florida Panthers',
+                label: 'Florida',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#093c8e'
+            },
+			{
+                short: 'Lan',
+                long: 'Los Angeles Kings',
+                label: 'Los Angeles',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#093c8e'
+            },
+			{
+                short: 'Min',
+                long: 'Minnesota Wild',
+                label: 'Minnesota',
+				conference: 'Western',
+				division: 'Central',
+                color: '#093c8e'
+            },
+			{
+                short: 'Mon',
+                long: 'Montreal Canadiens',
+                label: 'Montreal',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#db0404'
+            },
+			{
+                short: 'Nas',
+                long: 'Nashville Predators',
+                label: 'Nashville',
+				conference: 'Western',
+				division: 'Central',
+                color: '#093c8e'
+            },
+			{
+                short: 'Njr',
+                long: 'New Jersey Devils',
+                label: 'New Jersey',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Nyi',
+                long: 'New York Islanders',
+                label: 'Islanders',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Nyr',
+                long: 'New York Rangers',
+                label: 'Rangers',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Ott',
+                long: 'Ottawa Senators',
+                label: 'Ottawa',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#db0404'
+            },
+			{
+                short: 'Phi',
+                long: 'Philadelphia Flyers',
+                label: 'Philadelphia',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'Pit',
+                long: 'Pittsburgh Penguins',
+                label: 'Pittsburgh',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+			{
+                short: 'San',
+                long: 'San Jose Sharks',
+                label: 'San Jose',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#093c8e'
+            },
+			{
+                short: 'Stl',
+                long: 'St Louis Blues',
+                label: 'St Louis',
+				conference: 'Western',
+				division: 'Central',
+                color: '#093c8e'
+            },
+			{
+                short: 'Tam',
+                long: 'Tampa Bay Lightning',
+                label: 'Tampa Bay',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#093c8e'
+            },
+			{
+                short: 'Tor',
+                long: 'Toronto Maple Leafs',
+                label: 'Toronto',
+				conference: 'Eastern',
+				division: 'Atlantic',
+                color: '#db0404'
+            },
+			{
+                short: 'Van',
+                long: 'Vancouver Canucks',
+                label: 'Vancouver',
+				conference: 'Western',
+				division: 'Pacific',
+                color: '#db0404'
+            },
+			{
+                short: 'Was',
+                long: 'Washington Capitals',
+                label: 'Washington',
+				conference: 'Eastern',
+				division: 'Metropolitan',
+                color: '#093c8e'
+            },
+            {
+                short: 'Win',
+                long: 'Winnipeg Jets',
+                label: 'Winnipeg',
+				conference: 'Western',
+				division: 'Central',
+                color: '#db0404'
+            }
+        ],
+        sources: [
+            'Official game sheets'
+        ]
+    };
+    $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData, $scope.ligueData.division);
 }])
 
 .controller("MkCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
