@@ -21,6 +21,12 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
+	.state({
+        name: 'home',
+        url: '/home',
+        templateUrl: 'pages/home.html',
+        data: { pageTitle: 'Home - Ice Hockey Attendance Stats' },
+    })
     .state({
         name: 'mol',
         url: '/mol',
@@ -72,6 +78,6 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         }
     })
 
-  $urlRouterProvider.otherwise('/mol');
+  $urlRouterProvider.otherwise('/home');
 })
 ;
