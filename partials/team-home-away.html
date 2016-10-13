@@ -18,5 +18,5 @@
     
     <div class="col-xs-12 divider-space">&nbsp;</div>
 
-	<div ng-repeat="chartData in data track by $index" class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">{{chartLabels[$index]}}<br><br><canvas id="bar" class="chart chart-bar" chart-data="[chartData]" chart-labels="labels[$index]" chart-options="options" chart-colors="colors"> </canvas><br></div>
+	<div ng-repeat="chartData in data track by $index" class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">{{chartLabels[$index]}}<br><br><canvas id="bar" class="chart chart-bar" chart-data="[chartData]" chart-labels="labels[$index]" chart-options="options" chart-colors="[colors[$index]]"> </canvas><br></div>
 </div>

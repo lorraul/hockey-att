@@ -627,7 +627,7 @@ angular.module('molApp')
             }
         ],
         sources: [
-            'Official game sheets'
+            'Fox Sports: http://www.foxsports.com/nhl/scores'
         ]
     };
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData, $scope.ligueData.division);

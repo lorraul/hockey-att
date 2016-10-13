@@ -48,6 +48,12 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
+					<li ng-class="{ active: isActive('/nhl')}">
+                        <a ui-sref="nhl">
+                            <img src="img/nhl.png">
+                            NHL 2016/17
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/mol')}">
                         <a ui-sref="mol">
                             <img src="img/mol.png">
@@ -70,12 +76,6 @@
                         <a ui-sref="ebel">
                             <img src="img/ebel.png">
                             EBEL 2016/17
-                        </a>
-                    </li>
-                    <li ng-class="{ active: isActive('/nhl')}">
-                        <a ui-sref="nhl">
-                            <img src="img/nhl.png">
-                            NHL 2016/17
                         </a>
                     </li>
                 </ul>               
