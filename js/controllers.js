@@ -706,4 +706,122 @@ angular.module('molApp')
     };
     $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
 }])
+
+.controller("DelCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
+    $scope.ligueData = {
+        months: ['September','October','November','December','January','February','March'],
+        stages: [
+			{
+                short: 'RS',
+                long: 'Regular Season'
+            },
+            {
+                short: 'R16',
+                long: 'Round 16'
+            },
+			{
+                short: 'QF',
+                long: 'Quarterfinals'
+            },
+            {
+                short: 'SF',
+                long: 'Semifinals'
+            },
+            {
+                short: 'FIN',
+                long: 'Finals'
+            }
+        ],
+		teams: [
+            {
+                short: 'Man',
+                long: 'Adler Mannheim',
+                label: 'Mannheim',
+                color: '#004c97'
+            },
+			{
+                short: 'Aug',
+                long: 'Augsburger Panther',
+                label: 'Augsburg',
+                color: '#004c97'
+            },
+			{
+                short: 'Deg',
+                long: 'Düsseldorfer EG',
+                label: 'Düsseldor',
+                color: '#004c97'
+            },
+			{
+                short: 'Muc',
+                long: 'EHC München',
+                label: 'München',
+                color: '#004c97'
+            },
+			{
+                short: 'Ebb',
+                long: 'Eisbären Berlin',
+                label: 'Berlin',
+                color: '#004c97'
+            },
+			{
+                short: 'Ing',
+                long: 'ERC Ingolstadt',
+                label: 'Ingolstadt',
+                color: '#004c97'
+            },
+			{
+                short: 'Bhv',
+                long: 'Fischtown Pinguins',
+                label: 'Bremerhaven',
+                color: '#004c97'
+            },
+			{
+                short: 'Wob',
+                long: 'Grizzlys Wolfsburg',
+                label: 'Wolfsburg',
+                color: '#004c97'
+            },
+			{
+                short: 'Iec',
+                long: 'Iserlohn Roosters',
+                label: 'Iserlohn',
+                color: '#004c97'
+            },
+			{
+                short: 'Kev',
+                long: 'Krefeld Pinguine',
+                label: 'Krefeld',
+                color: '#004c97'
+            },
+			{
+                short: 'Kec',
+                long: 'Kölner Haie',
+                label: 'Köln',
+                color: '#004c97'
+            },
+			{
+                short: 'Nit',
+                long: 'Nürnberg Ice Tigers',
+                label: 'Nürnberg',
+                color: '#004c97'
+            },
+			{
+                short: 'Sww',
+                long: 'Schwenninger WW',
+                label: 'Schwenninger',
+                color: '#004c97'
+            },
+			{
+                short: 'Str',
+                long: 'Straubing Tigers',
+                label: 'Straubing',
+                color: '#004c97'
+            },
+        ],
+        sources: [
+            'Official game sheets: https://www.telekomeishockey.de/del/spielplan'
+        ]
+    };
+    $scope.ligueStats = ligueStats(AttendanceDataRes, $scope.ligueData);
+}])
 ;

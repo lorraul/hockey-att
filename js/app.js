@@ -77,6 +77,16 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
             AttendanceDataRes: function(AttendanceData) { return AttendanceData(5); }
         }
     })
+	.state({
+        name: 'del',
+        url: '/del',
+        controller: 'DelCtrl',
+        templateUrl: 'pages/del.html',
+        data: { pageTitle: 'DEL - Ice Hockey Attendance Stats' },
+        resolve: {
+            AttendanceDataRes: function(AttendanceData) { return AttendanceData(7); }
+        }
+    })
 
   $urlRouterProvider.otherwise('/home');
 })
