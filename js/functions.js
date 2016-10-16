@@ -8,7 +8,7 @@ function getColumn(objectArray, property, filteredBy, filterValue){
         }
         else {
             if (filteredBy != 'date'){
-                if (objectArray[i][filteredBy] == filterValue)
+                if (objectArray[i][filteredBy].trim() == filterValue)
                     propertyValues.push(objectArray[i][property]);
             }
             else {

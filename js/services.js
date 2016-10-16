@@ -123,7 +123,6 @@ angular.module('molApp')
 
         //country stats
         if(ligueData.countries && ligueData.countries.length != 0){
-            //country stats
             returnObject.dataCountry = [[]];
             returnObject.colorsCountry = [{backgroundColor: [], borderColor: []}];
             returnObject.labelsCountry = [];
