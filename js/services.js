@@ -186,7 +186,7 @@ angular.module('molApp')
 			returnObject.dataHomeAwayAll = [];
 			returnObject.teamChartsBy = [];
 			for (var h in teamChartsBy) {
-				returnObject.colorsTeams.push({backgroundColor: [], borderColor: []});
+				returnObject.colorsTeams.push({backgroundColor:[], borderColor:[]});
 				returnObject.labelsTeams.push([]);
 				returnObject.dataHome.push([]);
 				returnObject.dataAway.push([]);
@@ -212,6 +212,14 @@ angular.module('molApp')
 				returnObject.dataAwayAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long));
 				returnObject.dataHomeAwayAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
 			}
+		}
+		
+		//team record stats
+		returnObject.dataHomeRecord = [];
+		returnObject.dataAwayRecord = [];
+		for (var i in ligueData.teams){
+			returnObject.dataHomeRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
+			returnObject.dataAwayRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
 		}
 		
         return returnObject;

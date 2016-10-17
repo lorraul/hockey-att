@@ -46,16 +46,25 @@ function isNumeric(n) {
 }
 
 //get object from objectarray with property being max
-function getMax(objectArray, property){
+function getMax(objectArray, property, filteredBy, filterValue){
 	if (objectArray.length == 0) return {};
     var returnObject;
     var maxVal = 0;
-    for (var i in objectArray){
-        if (parseInt(objectArray[i][property]) > maxVal){
-            returnObject = objectArray[i];
-            maxVal = parseInt(objectArray[i][property]);
-        }
-    }
+	if (!filteredBy || !filterValue){
+		for (var i in objectArray){
+			if (parseInt(objectArray[i][property]) > maxVal){
+				returnObject = objectArray[i];
+				maxVal = parseInt(objectArray[i][property]);
+			}
+		}
+	} else {
+		for (var i in objectArray){
+			if ((objectArray[i][filteredBy].trim() == filterValue) && (parseInt(objectArray[i][property]) > maxVal)){
+				returnObject = objectArray[i];
+				maxVal = parseInt(objectArray[i][property]);
+			}
+		}
+	}
     return returnObject;
 }
 

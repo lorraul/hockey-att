@@ -1,0 +1,10 @@
+<div class="row" id="team-record-away">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+        Record attendance on away games by team:<br>
+        <span class="translation">Rekord nézőszám idegen pályán</span>
+    </div>
+	
+	<div ng-repeat="recordGame in data track by $index" class="col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10">
+		<div class="team-label">{{recordGame.team}}:</div> <div class="team-label">Attendance: {{recordGame.game.attendance}}</div> Game: {{recordGame.game.team1}} - {{recordGame.game.team2}} ({{recordGame.game.date}})
+	</div>
+</div>

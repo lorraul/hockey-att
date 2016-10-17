@@ -101,6 +101,26 @@ angular.module('molApp')
     };
 })
 
+.directive('teamRecordHome', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/team-record-home.html',
+        scope: {
+            data: '='
+        }
+    };
+})
+
+.directive('teamRecordAway', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/team-record-away.html',
+        scope: {
+            data: '='
+        }
+    };
+})
+
 .directive('sources', function(){
     return {
         restrict: 'E',
