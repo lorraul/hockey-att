@@ -112,3 +112,13 @@ function getMonthNr(month){
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+//object sorting by property, decreasing order
+//Source: http://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value-in-javascript
+function compareAttendance(a,b) {
+  if (a.attendance < b.attendance)
+    return 1;
+  if (a.attendance > b.attendance)
+    return -1;
+  return 0;
+}

@@ -152,7 +152,7 @@ angular.module('molApp')
             returnObject.dataStage[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'stage', ligueData.stages[i].short)));
         }
 
-        //team stats   
+        //team chart stats   
 		if (typeof teamChartsBy == 'undefined'){
 			returnObject.colorsTeams = [{backgroundColor: [], borderColor: []}];
 			returnObject.labelsTeams = [[]];
@@ -178,12 +178,15 @@ angular.module('molApp')
 		} else {
 			returnObject.colorsTeams = [];
 			returnObject.labelsTeams = [];
+			
 			returnObject.dataHome = [];
 			returnObject.dataAway = [];
 			returnObject.dataHomeAway = [];
+			
 			returnObject.dataHomeAll = [];
 			returnObject.dataAwayAll = [];
 			returnObject.dataHomeAwayAll = [];
+			
 			returnObject.teamChartsBy = [];
 			for (var h in teamChartsBy) {
 				returnObject.colorsTeams.push({backgroundColor:[], borderColor:[]});
@@ -213,6 +216,21 @@ angular.module('molApp')
 				returnObject.dataHomeAwayAll[i] = getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)));
 			}
 		}
+		
+		//top and bottom teams
+		returnObject.dataHomeAwayAllSorted = [];
+		returnObject.dataHomeAllSorted = [];
+		returnObject.dataAwayAllSorted = [];
+		
+		for (var i in ligueData.teams){
+			returnObject.dataHomeAwayAllSorted.push({team: ligueData.teams[i].long, attendance: returnObject.dataHomeAwayAll[i]});
+			returnObject.dataHomeAllSorted.push({team: ligueData.teams[i].long, attendance: returnObject.dataHomeAll[i]});	
+			returnObject.dataAwayAllSorted.push({team: ligueData.teams[i].long, attendance: returnObject.dataAwayAll[i]});	
+		}
+			
+		returnObject.dataHomeAwayAllSorted.sort(compareAttendance);
+		returnObject.dataHomeAllSorted.sort(compareAttendance);
+		returnObject.dataAwayAllSorted.sort(compareAttendance);
 		
 		//team record stats
 		returnObject.dataHomeRecord = [];

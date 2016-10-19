@@ -60,6 +60,7 @@ angular.module('molApp')
         scope: {
             data: '=',
 			dataAll: '=dataall',
+			dataSorted: '=datasorted',
             teams: '=',
             labels: '=',
             options: '=',
@@ -76,6 +77,7 @@ angular.module('molApp')
         scope: {
             data: '=',
 			dataAll: '=dataall',
+			dataSorted: '=datasorted',
             teams: '=',
             labels: '=',
             options: '=',
@@ -92,6 +94,7 @@ angular.module('molApp')
         scope: {
             data: '=',
 			dataAll: '=dataall',
+			dataSorted: '=datasorted',
             teams: '=',
             labels: '=',
             options: '=',

@@ -1,7 +1,55 @@
 <div class="row" id="team-home-away">
+	<div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+		Teams with the <b>highest</b> average attendance (home and away games combined):<br>
+		<span class="translation">Legnagyobb nézőszámú csapatok (hazai és idegen pályán)</span>
+	</div>
+	
+	<div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+	<table class="table table-inverse">
+	<thead>
+		<tr>
+		  <th>Team</th>
+		  <th>Average attendance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="recordTeam in dataSorted | limitTo:3 track by $index">
+		  <td>{{recordTeam.team}}</td>
+		  <td>{{recordTeam.attendance}}</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+	
+	<div class="col-xs-12 divider-space">&nbsp;</div>
+	
+	<div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+		Teams with the <b>lowest</b> average attendance (home and away games combined):<br>
+		<span class="translation">Legalacsonyabb nézőszámú csapatok (hazai és idegen pályán)</span>
+	</div>
+	
+	<div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+	<table class="table table-inverse">
+	<thead>
+		<tr>
+		  <th>Team</th>
+		  <th>Average attendance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="recordTeam in dataSorted | limitTo:-3 track by $index">
+		  <td>{{recordTeam.team}}</td>
+		  <td>{{recordTeam.attendance}}</td>
+		</tr>
+	</tbody>
+	</table>
+	</div>
+	
+	<div class="col-xs-12 divider-space">&nbsp;</div>
+	
     <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
-        Average attendance by team (home and away games):<br>
-        <span class="translation">Átlag nézőszám csapatok szerint (hazai és vendég)</span>
+        Average attendance by team (home and away games combined):<br>
+        <span class="translation">Átlag nézőszám csapatok szerint (hazai és idegen pályán)</span>
     </div>
 
     <div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
