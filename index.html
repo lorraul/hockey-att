@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     
     <meta property="og:title" content="Ice Hockey Attendance Stats" />
-    <meta property="og:description" content="Attendance statistics for Mol Liga, LNH and EBEL." />
+    <meta property="og:description" content="Attendance statistics for NHL, DEL, Mol Liga, EBEL and others." />
     <meta property="og:image" content="img/og-img.jpg" />
     
     <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -66,6 +66,12 @@
                             Mol Liga 2016/17
                         </a>
                     </li>
+                    <li ng-class="{ active: isActive('/ebel')}">
+                        <a ui-sref="ebel">
+                            <img src="img/ebel.png">
+                            EBEL 2016/17
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/lnh')}">
                         <a ui-sref="lnh">
                             <img src="img/lnh.png">
@@ -76,12 +82,6 @@
                         <a ui-sref="mk">
                             <img src="img/mjsz.png">
                             MK 2016/17
-                        </a>
-                    </li>
-                    <li ng-class="{ active: isActive('/ebel')}">
-                        <a ui-sref="ebel">
-                            <img src="img/ebel.png">
-                            EBEL 2016/17
                         </a>
                     </li>
                 </ul>               
