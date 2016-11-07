@@ -8,6 +8,9 @@ function getColumn(objectArray, property, filteredBy, filterValue){
         }
         else {
             if (filteredBy != 'date'){
+                if (typeof objectArray[i][filteredBy] == 'undefined') {
+                    continue;
+                }
                 if (objectArray[i][filteredBy].trim() == filterValue)
                     propertyValues.push(objectArray[i][property]);
             }
@@ -59,6 +62,9 @@ function getMax(objectArray, property, filteredBy, filterValue){
 		}
 	} else {
 		for (var i in objectArray){
+            if (typeof objectArray[i][filteredBy] == 'undefined') {
+                    continue;
+            }
 			if ((objectArray[i][filteredBy].trim() == filterValue) && (parseInt(objectArray[i][property]) > maxVal)){
 				returnObject = objectArray[i];
 				maxVal = parseInt(objectArray[i][property]);
