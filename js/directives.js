@@ -1,6 +1,19 @@
 //directives
 angular.module('molApp')
 
+.directive('leaguePageTitle', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/league-page-title.html',
+        scope: {
+            image: '=',
+            title: '=',
+            gameslink: '=',
+            updated: '=',
+        }
+    };
+})
+
 .directive('totalAverage', function(){
     return {
         restrict: 'E',

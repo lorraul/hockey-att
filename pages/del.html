@@ -1,8 +1,6 @@
 <div class="container">
-    <div class="row" id="title">
-        <div class="col-xs-12 col-sm-6 pagetitle"><img src="img/del.png"> DEL 2016/17</div>
-		<div class="col-xs-12 col-sm-6"><a ng-href="{{ligueStats.gamesLink}}">Games</a> - Last update: {{ligueStats.updated}}</div>
-    </div>
+    
+    <league-page-title image="ligueData.image" title="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated"></league-page-title>
 	
 	<total-average data="ligueStats.dataTotal"></total-average>
     

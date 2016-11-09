@@ -8,6 +8,8 @@ angular.module('molApp')
 
 .controller("MolCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
+        image : 'mol.png',
+        title: 'MOL Liga 2016/17',
         countries: [
             {
                 name: 'Hungary',
@@ -124,6 +126,8 @@ angular.module('molApp')
 
 .controller("LnhCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
+        image : 'lnh.png',
+        title: 'LNH 2016/17',
         countries: [],
         months: ['September','October','November','December','January','February','March'],
         stages: [
@@ -185,6 +189,8 @@ angular.module('molApp')
 
 .controller("EbelCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
+        image : 'ebel.png',
+        title: 'EBEL 2016/17',
         countries: [
             {
                 name: 'Austria',
@@ -319,6 +325,8 @@ angular.module('molApp')
 
 .controller("NhlCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
 	$scope.ligueData = {
+        image : 'nhl.png',
+        title: 'NHL 2016/17',
 		countries: [
             {
                 name: 'Canada',
@@ -635,6 +643,8 @@ angular.module('molApp')
 
 .controller("MkCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
+        image : 'mjsz.png',
+        title: 'Magyar Kupa 2016/17',
         months: ['October','November','December','January'],
         stages: [
             {
@@ -709,6 +719,8 @@ angular.module('molApp')
 
 .controller("DelCtrl", ['$scope', 'AttendanceDataRes', 'ligueStats', function ($scope, AttendanceDataRes, ligueStats) {
     $scope.ligueData = {
+        image : 'del.png',
+        title: 'DEL 2016/17',
         months: ['September','October','November','December','January','February','March'],
         stages: [
 			{
