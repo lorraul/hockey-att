@@ -28,66 +28,15 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         data: { pageTitle: 'Home - Ice Hockey Attendance Stats' },
     })
     .state({
-        name: 'mol',
-        url: '/mol',
-        controller: 'MolCtrl',
-        templateUrl: 'pages/mol.html',
-        data: { pageTitle: 'MOL Liga - Ice Hockey Attendance Stats' },
+        name: 'league',
+        url: '/league/:leagueabbr',
+        controller: 'LeagueCtrl',
+        templateUrl: 'pages/league.html',
+        data: {},
         resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(1); }
+            AttendanceDataRes: function(AttendanceData, $stateParams) { return AttendanceData($stateParams.leagueabbr); }
         }
-    })
-    .state({
-        name: 'lnh',
-        url: '/lnh',
-        controller: 'LnhCtrl',
-        templateUrl: 'pages/lnh.html',
-        data: { pageTitle: 'LNH - Ice Hockey Attendance Stats' },
-        resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(3); }
-        }
-    })
-    .state({
-        name: 'ebel',
-        url: '/ebel',
-        controller: 'EbelCtrl',
-        templateUrl: 'pages/ebel.html',
-        data: { pageTitle: 'EBEL - Ice Hockey Attendance Stats' },
-        resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(4); }
-        }
-    })
-    .state({
-        name: 'nhl',
-        url: '/nhl',
-        controller: 'NhlCtrl',
-        templateUrl: 'pages/nhl.html',
-        data: { pageTitle: 'NHL - Ice Hockey Attendance Stats' },
-		resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(6); }
-        }
-    })
-    .state({
-        name: 'mk',
-        url: '/mk',
-        controller: 'MkCtrl',
-        templateUrl: 'pages/mk.html',
-        data: { pageTitle: 'MK - Ice Hockey Attendance Stats' },
-        resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(5); }
-        }
-    })
-	.state({
-        name: 'del',
-        url: '/del',
-        controller: 'DelCtrl',
-        templateUrl: 'pages/del.html',
-        data: { pageTitle: 'DEL - Ice Hockey Attendance Stats' },
-        resolve: {
-            AttendanceDataRes: function(AttendanceData) { return AttendanceData(7); }
-        }
-    })
-
-  $urlRouterProvider.otherwise('/home');
+    });
+    $urlRouterProvider.otherwise('/home');
 })
 ;

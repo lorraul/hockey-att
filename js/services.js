@@ -1,41 +1,62 @@
 angular.module('molApp')
+
+.factory('LeagueData', ['$resource', function ($resource) {
+    return function(leagueabbr){
+        var datafile = 'data/'+leagueabbr+'.json';
+        var apiRequest = $resource(datafile);
+        return apiRequest.get().$promise.then(
+            function(data){ return data;},
+            function(error){ return 'error'; }
+        );
+    }
+}])
+
 .factory('AttendanceRawData', ['$resource', function ($resource) {
-    var apiRequest = $resource("https://spreadsheets.google.com/feeds/list/1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw/:sheet/public/values?alt=json");
-    return function(sheet){
-        return apiRequest.get({sheet: sheet}).$promise.then(
+    var apiRequest = $resource("https://spreadsheets.google.com/feeds/list/:spreedsheatid/:sheetnr/public/values?alt=json");
+    return function(spreedsheatid, sheetnr){
+        return apiRequest.get({spreedsheatid: spreedsheatid, sheetnr: sheetnr}).$promise.then(
             function(data){ return data.feed;},
             function(error){ return 'error'; }
         );
     }
 }])
 
-.factory('AttendanceData', ['AttendanceRawData', function (AttendanceRawData) {
-    return function(sheet){
-        return AttendanceRawData(sheet).then(
-            function(data){ 
-                if (data == 'error') return 'error';
-                
-                var dataArray = [];
-                var dataObject = {};
-                for (var i in data.entry){
-                    dataObject = {}
-                    dataObjectElements = data.entry[i].content.$t.split(", ");
-                    for(var j in dataObjectElements){
-                        dataObjectElements[j].split(": ");
-                        dataObject[dataObjectElements[j].split(": ")[0]] = dataObjectElements[j].split(": ")[1];
+.factory('AttendanceData', ['AttendanceRawData', 'LeagueData', function (AttendanceRawData, LeagueData) {
+    return function(leagueabbr){
+        return LeagueData(leagueabbr).then(
+            function(leagueData){
+                return AttendanceRawData(leagueData.spreadsheet, leagueData.sheetnr).then(
+                    function(data){ 
+                        if (data == 'error') return 'error';
+
+                        var dataArray = [];
+                        var dataObject = {};
+                        for (var i in data.entry){
+                            dataObject = {}
+                            dataObjectElements = data.entry[i].content.$t.split(", ");
+                            for(var j in dataObjectElements){
+                                dataObjectElements[j].split(": ");
+                                dataObject[dataObjectElements[j].split(": ")[0]] = dataObjectElements[j].split(": ")[1];
+                            }
+                            dataArray.push(dataObject);
+                        }
+
+                        var metaData = {};
+                        metaData.updated = data.updated.$t;
+                        metaData.gamesLink = data.link[0].href;
+
+                        var returnObject = {
+                            attendanceData: {},
+                            leagueData: {}
+                        };
+                        returnObject.attendanceData.dataArray = dataArray;
+                        returnObject.attendanceData.metaData = metaData;
+                        returnObject.leagueData = leagueData;
+                        return returnObject;
                     }
-                    dataArray.push(dataObject);
-                }
-                
-                var metaData = {};
-                metaData.updated = data.updated.$t;
-                metaData.gamesLink = data.link[0].href;
-                
-                var returnObject = {};
-                returnObject.dataArray = dataArray;
-                returnObject.metaData = metaData;
-                return returnObject;
-            }
+                );
+            },
+            function(error){ return 'error'; }
         );
     }
 }])

@@ -1,0 +1,116 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "1",
+    "image": "mol.png",
+    "title": "MOL Liga 2016/17",
+    "countries": [
+        {
+            "name": "Hungary",
+            "two": "hu",
+            "three": "HUN",
+            "color": "#8db600"
+        },
+        {
+            "name": "Romania",
+            "two": "ro",
+            "three": "ROM",
+            "color": "#fdb600"
+        },
+        {
+            "name": "Serbia",
+            "two": "rs",
+            "three": "SRB",
+            "color": "#1aa3ff"
+        }
+    ],
+    "months": ["September","October","November","December","January","February","March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular season"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bra",
+            "long": "ASC Corona Brasov",
+            "label": "Brasov",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Deb",
+            "long": "Debreceni HK",
+            "label": "Debrecen",
+            "color": "#8db600"
+        },
+        {
+            "short": "Gal",
+            "long": "Dunarea Galati",
+            "label": "Galati",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Dab",
+            "long": "Dunaújvárosi Acélbikák",
+            "label": "Dunaújváros",
+            "color": "#8db600"
+        },
+        {
+            "short": "Mis",
+            "long": "DVTK Jegesmedvék",
+            "label": "Miskolc",
+            "color": "#8db600"
+        },
+        {
+            "short": "Feh",
+            "long": "Fehérvári Titánok",
+            "label": "Fehérvár",
+            "color": "#8db600"
+        },
+        {
+            "short": "Fer",
+            "long": "Ferencvárosi TC",
+            "label": "Ferencváros",
+            "color": "#8db600"
+        },
+        {
+            "short": "Beo",
+            "long": "HK Beograd",
+            "label": "Beograd",
+            "color": "#1aa3ff"
+        },
+        {
+            "short": "Mac",
+            "long": "MAC Budapest",
+            "label": "MAC",
+            "color": "#8db600"
+        },
+        {
+            "short": "Csi",
+            "long": "SC Csíkszereda",
+            "label": "Csíkszereda",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Ute",
+            "long": "Újpesti TE",
+            "label": "Újpest",
+            "color": "#8db600"
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://icehockey.hu/oldalak/mol_liga/menetrend"
+    ]
+}

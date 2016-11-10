@@ -1,0 +1,134 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "4",
+    "image": "ebel.png",
+    "title": "EBEL 2016/17",
+    "countries": [
+        {
+            "name": "Austria",
+            "two": "at",
+            "three": "AUT",
+            "color": "#cc0000"
+        },
+        {
+            "name": "Czech Republic",
+            "two": "cz",
+            "three": "CZE",
+            "color": "#0086b3"
+        },
+        {
+            "name": "Hungary",
+            "two": "hu",
+            "three": "HUN",
+            "color": "#8db600"
+        },
+        {
+            "name": "Italy",
+            "two": "it",
+            "three": "ITA",
+            "color": "#ff9900"
+        },
+        {
+            "name": "Slovenia",
+            "two": "si",
+            "three": "SLO",
+            "color": "#0066ff"
+        }
+    ],
+    "months": ["September","October","November","December","January","February","March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular season"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bla",
+            "long": "Black Wings Linz",
+            "label": "Black Wings",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Dor",
+            "long": "Dornbirner EC",
+            "label": "Dornbirner EC",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Feh",
+            "long": "Fehérvár AV19",
+            "label": "Fehérvár AV19",
+            "color": "#8db600"
+        },
+        {
+            "short": "Gra",
+            "long": "Graz 99ers",
+            "label": "Graz 99ers",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Bol",
+            "long": "HC Bolzano",
+            "label": "HC Bolzano",
+            "color": "#ff9900"
+        },
+        {
+            "short": "Kac",
+            "long": "KAC",
+            "label": "EC KAC",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Lju",
+            "long": "Olimpija Ljubljana",
+            "label": "Olimpija Ljubljana",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Zno",
+            "long": "Orli Znojmo",
+            "label": "Orli Znojmo",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Red",
+            "long": "Red Bull Salzburg",
+            "label": "Red Bull Salzburg",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Ins",
+            "long": "TWK Innsbruck",
+            "label": "TWK Innsbruck",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Vie",
+            "long": "Vienna Capitals",
+            "label": "Vienna Capitals",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Vsv",
+            "long": "VSV",
+            "label": "EC VSV",
+            "color": "#cc0000"
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://erstebankliga.at/spielplan"
+    ]
+}

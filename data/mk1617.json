@@ -1,0 +1,74 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "5",
+    "image": "mjsz.png",
+    "title": "Magyar Kupa 2016/17",
+    "months": ["October","November","December","January"],
+    "stages": [
+        {
+            "short": "QF",
+            "long": "Qualifications"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Deb",
+            "long": "Debreceni HK",
+            "label": "Debrecen",
+            "color": "#8db600"
+        },
+        {
+            "short": "Dab",
+            "long": "Dunaújvárosi Acélbikák",
+            "label": "Dunaújváros",
+            "color": "#8db600"
+        },
+        {
+            "short": "Hkb",
+            "long": "Hokiklub Budapest",
+            "label": "Hokiklub",
+            "color": "#8db600"
+        },
+        {
+            "short": "Mis",
+            "long": "DVTK Jegesmedvék",
+            "label": "Miskolc",
+            "color": "#8db600"
+        },
+        {
+            "short": "Feh",
+            "long": "Fehérvár AV19",
+            "label": "Fehérvár",
+            "color": "#8db600"
+        },
+        {
+            "short": "Fer",
+            "long": "Ferencvárosi TC",
+            "label": "Ferencváros",
+            "color": "#8db600"
+        },
+        {
+            "short": "Mac",
+            "long": "MAC Budapest",
+            "label": "MAC",
+            "color": "#8db600"
+        },
+        {
+            "short": "Ute",
+            "long": "Újpesti TE",
+            "label": "Újpest",
+            "color": "#8db600"
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://icehockey.hu/oldalak/felnott_bajnoksagok/ewhl"
+    ]
+}

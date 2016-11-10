@@ -1,0 +1,61 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "3",
+    "image": "lnh.png",
+    "title": "LNH 2016/17",
+    "countries": [],
+    "months": ["September","October","November","December","January","February","March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular season"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bra",
+            "long": "ASC Corona Brasov",
+            "label": "Brasov",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Gal",
+            "long": "Dunarea Galati",
+            "label": "Galati",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Pro",
+            "long": "Progym Gyergyó",
+            "label": "Progym",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Csi",
+            "long": "SC Csíkszereda",
+            "label": "Csíkszereda",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Spo",
+            "long": "Sportul Studentesc",
+            "label": "Sportul",
+            "color": "#fdb600"
+        },
+        {
+            "short": "Ste",
+            "long": "Steaua Bucuresti",
+            "label": "Steaua",
+            "color": "#fdb600"
+        }
+    ],
+    "sources": ["Official game sheets on Pointstreak"]
+}
