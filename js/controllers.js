@@ -12,6 +12,6 @@ angular.module('molApp')
     if (AttendanceDataRes.leagueData.chartsby)
         $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData, $scope.ligueData[AttendanceDataRes.leagueData.chartsby]);
     else
-        $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData);        
+        $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData);
 }])
 ;

@@ -13,9 +13,9 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
         $rootScope.stateIsLoading = false;
         $window.ga('send', 'pageview', $location.path());
     });
-    $rootScope.$on('$stateChangeError', function() {
+    $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
         $rootScope.stateIsLoading = true;
-        console.log('state change error ' + error);
+        console.log('state change error ' + JSON.stringify(error));
     });
 }]) 
 
@@ -29,12 +29,12 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
     })
     .state({
         name: 'league',
-        url: '/league/:leagueabbr',
+        url: '/league/:leagueabbr/:season',
         controller: 'LeagueCtrl',
         templateUrl: 'pages/league.html',
         data: {},
         resolve: {
-            AttendanceDataRes: function(AttendanceData, $stateParams) { return AttendanceData($stateParams.leagueabbr); }
+            AttendanceDataRes: function(AttendanceData, $stateParams) { return AttendanceData($stateParams.leagueabbr, $stateParams.season); }
         }
     });
     $urlRouterProvider.otherwise('/home');

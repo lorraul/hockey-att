@@ -1,8 +1,8 @@
 angular.module('molApp')
 
 .factory('LeagueData', ['$resource', function ($resource) {
-    return function(leagueabbr){
-        var datafile = 'data/'+leagueabbr+'.json';
+    return function(leagueabbr, season){
+        var datafile = 'data/'+leagueabbr+season+'.json';
         var apiRequest = $resource(datafile);
         return apiRequest.get().$promise.then(
             function(data){ return data;},
@@ -22,8 +22,8 @@ angular.module('molApp')
 }])
 
 .factory('AttendanceData', ['AttendanceRawData', 'LeagueData', function (AttendanceRawData, LeagueData) {
-    return function(leagueabbr){
-        return LeagueData(leagueabbr).then(
+    return function(leagueabbr, season){
+        return LeagueData(leagueabbr, season).then(
             function(leagueData){
                 return AttendanceRawData(leagueData.spreadsheet, leagueData.sheetnr).then(
                     function(data){ 
