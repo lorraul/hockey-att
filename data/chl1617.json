@@ -1,0 +1,405 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "8",
+    "image": "chl.png",
+    "title": "CHL 2016/17",
+    "countries": [
+        {
+            "name": "Austria",
+            "two": "at",
+            "three": "AUT",
+            "color": "#cc0000"
+        },
+        {
+            "name": "Belarus",
+            "two": "by",
+            "three": "BLR",
+            "color": "#8db600"
+        },
+        {
+            "name": "Czechia",
+            "two": "cz",
+            "three": "CZE",
+            "color": "#0086b3"
+        },
+        {
+            "name": "Denmark",
+            "two": "dk",
+            "three": "DEN",
+            "color": "#ff9900"
+        },
+        {
+            "name": "Finland",
+            "two": "fi",
+            "three": "FIN",
+            "color": "#0066ff"
+        },
+        {
+            "name": "France",
+            "two": "fr",
+            "three": "FRA",
+            "color": "#0975b5"
+        },
+        {
+            "name": "Germany",
+            "two": "de",
+            "three": "GER",
+            "color": "#004c97"
+        },
+        {
+            "name": "Poland",
+            "two": "pl",
+            "three": "POL",
+            "color": "#bf3535"
+        },
+        {
+            "name": "Norway",
+            "two": "no",
+            "three": "NOR",
+            "color": "#67098c"
+        },
+        {
+            "name": "Slovakia",
+            "two": "sk",
+            "three": "SVK",
+            "color": "#098cb5"
+        },
+        {
+            "name": "Sweden",
+            "two": "se",
+            "three": "SWE",
+            "color": "#fff542"
+        },
+        {
+            "name": "Switzerland",
+            "two": "ch",
+            "three": "SUI",
+            "color": "#f44242"
+        },
+        {
+            "name": "UK",
+            "two": "gb",
+            "three": "GBR",
+            "color": "#818c09"
+        }
+    ],
+    "months": ["August","September","October","November","December","January","February"],
+    "stages": [
+        {
+            "short": "GS",
+            "long": "Group stage"
+        },
+        {
+            "short": "R32",
+            "long": "Round 32"
+        },
+        {
+            "short": "R16",
+            "long": "Round 16"
+        },        
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Man",
+            "long": "Adler Mannheim",
+            "label": "Mannheim",
+            "color": "#004c97"
+        },
+        {
+            "short": "Ber",
+            "long": "SC Bern",
+            "label": "Bern",
+            "color": "#f44242"
+        },
+        {
+            "short": "Lin",
+            "long": "Black Wings Linz",
+            "label": "Linz",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Lib",
+            "long": "Bili Tygri Liberec",
+            "label": "Liberec",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Mlb",
+            "long": "BK Mlada Boleslav",
+            "label": "Mlada Boleslav",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Kra",
+            "long": "Cracovia Krakow",
+            "label": "Krakow",
+            "color": "#bf3535"
+        },
+        {
+            "short": "Dav",
+            "long": "HC Davos",
+            "label": "Davos",
+            "color": "#f44242"
+        },
+        {
+            "short": "Dav",
+            "long": "Djurgårdens IF",
+            "label": "Djurgårdens",
+            "color": "#fff542"
+        },
+        {
+            "short": "Sal",
+            "long": "EC Salzburg",
+            "label": "Salzburg",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Mün",
+            "long": "EHC München",
+            "label": "München",
+            "color": "#004c97"
+        },
+        {
+            "short": "Ebb",
+            "long": "Eisbären Berlin",
+            "label": "Berlin",
+            "color": "#004c97"
+        },
+        {
+            "short": "Ing",
+            "long": "ERC Ingolstadt",
+            "label": "Ingolstadt",
+            "color": "#004c97"
+        },
+        {
+            "short": "Esb",
+            "long": "Esbjerg Energy",
+            "label": "Esbjerg",
+            "color": "#ff9900"
+        },
+        {
+            "short": "Fro",
+            "long": "Frölunda HC",
+            "label": "Frölunda",
+            "color": "#fff542"
+        },
+        {
+            "short": "Far",
+            "long": "Färjestad BK",
+            "label": "Färjestad",
+            "color": "#fff542"
+        },
+        {
+            "short": "Gap",
+            "long": "Gap Rapaces",
+            "label": "Gap",
+            "color": "#0975b5"
+        },
+        {
+            "short": "Got",
+            "long": "Gottéron",
+            "label": "Gottéron",
+            "color": "#f44242"
+        },
+        {
+            "short": "Wol",
+            "long": "Grizzlys Wolfsburg",
+            "label": "Wolfsburg",
+            "color": "#004c97"
+        },
+        {
+            "short": "Par",
+            "long": "Dynamo Pardubice",
+            "label": "Pardubice",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Kos",
+            "long": "HC Kosice",
+            "label": "Kosice",
+            "color": "#098cb5"
+        },
+        {
+            "short": "Plz",
+            "long": "HC Plzen",
+            "label": "Plzen",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Pra",
+            "long": "Sparta Praha",
+            "label": "Praha",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Vit",
+            "long": "HC Vitkovice",
+            "label": "Vitkovice",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Hifk",
+            "long": "IFK Helsinki",
+            "label": "HIFK",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Nit",
+            "long": "HK Nitra",
+            "label": "Nitra",
+            "color": "#098cb5"
+        },
+        {
+            "short": "Hv71",
+            "long": "HV71 Jönköping",
+            "label": "HV71",
+            "color": "#fff542"
+        },
+        {
+            "short": "Jyp",
+            "long": "JYP Jyväskylä",
+            "label": "JYP",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Kal",
+            "long": "KalPa",
+            "label": "KalPa",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Kre",
+            "long": "Krefeld Pinguine",
+            "label": "Krefeld",
+            "color": "#004c97"
+        },
+        {
+            "short": "Kar",
+            "long": "Kärpät Oulu",
+            "label": "Kärpät",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Lin",
+            "long": "Linköping HC",
+            "label": "Linköping",
+            "color": "#fff542"
+        },
+        {
+            "short": "Lug",
+            "long": "HC Lugano",
+            "label": "Lugano",
+            "color": "#f44242"
+        },
+        {
+            "short": "Luk",
+            "long": "Lukko Rauma",
+            "label": "Lukko",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Lul",
+            "long": "Luleå HF",
+            "label": "Luleå",
+            "color": "#fff542"
+        },
+        {
+            "short": "Lor",
+            "long": "Lørenskog",
+            "label": "Lørenskog",
+            "color": "#67098c"
+        },
+        {
+            "short": "Zno",
+            "long": "Orli Znojmo",
+            "label": "Znojmo",
+            "color": "#0086b3"
+        },
+        {
+            "short": "Rou",
+            "long": "Rouen Dragons",
+            "label": "Rouen",
+            "color": "#0975b5"
+        },
+        {
+            "short": "Sai",
+            "long": "SaiPa",
+            "label": "SaiPa",
+            "color": "#0066ff"
+        },
+        {
+            "short": "She",
+            "long": "Sheffield Steelers",
+            "label": "Sheffield",
+            "color": "#818c09"
+        },
+        {
+            "short": "Ske",
+            "long": "Skellefteå AIK",
+            "label": "Skellefteå",
+            "color": "#fff542"
+        },
+        {
+            "short": "Sta",
+            "long": "Stavanger Oilers",
+            "label": "Stavanger Oilers",
+            "color": "#67098c"
+        },
+        {
+            "short": "Tap",
+            "long": "Tappara Tampere",
+            "label": "Tappara",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Tps",
+            "long": "TPS Turku",
+            "label": "TPS",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Vie",
+            "long": "Vienna Capitals",
+            "label": "Vienna",
+            "color": "#cc0000"
+        },
+        {
+            "short": "Vax",
+            "long": "Växjö Lakers",
+            "label": "Växjö",
+            "color": "#0066ff"
+        },
+        {
+            "short": "Min",
+            "long": "Yunost Minsk",
+            "label": "Minsk",
+            "color": "#8db600"
+        },
+        {
+            "short": "ZSC",
+            "long": "ZSC Lions",
+            "label": "Zürich",
+            "color": "#f44242"
+        },
+        {
+            "short": "Zug",
+            "long": "EV Zug",
+            "label": "Zug",
+            "color": "#f44242"
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://www.championshockeyleague.net/gamecentre"
+    ]
+}
