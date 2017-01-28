@@ -42,6 +42,14 @@
             "long": "Regular season"
         },
         {
+            "short": "QR",
+            "long": "Quialification round"
+        },
+        {
+            "short": "PR",
+            "long": "Placement round"
+        },
+        {
             "short": "QF",
             "long": "Quarterfinals"
         },
