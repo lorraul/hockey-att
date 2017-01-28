@@ -79,6 +79,10 @@ footer .row {
     height: 40px;
 }
 
+.pagemeta {
+    line-height: 20px;
+}
+
 .subtitle{
     margin-bottom: 20px;
     font-family: 'Archivo Narrow', sans-serif;
