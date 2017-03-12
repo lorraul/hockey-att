@@ -20,7 +20,8 @@
     "angular-chart.js": "^1.0.2",
     "angular-resource": "^1.5.8",
     "bootstrap": "^3.3.7",
-    "angular-ui-router": "npm:angular-ui-router#^0.3.1",
-    "flag-icon-css": "^2.4.0"
+    "angular-ui-router": "npm:angular-ui-router#^0.3.2",
+    "flag-icon-css": "^2.4.0",
+    "chartjs-plugin-annotation": "npm:chartjs-plugin-annotation#^0.5.2"
   }
 }

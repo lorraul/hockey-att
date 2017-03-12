@@ -64,16 +64,41 @@ angular.module('molApp')
 .factory('globalChartOptions', function () {
     var gridLines = {color: '#262626', lineWidth: 1};
     var scaleLabelColor = '#d9d9d9';
-    var horizontalLineStyle = 'rgba(255,102,102,0.4)',
-        horizontalLineText = 'Average'; 
+    var horizontalLineStyle = 'rgba(255,102,102,0.9)',
+        horizontalLineText = 'Average';
+    var annotationStyle = function(averageValue){
+        return {
+            annotations: [{
+                type: 'line',
+                mode: 'horizontal',
+                scaleID: 'y-axis-0',
+                value: averageValue,
+                borderColor: horizontalLineStyle,
+                borderWidth: 1,
+                borderDash: [8, 10],
+                label: {
+                    backgroundColor: 'transparent',
+                    fontFamily: "sans-serif",
+                    fontSize: 12,
+                    fontStyle: 'bold',
+                    fontColor: '#d9d9d9',
+                    xPadding: 6,
+                    yPadding: 6,
+                    cornerRadius: 6,
+                    position: 'left',
+                    xAdjust: 30,
+                    yAdjust: 0,
+                    enabled: true,
+                    content: horizontalLineText
+                }
+            }],
+            drawTime: 'afterDraw'
+        }
+    };
     return {
         barChart: function(averageValue){
             return {
-                horizontalLine: [{
-                  "y": averageValue,
-                  "style": horizontalLineStyle,
-                  "text": horizontalLineText
-                }],
+                annotation: annotationStyle(averageValue),
                 scales: {
                     xAxes: [{
                         gridLines: gridLines,
@@ -93,11 +118,7 @@ angular.module('molApp')
         },
         lineChart: function(averageValue){
             return {
-                horizontalLine: [{
-                  "y": averageValue,
-                  "style": horizontalLineStyle,
-                  "text": horizontalLineText
-                }],
+                annotation: annotationStyle(averageValue),
                 scales: {
                     xAxes: [{
                         gridLines: gridLines,
