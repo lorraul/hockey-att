@@ -75,13 +75,26 @@ function getMax(objectArray, property, filteredBy, filterValue){
 }
 
 //get object from objectarray with property being min
-function getMin(objectArray, property){
+function getMin(objectArray, property, filteredBy, filterValue) {
+    if (objectArray.length == 0) return {};
     var returnObject;
     var minVal = getMax(objectArray, property).attendance;
-    for (var i in objectArray){
-        if (parseInt(objectArray[i][property]) < minVal){
-            returnObject = objectArray[i];
-            minVal = parseInt(objectArray[i][property]);
+    if (!filteredBy || !filterValue) {
+        for (var i in objectArray) {
+            if (parseInt(objectArray[i][property]) < minVal) {
+                returnObject = objectArray[i];
+                minVal = parseInt(objectArray[i][property]);
+            }
+        }
+    } else {
+        for (var i in objectArray) {
+            if (typeof objectArray[i][filteredBy] == 'undefined') {
+                continue;
+            }
+            if ((objectArray[i][filteredBy].trim() == filterValue) && (parseInt(objectArray[i][property]) < minVal)) {
+                returnObject = objectArray[i];
+                minVal = parseInt(objectArray[i][property]);
+            }
         }
     }
     return returnObject;

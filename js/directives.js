@@ -137,6 +137,26 @@ angular.module('molApp')
     };
 })
 
+.directive('teamLowestHome', function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/team-lowest-home.html',
+        scope: {
+            data: '='
+        }
+    };
+})
+
+.directive('teamLowestAway', function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/team-lowest-away.html',
+        scope: {
+            data: '='
+        }
+    };
+})
+
 .directive('sources', function(){
     return {
         restrict: 'E',

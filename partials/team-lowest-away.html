@@ -1,0 +1,28 @@
+<div class="row" id="team-lowest-away">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+        Lowest attendance on away games by team:
+        <br>
+        <span class="translation">Legalacsonyabb nézőszám idegen pályán</span>
+    </div>
+
+    <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+        <table class="table table-inverse">
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Attendance</th>
+                    <th>Date</th>
+                    <th>Game</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="lowestGame in data track by $index">
+                    <td>{{lowestGame.team}}</td>
+                    <td>{{lowestGame.game.attendance}}</td>
+                    <td>{{lowestGame.game.date}}</td>
+                    <td>{{lowestGame.game.team1}} - {{lowestGame.game.team2}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -274,12 +274,16 @@ angular.module('molApp')
 		returnObject.dataHomeAllSorted.sort(compareAttendance);
 		returnObject.dataAwayAllSorted.sort(compareAttendance);
 		
-		//team record stats
+		//team record and low stats
 		returnObject.dataHomeRecord = [];
 		returnObject.dataAwayRecord = [];
+        returnObject.dataHomeLow = [];
+        returnObject.dataAwayLow = [];
 		for (var i in ligueData.teams){
 			returnObject.dataHomeRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
 			returnObject.dataAwayRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
+            returnObject.dataHomeLow.push({team: ligueData.teams[i].long, game: getMin(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
+            returnObject.dataAwayLow.push({team: ligueData.teams[i].long, game: getMin(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
 		}
 		
         return returnObject;
