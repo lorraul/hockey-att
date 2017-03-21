@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteBase /hockey-att/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ #/$1 [L]

@@ -19,7 +19,9 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
     });
 }]) 
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix('!');
     $stateProvider
 	.state({
         name: 'home',
