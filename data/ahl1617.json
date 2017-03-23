@@ -1,0 +1,333 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "9",
+    "chartsby": "division",
+    "image": "ahl.png",
+    "title": "AHL 2016/17",
+    "months": ["October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season"
+        },
+        {
+            "short": "DS",
+            "long": "Division semifinals"
+        },
+        {
+            "short": "DF",
+            "long": "Division finals"
+        },
+        {
+            "short": "CF",
+            "long": "Conference Finals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "conference": [
+        {
+            "short": "Eastern",
+            "long": "Eastern Conference"
+		},
+        {
+            "short": "Western",
+            "long": "Western Conference"
+		}
+	],
+    "division": [
+        {
+            "short": "Atlantic",
+            "long": "Atlantic Division"
+		},
+        {
+            "short": "North",
+            "long": "North Division"
+		},
+        {
+            "short": "Central",
+            "long": "Central Division"
+		},
+        {
+            "short": "Pacific",
+            "long": "Pacific Division"
+		}
+	],
+    "teams": [
+        {
+            "short": "Alb",
+            "long": "Albany Devils",
+            "label": "Albany",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Bak",
+            "long": "Bakersfield Condors",
+            "label": "Bakersfield",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Bin",
+            "long": "Binghamton Senators",
+            "label": "Binghamton",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Bri",
+            "long": "Bridgeport Sound Tigers",
+            "label": "Bridgeport",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Cha",
+            "long": "Charlotte Checkers",
+            "label": "Charlotte",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Chi",
+            "long": "Chicago Wolves",
+            "label": "Chicago",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Cle",
+            "long": "Cleveland Monsters",
+            "label": "Cleveland",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Gra",
+            "long": "Grand Rapids Griffins",
+            "label": "Grand Rapids",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Har",
+            "long": "Hartford Wolf Pack",
+            "label": "Hartford",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Her",
+            "long": "Hershey Bears",
+            "label": "Hershey",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Iow",
+            "long": "Iowa Wild",
+            "label": "Iowa",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Leh",
+            "long": "Lehigh Valley Phantoms",
+            "label": "Lehigh Valley",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Man",
+            "long": "Manitoba Moose",
+            "label": "Manitoba",
+            "conference": "Western",
+            "division": "Central",
+            "country": "CAN",
+            "color": "#db0404"
+        },
+        {
+            "short": "Mil",
+            "long": "Milwaukee Admirals",
+            "label": "Milwaukee",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Ont",
+            "long": "Ontario Reign",
+            "label": "Ontario",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "CAN",
+            "color": "#db0404"
+        },
+        {
+            "short": "Pro",
+            "long": "Providence Bruins",
+            "label": "Providence",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Roa",
+            "long": "Rochester Americans",
+            "label": "Rochester",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Roi",
+            "long": "Rockford IceHogs",
+            "label": "Rockford",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Saa",
+            "long": "San Antonio Rampage",
+            "label": "San Antonio",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Sad",
+            "long": "San Diego Gulls",
+            "label": "San Diego",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Saj",
+            "long": "San Jose Barracuda",
+            "label": "San Jose",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Spr",
+            "long": "Springfield Thunderbirds",
+            "label": "Springfield",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Stj",
+            "long": "St. John's IceCaps",
+            "label": "St. John's",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "color": "#db0404"
+        },
+        {
+            "short": "Sto",
+            "long": "Stockton Heat",
+            "label": "Stockton",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Syr",
+            "long": "Syracuse Crunch",
+            "label": "Syracuse",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Tex",
+            "long": "Texas Stars",
+            "label": "Texas",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Tor",
+            "long": "Toronto Marlies",
+            "label": "Toronto Marlies",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "color": "#db0404"
+        },
+        {
+            "short": "Tuc",
+            "long": "Tucson Roadrunners",
+            "label": "Tucson",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Uti",
+            "long": "Utica Comets",
+            "label": "Utica",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Wil",
+            "long": "Wilkes-Barre/Scranton Penguins",
+            "label": "Wilkes-Barre",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "color": "#093c8e"
+        }
+    ],
+    "sources": [
+        "AHL Game Reports: http://theahl.com"
+    ]
+}

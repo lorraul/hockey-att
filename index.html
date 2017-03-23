@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="img/icon.png" class="navbar-brand-img"> Ice Hockey Attendance Stats</a>
+                <a class="navbar-brand" ui-sref="home"><img src="img/icon.png" class="navbar-brand-img"> Ice Hockey Attendance Stats</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav">
@@ -55,6 +55,18 @@
                         <a ui-sref="league({leagueabbr: 'nhl', season: '1617'})">
                             <img src="img/nhl.png">
                             NHL 2016/17
+                        </a>
+                    </li>
+                    <li ng-class="{ active: isActive('/league/ahl/1617')}">
+                        <a ui-sref="league({leagueabbr: 'ahl', season: '1617'})">
+                            <img src="img/ahl.png">
+                            AHL 2016/17
+                        </a>
+                    </li>
+                    <li ng-class="{ active: isActive('/league/echl/1617')}">
+                        <a ui-sref="league({leagueabbr: 'echl', season: '1617'})">
+                            <img src="img/echl.png">
+                            ECHL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/chl/1617')}">

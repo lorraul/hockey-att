@@ -1,0 +1,306 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "10",
+    "chartsby": "division",
+    "image": "echl.png",
+    "title": "ECHL 2016/17",
+    "months": ["October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season"
+        },
+        {
+            "short": "CQ",
+            "long": "Conference Quarterfinals"
+        },
+        {
+            "short": "CS",
+            "long": "Conference Semifinals"
+        },
+        {
+            "short": "CF",
+            "long": "Conference Finals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "conference": [
+        {
+            "short": "Eastern",
+            "long": "Eastern Conference"
+		},
+        {
+            "short": "Western",
+            "long": "Western Conference"
+		}
+	],
+    "division": [
+        {
+            "short": "South",
+            "long": "South Division"
+		},
+        {
+            "short": "North",
+            "long": "North Division"
+		},
+        {
+            "short": "Central",
+            "long": "Central Division"
+		},
+        {
+            "short": "Mountain",
+            "long": "Mountain Division"
+		}
+	],
+    "teams": [
+        {
+            "short": "Adi",
+            "long": "Adirondack Thunder",
+            "label": "Adirondack",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Ala",
+            "long": "Alaska Aces",
+            "label": "Alaska",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "All",
+            "long": "Allen Americans",
+            "label": "Allen",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Atl",
+            "long": "Atlanta Gladiators",
+            "label": "Atlanta",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Bra",
+            "long": "Brampton Beast",
+            "label": "Brampton",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Cin",
+            "long": "Cincinnati Cyclones",
+            "label": "Cincinnati",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Col",
+            "long": "Colorado Eagles",
+            "label": "Colorado",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Elm",
+            "long": "Elmira Jackals",
+            "label": "Elmira",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Flo",
+            "long": "Florida Everblades",
+            "label": "Florida",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "For",
+            "long": "Fort Wayne Komets",
+            "label": "Fort Wayne",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Gre",
+            "long": "Greenville Swamp Rabbits",
+            "label": "Greenville",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Ida",
+            "long": "Idaho Steelheads",
+            "label": "Idaho",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Indy",
+            "long": "Indy Fuel",
+            "label": "Indy",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Kal",
+            "long": "Kalamazoo Wings",
+            "label": "Kalamazoo",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Man",
+            "long": "Manchester Monarchs",
+            "label": "Manchester",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Mis",
+            "long": "Missouri Mavericks",
+            "label": "Missouri",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Nor",
+            "long": "Norfolk Admirals",
+            "label": "Norfolk",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Orl",
+            "long": "Orlando Solar Bears",
+            "label": "Orlando",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Qua",
+            "long": "Quad City Mallards",
+            "label": "Quad City",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Rap",
+            "long": "Rapid City Rush",
+            "label": "Rapid City",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Rea",
+            "long": "Reading Royals",
+            "label": "Reading",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Sou",
+            "long": "South Carolina Stingrays",
+            "label": "South Carolina",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Tol",
+            "long": "Toledo Walleye",
+            "label": "Toledo",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Tul",
+            "long": "Tulsa Oilers",
+            "label": "Tulsa",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Uta",
+            "long": "Utah Grizzlies",
+            "label": "Utah",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Whe",
+            "long": "Wheeling Nailers",
+            "label": "Wheeling",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "color": "#093c8e"
+        },
+        {
+            "short": "Wic",
+            "long": "Wichita Thunder",
+            "label": "Wichita",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "color": "#093c8e"
+        }
+    ],
+    "sources": [
+        "ECHL Game Reports: http://www.echl.com/"
+    ]
+}
