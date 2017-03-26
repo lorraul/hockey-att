@@ -120,40 +120,28 @@ angular.module('molApp')
 .directive('teamRecordHome', function(){
     return {
         restrict: 'E',
-        templateUrl: 'partials/team-record-home.html',
-        scope: {
-            data: '='
-        }
+        templateUrl: 'partials/team-record-home.html'
     };
 })
 
 .directive('teamRecordAway', function(){
     return {
         restrict: 'E',
-        templateUrl: 'partials/team-record-away.html',
-        scope: {
-            data: '='
-        }
+        templateUrl: 'partials/team-record-away.html'
     };
 })
 
 .directive('teamLowestHome', function () {
     return {
         restrict: 'E',
-        templateUrl: 'partials/team-lowest-home.html',
-        scope: {
-            data: '='
-        }
+        templateUrl: 'partials/team-lowest-home.html'
     };
 })
 
 .directive('teamLowestAway', function () {
     return {
         restrict: 'E',
-        templateUrl: 'partials/team-lowest-away.html',
-        scope: {
-            data: '='
-        }
+        templateUrl: 'partials/team-lowest-away.html'
     };
 })
 

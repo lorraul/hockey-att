@@ -22,4 +22,15 @@ angular.module('molApp')
     });
     return results;
   };
+})
+
+.filter('showMore',function($filter){
+  return function(all,showMore){
+      if (!showMore) return;
+      var result = [];
+      for (var i=0; i<all.length; i++){
+          result.push(all[i]);
+      }
+      return result;
+  }
 });

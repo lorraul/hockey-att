@@ -48,16 +48,20 @@ function isNumeric(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
-//get object from objectarray with property being max
+
+//get object from objectarray with property being max, multiple cases included
 function getMax(objectArray, property, filteredBy, filterValue){
 	if (objectArray.length == 0) return {};
-    var returnObject;
+    var returnArray = [];
     var maxVal = 0;
 	if (!filteredBy || !filterValue){
 		for (var i in objectArray){
-			if (parseInt(objectArray[i][property]) > maxVal){
-				returnObject = objectArray[i];
-				maxVal = parseInt(objectArray[i][property]);
+            if (parseInt(objectArray[i][property]) > maxVal){
+                returnArray= [objectArray[i]]; //reset returnArray if new max is found
+                maxVal = parseInt(objectArray[i][property]);
+            }
+			if (parseInt(objectArray[i][property]) == maxVal){
+				returnArray.push(objectArray[i]);
 			}
 		}
 	} else {
@@ -65,25 +69,33 @@ function getMax(objectArray, property, filteredBy, filterValue){
             if (typeof objectArray[i][filteredBy] == 'undefined') {
                     continue;
             }
-			if ((objectArray[i][filteredBy].trim() == filterValue) && (parseInt(objectArray[i][property]) > maxVal)){
-				returnObject = objectArray[i];
-				maxVal = parseInt(objectArray[i][property]);
-			}
+			if (objectArray[i][filteredBy].trim() == filterValue){
+                if (parseInt(objectArray[i][property]) > maxVal){
+                    returnArray= [objectArray[i]]; //reset returnArray if new max is found
+                    maxVal = parseInt(objectArray[i][property]);
+                }
+                else if (parseInt(objectArray[i][property]) == maxVal){
+                    returnArray.push(objectArray[i]);
+                }
+            }
 		}
 	}
-    return returnObject;
+    return returnArray;
 }
 
-//get object from objectarray with property being min
+//get object from objectarray with property being min, multiple cases included
 function getMin(objectArray, property, filteredBy, filterValue) {
     if (objectArray.length == 0) return {};
-    var returnObject;
-    var minVal = getMax(objectArray, property).attendance;
+    var returnArray = [];
+    var minVal = getMax(objectArray, property)[0].attendance;
     if (!filteredBy || !filterValue) {
         for (var i in objectArray) {
             if (parseInt(objectArray[i][property]) < minVal) {
-                returnObject = objectArray[i];
+                returnArray = [objectArray[i]]; //reset returnArray if new max is found
                 minVal = parseInt(objectArray[i][property]);
+            }
+            if (parseInt(objectArray[i][property]) == minVal) {
+                returnArray.push(objectArray[i]);
             }
         }
     } else {
@@ -91,13 +103,18 @@ function getMin(objectArray, property, filteredBy, filterValue) {
             if (typeof objectArray[i][filteredBy] == 'undefined') {
                 continue;
             }
-            if ((objectArray[i][filteredBy].trim() == filterValue) && (parseInt(objectArray[i][property]) < minVal)) {
-                returnObject = objectArray[i];
-                minVal = parseInt(objectArray[i][property]);
+            if (objectArray[i][filteredBy].trim() == filterValue) {
+                if (parseInt(objectArray[i][property]) < minVal) {
+                    returnArray = [objectArray[i]]; //reset returnArray if new max is found
+                    minVal = parseInt(objectArray[i][property]);
+                }
+                else if (parseInt(objectArray[i][property]) == minVal){
+                    returnArray.push(objectArray[i]);
+                }
             }
         }
     }
-    return returnObject;
+    return returnArray;
 }
 
 //get the latest date from an array of dates

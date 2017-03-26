@@ -1,28 +1,39 @@
 <div class="row" id="team-lowest-home">
     <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
-        Lowest attendance on home games by team:
-        <br>
+        Lowest attendance on home games by team:<br>
         <span class="translation">Legalacsonyabb nézőszám hazai pályán</span>
     </div>
-
     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
-        <table class="table table-inverse">
-            <thead>
-                <tr>
-                    <th>Team</th>
-                    <th>Attendance</th>
-                    <th>Date</th>
-                    <th>Game</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="lowestGame in data track by $index">
-                    <td>{{lowestGame.team}}</td>
-                    <td>{{lowestGame.game.attendance}}</td>
-                    <td>{{lowestGame.game.date}}</td>
-                    <td>{{lowestGame.game.team1}} - {{lowestGame.game.team2}}</td>
-                </tr>
-            </tbody>
+        <table class="table table-inverse team-table">
+        <tbody>
+            <tr ng-repeat-start="recordsByTeam in ligueStats.dataHomeLow" class="team-separator">
+              <td colspan="4">{{recordsByTeam.team}}</td>
+            </tr>
+            <tr class="game-line" ng-if="!homeLowSwitch[$index]">
+                <td>Attendance: {{recordsByTeam.games[0].attendance}}</td>
+                <td>Date: {{recordsByTeam.games[0].date}}</td>
+                <td>Game: {{recordsByTeam.games[0].team1}} - {{recordsByTeam.games[0].team2}}</td>
+            </tr>
+            <tr ng-if="homeLowSwitch[$index]">
+                <td>Attendance</td>
+                <td>Date</td>
+                <td>Game</td>
+            </tr>
+            <tr class="game-line" ng-repeat="game in recordsByTeam.games | showMore:homeLowSwitch[$index]">
+                <td>{{game.attendance}}</td>
+                <td>{{game.date}}</td>
+                <td>{{game.team1}} - {{game.team2}}</td>
+            </tr>
+            <tr ng-repeat-end>
+                <td colspan="4">
+                    <a class="more-button" ng-if="recordsByTeam.games.length > 1" type="button" ng-click="homeLowSwitch[$index] = !homeLowSwitch[$index]">
+                        <span ng-if="!homeLowSwitch[$index]">More games with the same number <span class="glyphicon glyphicon-chevron-down"></span></span>
+                        <span ng-if="homeLowSwitch[$index]">Show less <span class="glyphicon glyphicon-chevron-up"></span></span>
+                    </a>
+                    <hr>
+                </td>
+            </tr>
+        </tbody>
         </table>
     </div>
 </div>

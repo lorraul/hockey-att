@@ -156,8 +156,8 @@ angular.module('molApp')
         //total average
         returnObject.dataTotal= {
             total: getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance')),
-            highest: getMax(AttendanceDataRes.dataArray, 'attendance'),
-            lowest: getMin(AttendanceDataRes.dataArray, 'attendance')
+            highest: getMax(AttendanceDataRes.dataArray, 'attendance')[0],
+            lowest: getMin(AttendanceDataRes.dataArray, 'attendance')[0]
         }
 
         returnObject.optionsBarChart = globalChartOptions.barChart(returnObject.dataTotal.total);
@@ -280,12 +280,12 @@ angular.module('molApp')
         returnObject.dataHomeLow = [];
         returnObject.dataAwayLow = [];
 		for (var i in ligueData.teams){
-			returnObject.dataHomeRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
-			returnObject.dataAwayRecord.push({team:ligueData.teams[i].long, game:getMax(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
-            returnObject.dataHomeLow.push({team: ligueData.teams[i].long, game: getMin(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
-            returnObject.dataAwayLow.push({team: ligueData.teams[i].long, game: getMin(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
+			returnObject.dataHomeRecord.push({team:ligueData.teams[i].long, games:getMax(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
+			returnObject.dataAwayRecord.push({team:ligueData.teams[i].long, games:getMax(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
+            returnObject.dataHomeLow.push({team: ligueData.teams[i].long, games: getMin(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)});
+            returnObject.dataAwayLow.push({team: ligueData.teams[i].long, games: getMin(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long)});
 		}
-		
+
         return returnObject;
     }
 }])

@@ -13,5 +13,9 @@ angular.module('molApp')
         $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData, $scope.ligueData[AttendanceDataRes.leagueData.chartsby]);
     else
         $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData);
-}])
-;
+    
+    $scope.homeRecordSwitch = [];
+    $scope.homeLowSwitch = [];
+    $scope.awayRecordSwitch = [];
+    $scope.awayLowSwitch = [];
+}]);
