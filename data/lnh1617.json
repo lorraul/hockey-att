@@ -15,6 +15,10 @@
             "long": "Semifinals"
         },
         {
+            "short": "3RD",
+            "long": "3rd place"
+        },
+        {
             "short": "FIN",
             "long": "Final"
         }
