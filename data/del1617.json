@@ -3,9 +3,13 @@
     "sheetnr": "7",
     "image": "del.png",
     "title": "DEL 2016/17",
-    "months": ["September","October","November","December","January","February","March"],
+    "teamColors": {
+        "by": "",
+        "default": "#004c97"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
     "stages": [
-		{
+        {
             "short": "RS",
             "long": "Regular Season"
         },
@@ -13,7 +17,7 @@
             "short": "R16",
             "long": "Round 16"
         },
-		{
+        {
             "short": "QF",
             "long": "Quarterfinals"
         },
@@ -26,90 +30,132 @@
             "long": "Finals"
         }
     ],
-	"teams": [
+    "teams": [
         {
             "short": "Man",
             "long": "Adler Mannheim",
             "label": "Mannheim",
-            "color": "#004c97"
+            "location": {
+                "lat": "49.4883",
+                "lon": "8.4647"
+            }
         },
-		{
+        {
             "short": "Aug",
             "long": "Augsburger Panther",
             "label": "Augsburg",
-            "color": "#004c97"
+            "location": {
+                "lat": "48.3667",
+                "lon": "10.8833"
+            }
         },
-		{
+        {
             "short": "Deg",
             "long": "Düsseldorfer EG",
             "label": "Düsseldor",
-            "color": "#004c97"
+            "location": {
+                "lat": "51.2167",
+                "lon": "6.7667"
+            }
         },
-		{
+        {
             "short": "Muc",
             "long": "EHC München",
             "label": "München",
-            "color": "#004c97"
+            "location": {
+                "lat": "51.6167",
+                "lon": "13.3167"
+            }
         },
-		{
+        {
             "short": "Ebb",
             "long": "Eisbären Berlin",
             "label": "Berlin",
-            "color": "#004c97"
+            "location": {
+                "lat": "54.0333",
+                "lon": "10.4500"
+            }
         },
-		{
+        {
             "short": "Ing",
             "long": "ERC Ingolstadt",
             "label": "Ingolstadt",
-            "color": "#004c97"
+            "location": {
+                "lat": "48.7667",
+                "lon": "11.4333"
+            }
         },
-		{
+        {
             "short": "Bhv",
             "long": "Fischtown Pinguins",
             "label": "Bremerhaven",
-            "color": "#004c97"
+            "location": {
+                "lat": "53.5500",
+                "lon": "8.5833"
+            }
         },
-		{
+        {
             "short": "Wob",
             "long": "Grizzlys Wolfsburg",
             "label": "Wolfsburg",
-            "color": "#004c97"
+            "location": {
+                "lat": "52.4333",
+                "lon": "10.8000"
+            }
         },
-		{
+        {
             "short": "Iec",
             "long": "Iserlohn Roosters",
             "label": "Iserlohn",
-            "color": "#004c97"
+            "location": {
+                "lat": "51.3667",
+                "lon": "7.7000"
+            }
         },
-		{
+        {
             "short": "Kev",
             "long": "Krefeld Pinguine",
             "label": "Krefeld",
-            "color": "#004c97"
+            "location": {
+                "lat": "51.3333",
+                "lon": "6.5667"
+            }
         },
-		{
+        {
             "short": "Kec",
             "long": "Kölner Haie",
             "label": "Köln",
-            "color": "#004c97"
+            "location": {
+                "lat": "50.9333",
+                "lon": "6.9500"
+            }
         },
-		{
+        {
             "short": "Nit",
             "long": "Nürnberg Ice Tigers",
             "label": "Nürnberg",
-            "color": "#004c97"
+            "location": {
+                "lat": "49.4478",
+                "lon": "11.0683"
+            }
         },
-		{
+        {
             "short": "Sww",
             "long": "Schwenninger WW",
             "label": "Schwenninger",
-            "color": "#004c97"
+            "location": {
+                "lat": "48.1000",
+                "lon": "9.0000"
+            }
         },
-		{
+        {
             "short": "Str",
             "long": "Straubing Tigers",
             "label": "Straubing",
-            "color": "#004c97"
+            "location": {
+                "lat": "48.8833",
+                "lon": "12.5667"
+            }
         }
     ],
     "sources": [

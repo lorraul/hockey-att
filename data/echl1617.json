@@ -4,6 +4,10 @@
     "chartsby": "division",
     "image": "echl.png",
     "title": "ECHL 2016/17",
+    "teamColors": {
+        "by": "",
+        "default": "#dd1818"
+    },
     "months": ["October", "November", "December", "January", "February", "March", "April"],
     "stages": [
         {
@@ -63,7 +67,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "43.3101",
+                "lon": "-73.6432"
+            }
         },
         {
             "short": "Ala",
@@ -72,7 +79,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "61.1692",
+                "lon": "-149.8443"
+            }
         },
         {
             "short": "All",
@@ -81,7 +91,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "33.0989",
+                "lon": "-96.6526"
+            }
         },
         {
             "short": "Atl",
@@ -90,7 +103,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "33.8444",
+                "lon": "-84.4741"
+            }
         },
         {
             "short": "Bra",
@@ -99,7 +115,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "CAN",
-            "color": "#093c8e"
+            "location": {
+                "lat": "43.6833",
+                "lon": "-79.7667"
+            }
         },
         {
             "short": "Cin",
@@ -108,7 +127,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "39.1699",
+                "lon": "-84.4859"
+            }
         },
         {
             "short": "Col",
@@ -117,7 +139,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "40.4999",
+                "lon": "-105.2647"
+            }
         },
         {
             "short": "Elm",
@@ -126,7 +151,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "42.0830",
+                "lon": "-76.7762"
+            }
         },
         {
             "short": "Flo",
@@ -135,7 +163,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "26.3997",
+                "lon": "-81.7011"
+            }
         },
         {
             "short": "For",
@@ -144,7 +175,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "41.0791",
+                "lon": "-85.1423"
+            }
         },
         {
             "short": "Gre",
@@ -153,7 +187,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "34.8477",
+                "lon": "-82.3791"
+            }
         },
         {
             "short": "Ida",
@@ -162,7 +199,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "43.4599",
+                "lon": "-116.2440"
+            }
         },
         {
             "short": "Indy",
@@ -171,7 +211,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "39.7795",
+                "lon": "-86.1328"
+            }
         },
         {
             "short": "Kal",
@@ -180,7 +223,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "42.2899",
+                "lon": "-85.5883"
+            }
         },
         {
             "short": "Man",
@@ -189,7 +235,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "42.9521",
+                "lon": "-71.6539"
+            }
         },
         {
             "short": "Mis",
@@ -198,7 +247,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "39.0615",
+                "lon": "-94.2657"
+            }
         },
         {
             "short": "Nor",
@@ -207,7 +259,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "36.8530",
+                "lon": "-76.2882"
+            }
         },
         {
             "short": "Orl",
@@ -216,7 +271,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "28.5037",
+                "lon": "-81.3306"
+            }
         },
         {
             "short": "Qua",
@@ -225,7 +283,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "41.4870",
+                "lon": "-90.4773"
+            }
         },
         {
             "short": "Rap",
@@ -234,7 +295,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "44.0260",
+                "lon": "-103.0755"
+            }
         },
         {
             "short": "Rea",
@@ -243,7 +307,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "40.3548",
+                "lon": "-75.9075"
+            }
         },
         {
             "short": "Sou",
@@ -252,7 +319,10 @@
             "conference": "Eastern",
             "division": "South",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "32.9501",
+                "lon": "-80.0896"
+            }
         },
         {
             "short": "Tol",
@@ -261,7 +331,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "41.6782",
+                "lon": "-83.4972"
+            }
         },
         {
             "short": "Tul",
@@ -270,7 +343,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "36.0971",
+                "lon": "-95.9627"
+            }
         },
         {
             "short": "Uta",
@@ -279,7 +355,10 @@
             "conference": "Western",
             "division": "Mountain",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "40.7242",
+                "lon": "-111.8787"
+            }
         },
         {
             "short": "Whe",
@@ -288,7 +367,10 @@
             "conference": "Eastern",
             "division": "North",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "40.0582",
+                "lon": "-80.6362"
+            }
         },
         {
             "short": "Wic",
@@ -297,7 +379,10 @@
             "conference": "Western",
             "division": "Central",
             "country": "USA",
-            "color": "#093c8e"
+            "location": {
+                "lat": "37.6150",
+                "lon": "-97.4346"
+            }
         }
     ],
     "sources": [

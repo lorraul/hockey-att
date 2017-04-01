@@ -3,7 +3,11 @@
     "sheetnr": "5",
     "image": "mjsz.png",
     "title": "Magyar Kupa 2016/17",
-    "months": ["October","November","December","January"],
+    "teamColors": {
+        "by": "",
+        "default": "#8db600"
+    },
+    "months": ["October", "November", "December", "January"],
     "stages": [
         {
             "short": "QF",
@@ -23,49 +27,73 @@
             "short": "Deb",
             "long": "Debreceni HK",
             "label": "Debrecen",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.5333",
+                "lon": "21.6333"
+            }
         },
         {
             "short": "Dab",
             "long": "Dunaújvárosi Acélbikák",
             "label": "Dunaújváros",
-            "color": "#8db600"
+            "location": {
+                "lat": "46.9807",
+                "lon": "18.9327"
+            }
         },
         {
             "short": "Hkb",
             "long": "Hokiklub Budapest",
             "label": "Hokiklub",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.5000",
+                "lon": "19.0833"
+            }
         },
         {
             "short": "Mis",
             "long": "DVTK Jegesmedvék",
             "label": "Miskolc",
-            "color": "#8db600"
+            "location": {
+                "lat": "48.1000",
+                "lon": "20.7833"
+            }
         },
         {
             "short": "Feh",
             "long": "Fehérvár AV19",
             "label": "Fehérvár",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.1955",
+                "lon": "18.4096"
+            }
         },
         {
             "short": "Fer",
             "long": "Ferencvárosi TC",
             "label": "Ferencváros",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.4858",
+                "lon": "19.0701"
+            }
         },
         {
             "short": "Mac",
             "long": "MAC Budapest",
             "label": "MAC",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.5000",
+                "lon": "19.0833"
+            }
         },
         {
             "short": "Ute",
             "long": "Újpesti TE",
             "label": "Újpest",
-            "color": "#8db600"
+            "location": {
+                "lat": "47.5686",
+                "lon": "19.0846"
+            }
         }
     ],
     "sources": [

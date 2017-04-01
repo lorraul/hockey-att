@@ -3,7 +3,11 @@
     "sheetnr": "8",
     "image": "chl.png",
     "title": "CHL 2016/17",
-    "countries": [
+    "teamColors": {
+        "by": "country",
+        "default": "#1852af"
+    },
+    "country": [
         {
             "name": "Austria",
             "two": "at",
@@ -83,7 +87,7 @@
             "color": "#818c09"
         }
     ],
-    "months": ["August","September","October","November","December","January","February"],
+    "months": ["August", "September", "October", "November", "December", "January", "February"],
     "stages": [
         {
             "short": "GS",
@@ -96,11 +100,11 @@
         {
             "short": "R16",
             "long": "Round 16"
-        },        
+        },
         {
             "short": "QF",
             "long": "Quarterfinals"
-        },        {
+        }, {
             "short": "SF",
             "long": "Semifinals"
         },
@@ -114,289 +118,481 @@
             "short": "Man",
             "long": "Adler Mannheim",
             "label": "Mannheim",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "49.4883",
+                "lon": "8.4647"
+            }
+		},
         {
             "short": "Ber",
             "long": "SC Bern",
             "label": "Bern",
-            "color": "#f44242"
-        },
+            "country": "SUI",
+            "location": {
+                "lat": "46.9167",
+                "lon": "7.4667"
+            }
+		},
         {
             "short": "Lin",
             "long": "Black Wings Linz",
             "label": "Linz",
-            "color": "#cc0000"
-        },
+            "country": "AUT",
+            "location": {
+                "lat": "48.3000",
+                "lon": "14.3000"
+            }
+		},
         {
             "short": "Lib",
             "long": "Bili Tygri Liberec",
             "label": "Liberec",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "50.7639",
+                "lon": "15.0653"
+            }
+		},
         {
             "short": "Mlb",
             "long": "BK Mlada Boleslav",
             "label": "Mlada Boleslav",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "50.4167",
+                "lon": "14.9000"
+            }
+		},
         {
             "short": "Kra",
             "long": "Cracovia Krakow",
             "label": "Krakow",
-            "color": "#bf3535"
-        },
+            "country": "POL",
+            "location": {
+                "lat": "50.0833",
+                "lon": "19.9167"
+            }
+		},
         {
             "short": "Dav",
             "long": "HC Davos",
             "label": "Davos",
-            "color": "#f44242"
-        },
+            "country": "SUI",
+            "location": {
+                "lat": "46.8040",
+                "lon": "9.8353"
+            }
+		},
         {
             "short": "Dav",
             "long": "Djurgårdens IF",
             "label": "Djurgårdens",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "58.6333",
+                "lon": "13.0667"
+            }
+		},
         {
             "short": "Sal",
             "long": "EC Salzburg",
             "label": "Salzburg",
-            "color": "#cc0000"
-        },
+            "country": "AUT",
+            "location": {
+                "lat": "47.8000",
+                "lon": "13.0333"
+            }
+		},
         {
             "short": "Mün",
             "long": "EHC München",
             "label": "München",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "51.6167",
+                "lon": "13.3167"
+            }
+		},
         {
             "short": "Ebb",
             "long": "Eisbären Berlin",
             "label": "Berlin",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "54.0333",
+                "lon": "10.4500"
+            }
+		},
         {
             "short": "Ing",
             "long": "ERC Ingolstadt",
             "label": "Ingolstadt",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "48.7667",
+                "lon": "11.4333"
+            }
+		},
         {
             "short": "Esb",
             "long": "Esbjerg Energy",
             "label": "Esbjerg",
-            "color": "#ff9900"
-        },
+            "country": "DEN",
+            "location": {
+                "lat": "55.4703",
+                "lon": "8.4519"
+            }
+		},
         {
             "short": "Fro",
             "long": "Frölunda HC",
             "label": "Frölunda",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "57.3333",
+                "lon": "13.0167"
+            }
+		},
         {
             "short": "Far",
             "long": "Färjestad BK",
             "label": "Färjestad",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "59.3667",
+                "lon": "13.5000"
+            }
+		},
         {
             "short": "Gap",
             "long": "Gap Rapaces",
             "label": "Gap",
-            "color": "#0975b5"
-        },
+            "country": "FRA",
+            "location": {
+                "lat": "44.5615",
+                "lon": "6.0811"
+            }
+		},
         {
             "short": "Got",
             "long": "Gottéron",
             "label": "Gottéron",
-            "color": "#f44242"
-        },
+            "country": "SUI",
+            "location": {
+                "lat": "46.7957",
+                "lon": "7.1547"
+            }
+		},
         {
             "short": "Wol",
             "long": "Grizzlys Wolfsburg",
             "label": "Wolfsburg",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "52.4333",
+                "lon": "10.8000"
+            }
+		},
         {
             "short": "Par",
             "long": "Dynamo Pardubice",
             "label": "Pardubice",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "50.0278",
+                "lon": "15.7758"
+            }
+		},
         {
             "short": "Kos",
             "long": "HC Kosice",
             "label": "Kosice",
-            "color": "#098cb5"
-        },
+            "country": "SVK",
+            "location": {
+                "lat": "48.7167",
+                "lon": "21.2500"
+            }
+		},
         {
             "short": "Plz",
             "long": "HC Plzen",
             "label": "Plzen",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "49.7500",
+                "lon": "13.3667"
+            }
+		},
         {
             "short": "Pra",
             "long": "Sparta Praha",
             "label": "Praha",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "50.0833",
+                "lon": "14.4667"
+            }
+		},
         {
             "short": "Vit",
             "long": "HC Vitkovice",
             "label": "Vitkovice",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "50.1167",
+                "lon": "13.3000"
+            }
+		},
         {
             "short": "Hifk",
             "long": "IFK Helsinki",
             "label": "HIFK",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "60.6000",
+                "lon": "21.4333"
+            }
+		},
         {
             "short": "Nit",
             "long": "HK Nitra",
             "label": "Nitra",
-            "color": "#098cb5"
-        },
+            "country": "SVK",
+            "location": {
+                "lat": "48.3167",
+                "lon": "18.0833"
+            }
+		},
         {
             "short": "Hv71",
             "long": "HV71 Jönköping",
             "label": "HV71",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "57.7833",
+                "lon": "14.1833"
+            }
+		},
         {
             "short": "Jyp",
             "long": "JYP Jyväskylä",
             "label": "JYP",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "62.2333",
+                "lon": "25.7333"
+            }
+		},
         {
             "short": "Kal",
             "long": "KalPa",
             "label": "KalPa",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "62.9000",
+                "lon": "27.6833"
+            }
+		},
         {
             "short": "Kre",
             "long": "Krefeld Pinguine",
             "label": "Krefeld",
-            "color": "#004c97"
-        },
+            "country": "GER",
+            "location": {
+                "lat": "52.4333",
+                "lon": "10.8000"
+            }
+		},
         {
             "short": "Kar",
             "long": "Kärpät Oulu",
             "label": "Kärpät",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "65.0167",
+                "lon": "25.4667"
+            }
+		},
         {
             "short": "Lin",
             "long": "Linköping HC",
             "label": "Linköping",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "58.4167",
+                "lon": "15.6167"
+            }
+		},
         {
             "short": "Lug",
             "long": "HC Lugano",
             "label": "Lugano",
-            "color": "#f44242"
-        },
+            "country": "SUI",
+            "location": {
+                "lat": "46.0062",
+                "lon": "8.9511"
+            }
+		},
         {
             "short": "Luk",
             "long": "Lukko Rauma",
             "label": "Lukko",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "61.1333",
+                "lon": "21.5000"
+            }
+		},
         {
             "short": "Lul",
             "long": "Luleå HF",
             "label": "Luleå",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "65.5833",
+                "lon": "22.1500"
+            }
+		},
         {
             "short": "Lor",
             "long": "Lørenskog",
             "label": "Lørenskog",
-            "color": "#67098c"
-        },
+            "country": "NOR",
+            "location": {
+                "lat": "59.898889",
+                "lon": "10.964167"
+            }
+		},
         {
             "short": "Zno",
             "long": "Orli Znojmo",
             "label": "Znojmo",
-            "color": "#0086b3"
-        },
+            "country": "CZE",
+            "location": {
+                "lat": "48.8561",
+                "lon": "16.0564"
+            }
+		},
         {
             "short": "Rou",
             "long": "Rouen Dragons",
             "label": "Rouen",
-            "color": "#0975b5"
-        },
+            "country": "FRA",
+            "location": {
+                "lat": "49.4333",
+                "lon": "1.0833"
+            }
+		},
         {
             "short": "Sai",
             "long": "SaiPa",
             "label": "SaiPa",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "61.0667",
+                "lon": "28.1833"
+            }
+		},
         {
             "short": "She",
             "long": "Sheffield Steelers",
             "label": "Sheffield",
-            "color": "#818c09"
-        },
+            "country": "GBR",
+            "location": {
+                "lat": "53.3667",
+                "lon": "-1.5000"
+            }
+		},
         {
             "short": "Ske",
             "long": "Skellefteå AIK",
             "label": "Skellefteå",
-            "color": "#fff542"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "64.7667",
+                "lon": "20.9500"
+            }
+		},
         {
             "short": "Sta",
             "long": "Stavanger Oilers",
             "label": "Stavanger Oilers",
-            "color": "#67098c"
-        },
+            "country": "NOR",
+            "location": {
+                "lat": "58.9667",
+                "lon": "5.7500"
+            }
+		},
         {
             "short": "Tap",
             "long": "Tappara Tampere",
             "label": "Tappara",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "61.5000",
+                "lon": "23.7500"
+            }
+		},
         {
             "short": "Tps",
             "long": "TPS Turku",
             "label": "TPS",
-            "color": "#0066ff"
-        },
+            "country": "FIN",
+            "location": {
+                "lat": "60.4500",
+                "lon": "22.2833"
+            }
+		},
         {
             "short": "Vie",
             "long": "Vienna Capitals",
             "label": "Vienna",
-            "color": "#cc0000"
-        },
+            "country": "AUT",
+            "location": {
+                "lat": "48.2000",
+                "lon": "16.3667"
+            }
+		},
         {
             "short": "Vax",
             "long": "Växjö Lakers",
             "label": "Växjö",
-            "color": "#0066ff"
-        },
+            "country": "SWE",
+            "location": {
+                "lat": "56.8833",
+                "lon": "14.8167"
+            }
+		},
         {
             "short": "Min",
             "long": "Yunost Minsk",
             "label": "Minsk",
-            "color": "#8db600"
-        },
+            "country": "BLR",
+            "location": {
+                "lat": "53.9000",
+                "lon": "27.5667"
+            }
+		},
         {
             "short": "ZSC",
             "long": "ZSC Lions",
             "label": "Zürich",
-            "color": "#f44242"
-        },
+            "country": "SUI",
+            "location": {
+                "lat": "47.3667",
+                "lon": "8.5500"
+            }
+		},
         {
             "short": "Zug",
             "long": "EV Zug",
             "label": "Zug",
-            "color": "#f44242"
+            "country": "SUI",
+            "location": {
+                "lat": "47.1724",
+                "lon": "8.5174"
+            }
         }
     ],
     "sources": [

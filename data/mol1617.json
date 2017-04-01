@@ -3,7 +3,11 @@
     "sheetnr": "1",
     "image": "mol.png",
     "title": "MOL Liga 2016/17",
-    "countries": [
+    "teamColors": {
+        "by": "country",
+        "default": "#8db600"
+    },
+    "country": [
         {
             "name": "Hungary",
             "two": "hu",
@@ -23,7 +27,7 @@
             "color": "#1aa3ff"
         }
     ],
-    "months": ["September","October","November","December","January","February","March"],
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
     "stages": [
         {
             "short": "RS",
@@ -47,67 +51,111 @@
             "short": "Bra",
             "long": "ASC Corona Brasov",
             "label": "Brasov",
-            "color": "#fdb600"
+            "country": "ROM",
+            "location": {
+                "lat": "45.6333",
+                "lon": "25.5833"
+            }
         },
         {
             "short": "Deb",
             "long": "Debreceni HK",
             "label": "Debrecen",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "47.5333",
+                "lon": "21.6333"
+            }
         },
         {
             "short": "Gal",
             "long": "Dunarea Galati",
             "label": "Galati",
-            "color": "#fdb600"
+            "country": "ROM",
+            "location": {
+                "lat": "45.4500",
+                "lon": "28.0500"
+            }
         },
         {
             "short": "Dab",
             "long": "Dunaújvárosi Acélbikák",
             "label": "Dunaújváros",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "46.9807",
+                "lon": "18.9327"
+            }
         },
         {
             "short": "Mis",
             "long": "DVTK Jegesmedvék",
             "label": "Miskolc",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "48.1000",
+                "lon": "20.7833"
+            }
         },
         {
             "short": "Feh",
             "long": "Fehérvári Titánok",
             "label": "Fehérvár",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "47.1955",
+                "lon": "18.4096"
+            }
         },
         {
             "short": "Fer",
             "long": "Ferencvárosi TC",
             "label": "Ferencváros",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "47.4858",
+                "lon": "19.0701"
+            }
         },
         {
             "short": "Beo",
             "long": "HK Beograd",
             "label": "Beograd",
-            "color": "#1aa3ff"
+            "country": "SRB",
+            "location": {
+                "lat": "44.8186",
+                "lon": "20.4681"
+            }
         },
         {
             "short": "Mac",
             "long": "MAC Budapest",
             "label": "MAC",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "47.5000",
+                "lon": "19.0833"
+            }
         },
         {
             "short": "Csi",
             "long": "SC Csíkszereda",
             "label": "Csíkszereda",
-            "color": "#fdb600"
+            "country": "ROM",
+            "location": {
+                "lat": "45.8833",
+                "lon": "23.8000"
+            }
         },
         {
             "short": "Ute",
             "long": "Újpesti TE",
             "label": "Újpest",
-            "color": "#8db600"
+            "country": "HUN",
+            "location": {
+                "lat": "47.5686",
+                "lon": "19.0846"
+            }
         }
     ],
     "sources": [

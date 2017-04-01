@@ -3,8 +3,11 @@
     "sheetnr": "3",
     "image": "lnh.png",
     "title": "LNH 2016/17",
-    "countries": [],
-    "months": ["September","October","November","December","January","February","March"],
+    "teamColors": {
+        "by": "",
+        "default": "#fdb600"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
     "stages": [
         {
             "short": "RS",
@@ -28,37 +31,55 @@
             "short": "Bra",
             "long": "ASC Corona Brasov",
             "label": "Brasov",
-            "color": "#fdb600"
+            "location": {
+                "lat": "45.6333",
+                "lon": "25.5833"
+            }
         },
         {
             "short": "Gal",
             "long": "Dunarea Galati",
             "label": "Galati",
-            "color": "#fdb600"
+            "location": {
+                "lat": "45.4500",
+                "lon": "28.0500"
+            }
         },
         {
             "short": "Pro",
             "long": "Progym Gyergyó",
             "label": "Progym",
-            "color": "#fdb600"
+            "location": {
+                "lat": "46.7167",
+                "lon": "25.6167"
+            }
         },
         {
             "short": "Csi",
             "long": "SC Csíkszereda",
             "label": "Csíkszereda",
-            "color": "#fdb600"
+            "location": {
+                "lat": "45.8833",
+                "lon": "23.8000"
+            }
         },
         {
             "short": "Spo",
             "long": "Sportul Studentesc",
             "label": "Sportul",
-            "color": "#fdb600"
+            "location": {
+                "lat": "",
+                "lon": ""
+            }
         },
         {
             "short": "Ste",
             "long": "Steaua Bucuresti",
             "label": "Steaua",
-            "color": "#fdb600"
+            "location": {
+                "lat": "45.7833",
+                "lon": "24.5667"
+            }
         }
     ],
     "sources": ["Official game sheets on Pointstreak"]
