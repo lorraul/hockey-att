@@ -50,7 +50,7 @@
                 <a class="navbar-brand" ui-sref="home"><img src="img/icon.png" class="navbar-brand-img"> Ice Hockey Attendance Stats</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav">
+                <ul id="horizontal-menu" class="nav navbar-nav" more>
 					<li ng-class="{ active: isActive('/league/nhl/1617')}">
                         <a ui-sref="league({leagueabbr: 'nhl', season: '1617'})">
                             <img src="img/nhl.png">
@@ -126,7 +126,8 @@
     
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="js/directives.js"></script>
+    <script src="js/template-directives.js"></script>
+    <script src="js/dom-directives.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/services.js"></script>

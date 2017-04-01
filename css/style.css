@@ -8,6 +8,45 @@ nav img {
     height: 20px;
 }
 
+#horizontal-menu {
+    float: right;
+}
+
+#horizontal-menu li.hideshow {
+    position:relative;
+}
+
+#horizontal-menu li.hideshow ul {
+    border: 1px solid #080808;
+    width: 200px;
+    position:absolute;
+    background-color: #222;
+    list-style-type: none;
+    line-height: 50px;
+    z-index: 100;
+    display:none;
+    right:0px;
+    padding-left: 0px;
+}
+
+#horizontal-menu li.hideshow a{
+    color: #9d9d9d;
+}
+
+#horizontal-menu li.hideshow a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+#horizontal-menu li.hideshow ul li {
+    text-align: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#horizontal-menu li.hideshow ul li:last-child {
+    border-bottom: 0;
+}
+
 footer {
     text-align: center;
 }
