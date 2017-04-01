@@ -164,15 +164,15 @@ angular.module('molApp')
         returnObject.optionsLineChart = globalChartOptions.lineChart(returnObject.dataTotal.total);
 
         //country stats
-        if(ligueData.countries && ligueData.countries.length != 0){
+        if(ligueData.country && ligueData.country.length != 0){
             returnObject.dataCountry = [[]];
             returnObject.colorsCountry = [{backgroundColor: [], borderColor: []}];
             returnObject.labelsCountry = [];
-            for (var i in ligueData.countries){
-                returnObject.dataCountry[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'country', ligueData.countries[i].three)))
-                returnObject.colorsCountry[0].backgroundColor.push(ligueData.countries[i].color);
-                returnObject.colorsCountry[0].borderColor.push(ligueData.countries[i].color);
-                returnObject.labelsCountry.push(ligueData.countries[i].three);
+            for (var i in ligueData.country){
+                returnObject.dataCountry[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'country', ligueData.country[i].three)))
+                returnObject.colorsCountry[0].backgroundColor.push(ligueData.country[i].color);
+                returnObject.colorsCountry[0].borderColor.push(ligueData.country[i].color);
+                returnObject.labelsCountry.push(ligueData.country[i].three);
             }
         }
 
@@ -193,14 +193,33 @@ angular.module('molApp')
             returnObject.labelsStage.push(ligueData.stages[i].short);
             returnObject.dataStage[0].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'stage', ligueData.stages[i].short)));
         }
+        
+        //create team color array
+        var teamColors = [];
+        if (!ligueData.teamColors.by){ //set default color for each team
+            for (var i=0; i< ligueData.teams.length; i++){
+                teamColors.push(ligueData.teamColors.default);
+            }
+        } else {
+            angular.forEach(ligueData.teams, function(team, key){
+                var colorSourceObject = _.find(ligueData[ligueData.teamColors.by], function(o) { 
+                    return o.three == team[ligueData.teamColors.by]; 
+                });
+                if(colorSourceObject.color){
+                    teamColors.push(colorSourceObject.color);
+                } else {
+                    teamColors.push(ligueData.teamColors.default);
+                }
+            });
+        }
 
         //team chart stats   
 		if (typeof teamChartsBy == 'undefined'){
 			returnObject.colorsTeams = [{backgroundColor: [], borderColor: []}];
 			returnObject.labelsTeams = [[]];
 			for (var i in ligueData.teams){
-				returnObject.colorsTeams[0].backgroundColor.push(ligueData.teams[i].color);
-				returnObject.colorsTeams[0].borderColor.push(ligueData.teams[i].color);
+				returnObject.colorsTeams[0].backgroundColor.push(teamColors[i]);
+				returnObject.colorsTeams[0].borderColor.push(teamColors[i]);
 				returnObject.labelsTeams[0].push(ligueData.teams[i].label);
 			}
 
@@ -242,8 +261,8 @@ angular.module('molApp')
 			for (var j in teamChartsBy){
 				for (var i in ligueData.teams){
 					if (ligueData.teams[i].division == teamChartsBy[j].short){
-						returnObject.colorsTeams[j].backgroundColor.push(ligueData.teams[i].color);
-						returnObject.colorsTeams[j].borderColor.push(ligueData.teams[i].color);
+						returnObject.colorsTeams[j].backgroundColor.push(teamColors[i]);
+						returnObject.colorsTeams[j].borderColor.push(teamColors[i]);
 						returnObject.labelsTeams[j].push(ligueData.teams[i].label);
 						returnObject.dataHomeAway[j].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long).concat(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team2', ligueData.teams[i].long))));
 						returnObject.dataHome[j].push(getAverage(getColumn(AttendanceDataRes.dataArray, 'attendance', 'team1', ligueData.teams[i].long)));
