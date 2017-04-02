@@ -1,29 +1,57 @@
-//get an array of properties from an array of objects filtered by filterValue of filteredBy property
-function getColumn(objectArray, property, filteredBy, filterValue){
+/*get an array of property values
+
+required parameters
+objectArray - array of objects: sheet json
+dataColumn - string: datasource column name
+
+optional parameters
+filterBy - string: filter by objects from column
+filterValue - value of filterProperty filtered
+filterProperty - string: property of the object from filterBy column
+leagueData - league data object
+
+example calls (controller level):
+getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'date');
+getColumnFiltered(AttendanceDataRes.attendanceData.dataArray,AttendanceDataRes.leagueData,'attendance','team1','country','ROM');
+getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'attendance', 'team1', null, 'HK Beograd');
+getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'attendance');
+getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'attendance', 'date', null, 'October');
+*/
+function getColumnFiltered(objectArray, ligueData, dataColumn, filteredBy, filterProperty, filterValue){
     var propertyValues = [];
     var filterMonthNr, entryDate;
     for (var i in objectArray){
         if (!filteredBy || !filterValue){
-            propertyValues.push(objectArray[i][property]);
+            propertyValues.push(objectArray[i][dataColumn]);
         }
         else {
-            if (filteredBy != 'date'){
-                if (typeof objectArray[i][filteredBy] == 'undefined') {
-                    continue;
-                }
-                if (objectArray[i][filteredBy].trim() == filterValue)
-                    propertyValues.push(objectArray[i][property]);
-            }
-            else {
+            if (filteredBy == 'date'){
                 monthNr = getMonthNr(filterValue);
                 entryDate = new Date(objectArray[i].date);
                 if (entryDate.getMonth() == monthNr)
-                    propertyValues.push(objectArray[i][property]);
+                    propertyValues.push(objectArray[i][dataColumn]);
+            }
+            else {
+                if (!filterProperty){ //simple filter if we don't need to get associated object for filterBy from league data json
+                    if (typeof objectArray[i][filteredBy] == 'undefined') {
+                        continue;
+                    }
+                    if (objectArray[i][filteredBy].trim() == filterValue)
+                        propertyValues.push(objectArray[i][dataColumn]);
+                }
+                else { //filter by property of associated object, 
+                    //if associated object is a team, currently the only case
+                    //get filterBy's associated object
+                    var assocObject = _.find(ligueData.teams, function(o) { 
+                        return o.long == objectArray[i][filteredBy].trim(); 
+                    });
+                    if (assocObject.country == filterValue) propertyValues.push(objectArray[i][dataColumn]);
+                }
             }
         }
     }
     return propertyValues;
-};
+}
 
 //get the average value of an array of numbers
 function getAverage(valueArray){
