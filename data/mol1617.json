@@ -3,6 +3,10 @@
     "sheetnr": "1",
     "image": "mol.png",
     "title": "MOL Liga 2016/17",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 1]
+    },
     "teamColors": {
         "by": "country",
         "default": "#8db600"
@@ -133,8 +137,8 @@
             "label": "MAC",
             "country": "HUN",
             "location": {
-                "lat": "47.5000",
-                "lon": "19.0833"
+                "lat": "47.4731629",
+                "lon": "19.0548799"
             }
         },
         {
@@ -143,8 +147,8 @@
             "label": "Csíkszereda",
             "country": "ROM",
             "location": {
-                "lat": "45.8833",
-                "lon": "23.8000"
+                "lat": "46.357707",
+                "lon": "25.7981105"
             }
         },
         {

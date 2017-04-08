@@ -3,6 +3,10 @@
     "sheetnr": "4",
     "image": "ebel.png",
     "title": "EBEL 2016/17",
+    "map": {
+        "region": "europe",
+        "offset": [1, 2]
+    },
     "teamColors": {
         "by": "country",
         "default": "#cc0000"

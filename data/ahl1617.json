@@ -4,6 +4,10 @@
     "chartsby": "division",
     "image": "ahl.png",
     "title": "AHL 2016/17",
+    "map": {
+        "region": "north america",
+        "offset": [2, 1]
+    },
     "teamColors": {
         "by": "country",
         "default": "#cd0000"

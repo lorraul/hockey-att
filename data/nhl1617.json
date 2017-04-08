@@ -4,6 +4,10 @@
     "chartsby": "division",
     "image": "nhl.png",
     "title": "NHL 2016/17",
+    "map": {
+        "region": "north america",
+        "offset": [2, 10]
+    },
     "teamColors": {
         "by": "country",
         "default": "#ff6c0a"

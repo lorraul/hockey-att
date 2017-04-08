@@ -1,7 +1,7 @@
 <div class="container">
     
     <league-page-title image="ligueData.image" title="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated"></league-page-title>
-    
+
     <total-average data="ligueStats.dataTotal"></total-average>
     
     <country data="ligueStats.dataCountry" labels="ligueStats.labelsCountry" options="ligueStats.optionsBarChart" colors="ligueStats.colorsCountry" countries="ligueData.country"></country>
@@ -13,6 +13,8 @@
     <team-home-away data="ligueStats.dataHomeAway" dataall="ligueStats.dataHomeAwayAll" datasorted="ligueStats.dataHomeAwayAllSorted" databottom="ligueStats.dataHomeAwayBottom" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home-away>
     
     <team-home data="ligueStats.dataHome" dataall="ligueStats.dataHomeAll" datasorted="ligueStats.dataHomeAllSorted" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home>
+    
+    <team-home-map map="ligueData.map" attendance="ligueStats.dataHomeAll" teams="ligueData.teams" averageatt="ligueStats.dataTotal.total"></team-home-map>
 	
 	<team-record-home data="ligueStats.dataHomeRecord"></team-record-home>
     

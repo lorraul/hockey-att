@@ -3,6 +3,10 @@
     "sheetnr": "3",
     "image": "lnh.png",
     "title": "LNH 2016/17",
+    "map": {
+        "region": "europe",
+        "offset": [1, 4]
+    },
     "teamColors": {
         "by": "",
         "default": "#fdb600"
@@ -59,8 +63,8 @@
             "long": "SC Csíkszereda",
             "label": "Csíkszereda",
             "location": {
-                "lat": "45.8833",
-                "lon": "23.8000"
+                "lat": "46.357707",
+                "lon": "25.7981105"
             }
         },
         {
@@ -68,8 +72,8 @@
             "long": "Sportul Studentesc",
             "label": "Sportul",
             "location": {
-                "lat": "",
-                "lon": ""
+                "lat": "46.6",
+                "lon": "25.7557116"
             }
         },
         {
@@ -77,8 +81,8 @@
             "long": "Steaua Bucuresti",
             "label": "Steaua",
             "location": {
-                "lat": "45.7833",
-                "lon": "24.5667"
+                "lat": "46.5334488",
+                "lon": "25.7557116"
             }
         }
     ],

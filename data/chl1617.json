@@ -3,6 +3,10 @@
     "sheetnr": "8",
     "image": "chl.png",
     "title": "CHL 2016/17",
+    "map": {
+        "region": "europe",
+        "offset": [1, 18]
+    },
     "teamColors": {
         "by": "country",
         "default": "#1852af"
@@ -210,8 +214,8 @@
             "label": "München",
             "country": "GER",
             "location": {
-                "lat": "51.6167",
-                "lon": "13.3167"
+                "lat": "48.1633695",
+                "lon": "11.5962521"
             }
 		},
         {
@@ -220,8 +224,8 @@
             "label": "Berlin",
             "country": "GER",
             "location": {
-                "lat": "54.0333",
-                "lon": "10.4500"
+                "lat": "52.505176",
+                "lon": "13.4419932"
             }
 		},
         {

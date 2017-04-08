@@ -3,6 +3,10 @@
     "sheetnr": "7",
     "image": "del.png",
     "title": "DEL 2016/17",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 6]
+    },
     "teamColors": {
         "by": "",
         "default": "#004c97"
@@ -52,7 +56,7 @@
         {
             "short": "Deg",
             "long": "Düsseldorfer EG",
-            "label": "Düsseldor",
+            "label": "Düsseldorf",
             "location": {
                 "lat": "51.2167",
                 "lon": "6.7667"
@@ -63,8 +67,8 @@
             "long": "EHC München",
             "label": "München",
             "location": {
-                "lat": "51.6167",
-                "lon": "13.3167"
+                "lat": "48.1633695",
+                "lon": "11.5962521"
             }
         },
         {
@@ -72,8 +76,8 @@
             "long": "Eisbären Berlin",
             "label": "Berlin",
             "location": {
-                "lat": "54.0333",
-                "lon": "10.4500"
+                "lat": "52.505176",
+                "lon": "13.4419932"
             }
         },
         {
@@ -144,8 +148,8 @@
             "long": "Schwenninger WW",
             "label": "Schwenninger",
             "location": {
-                "lat": "48.1000",
-                "lon": "9.0000"
+                "lat": "48.062604",
+                "lon": "8.5351513"
             }
         },
         {
@@ -153,8 +157,8 @@
             "long": "Straubing Tigers",
             "label": "Straubing",
             "location": {
-                "lat": "48.8833",
-                "lon": "12.5667"
+                "lat": "48.8831501",
+                "lon": "12.5036133"
             }
         }
     ],
