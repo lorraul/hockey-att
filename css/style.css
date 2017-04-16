@@ -13,27 +13,27 @@ nav img {
 }
 
 #horizontal-menu li.hideshow {
-    position:relative;
+    position: relative;
 }
 
 #horizontal-menu li.hideshow ul {
     border: 1px solid #080808;
     width: 200px;
-    position:absolute;
+    position: absolute;
     background-color: #222;
     list-style-type: none;
     line-height: 50px;
     z-index: 100;
-    display:none;
-    right:0px;
+    display: none;
+    right: 0px;
     padding-left: 0px;
 }
 
-#horizontal-menu li.hideshow a{
+#horizontal-menu li.hideshow a {
     color: #9d9d9d;
 }
 
-#horizontal-menu li.hideshow a:hover{
+#horizontal-menu li.hideshow a:hover {
     text-decoration: none;
     color: #fff;
 }
@@ -51,7 +51,8 @@ footer {
     text-align: center;
 }
 
-.navbar-brand, .navbar {
+.navbar-brand,
+.navbar {
     font-family: 'Archivo Narrow', sans-serif;
 }
 
@@ -62,8 +63,8 @@ footer {
 
 .loading-pos {
     width: 100px;
-    margin:0 auto;
-    margin-top:50px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .row {
@@ -90,15 +91,18 @@ footer .row {
     padding-bottom: 10px;
     line-height: 40px;
 }
+
 .home-link-div-text {
-	font-size: 28px;
-	font-family: 'Archivo Narrow', sans-serif;
+    font-size: 28px;
+    font-family: 'Archivo Narrow', sans-serif;
 }
+
 .home-link-div-img {
     line-height: 40px;
 }
+
 .home-link-div-img img {
-	width: 60px;
+    width: 60px;
 }
 
 .divider-space {
@@ -122,7 +126,7 @@ footer .row {
     line-height: 20px;
 }
 
-.subtitle{
+.subtitle {
     margin-bottom: 20px;
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 20px;
@@ -144,7 +148,6 @@ footer .row {
     width: 120px;
     overflow: hidden;
 }
-
 
 .team-table {
     width: 100%;
@@ -168,48 +171,53 @@ footer .row {
     cursor: pointer;
 }
 
+
 /*
 Loading spin 
 Source: http://bootsnipp.com/snippets/featured/glyphicon-animate-rotation-and-flip
 */
+
 .gly-spin {
-  -webkit-animation: spin 1s infinite linear;
-  -moz-animation: spin 1s infinite linear;
-  -o-animation: spin 1s infinite linear;
-  animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
 }
 
 @-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(359deg);
-  }
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
 }
+
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
 }
+
 @-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -o-transform: rotate(359deg);
-  }
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
 }
+
 @keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
 }

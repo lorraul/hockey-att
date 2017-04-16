@@ -5,35 +5,35 @@
     </div>
     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
         <table class="table table-inverse team-table">
-        <tbody>
-            <tr ng-repeat-start="recordsByTeam in ligueStats.dataAwayRecord" class="team-separator">
-              <td colspan="4">{{recordsByTeam.team}}</td>
-            </tr>
-            <tr class="game-line" ng-if="!awayRecordSwitch[$index]">
-                <td>Attendance: {{recordsByTeam.games[0].attendance}}</td>
-                <td>Date: {{recordsByTeam.games[0].date}}</td>
-                <td>Game: {{recordsByTeam.games[0].team1}} - {{recordsByTeam.games[0].team2}}</td>
-            </tr>
-            <tr ng-if="awayRecordSwitch[$index]">
-                <td>Attendance</td>
-                <td>Date</td>
-                <td>Game</td>
-            </tr>
-            <tr class="game-line" ng-repeat="game in recordsByTeam.games | showMore:awayRecordSwitch[$index]">
-                <td>{{game.attendance}}</td>
-                <td>{{game.date}}</td>
-                <td>{{game.team1}} - {{game.team2}}</td>
-            </tr>
-            <tr ng-repeat-end>
-                <td colspan="4">
-                    <a class="more-button" ng-if="recordsByTeam.games.length > 1" type="button" ng-click="awayRecordSwitch[$index] = !awayRecordSwitch[$index]">
-                        <span ng-if="!awayRecordSwitch[$index]">More games with the same number <span class="glyphicon glyphicon-chevron-down"></span></span>
-                        <span ng-if="awayRecordSwitch[$index]">Show less <span class="glyphicon glyphicon-chevron-up"></span></span>
-                    </a>
-                    <hr>
-                </td>
-            </tr>
-        </tbody>
+            <tbody>
+                <tr ng-repeat-start="recordsByTeam in ligueStats.dataAwayRecord" class="team-separator">
+                    <td colspan="4">{{recordsByTeam.team}}</td>
+                </tr>
+                <tr class="game-line" ng-if="!awayRecordSwitch[$index]">
+                    <td>Attendance: {{recordsByTeam.games[0].attendance}}</td>
+                    <td>Date: {{recordsByTeam.games[0].date}}</td>
+                    <td>Game: {{recordsByTeam.games[0].team1}} - {{recordsByTeam.games[0].team2}}</td>
+                </tr>
+                <tr ng-if="awayRecordSwitch[$index]">
+                    <td>Attendance</td>
+                    <td>Date</td>
+                    <td>Game</td>
+                </tr>
+                <tr class="game-line" ng-repeat="game in recordsByTeam.games | showMore:awayRecordSwitch[$index]">
+                    <td>{{game.attendance}}</td>
+                    <td>{{game.date}}</td>
+                    <td>{{game.team1}} - {{game.team2}}</td>
+                </tr>
+                <tr ng-repeat-end>
+                    <td colspan="4">
+                        <a class="more-button" ng-if="recordsByTeam.games.length > 1" type="button" ng-click="awayRecordSwitch[$index] = !awayRecordSwitch[$index]">
+                            <span ng-if="!awayRecordSwitch[$index]">More games with the same number <span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <span ng-if="awayRecordSwitch[$index]">Show less <span class="glyphicon glyphicon-chevron-up"></span></span>
+                        </a>
+                        <hr>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>

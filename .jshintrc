@@ -1,0 +1,16 @@
+{
+    "predef": [
+        "angular",
+        "console",
+        "document",
+        "window",
+        "_",
+        "Plotly",
+        "getLatestDate",
+        "getColumnFiltered",
+        "getAverage",
+        "getMax",
+        "getMin",
+        "compareAttendance"
+    ]
+}

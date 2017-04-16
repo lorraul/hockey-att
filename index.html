@@ -1,19 +1,20 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en" ng-app="molApp">
+
 <head>
     <title ng-bind="$state.current.data.pageTitle"></title>
     <link rel="icon" href="img/icon.png">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    
+
     <base href="/hockey-att/">
     <meta name="fragment" content="!">
-    
+
     <meta property="og:title" content="Ice Hockey Attendance Stats" />
     <meta property="og:description" content="Attendance statistics for NHL, DEL, Mol Liga, EBEL and others." />
     <meta property="og:image" content="img/og-img.jpg" />
-    
+
     <link type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Open+Sans" rel="stylesheet">
@@ -28,21 +29,28 @@
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="bower_components/lodash/dist/lodash.min.js"></script>
     <script type="text/javascript" src="bower_components/plotly.js/dist/plotly.min.js"></script>
-    
+
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
     </script>
 
 </head>
+
 <body>
     <nav class="navbar navbar-inverse" role="navigation" ng-controller="NavbarCtrl">
         <div class="container">
-            <div class="navbar-header">        
+            <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -53,61 +61,52 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul id="horizontal-menu" class="nav navbar-nav" more>
-					<li ng-class="{ active: isActive('/league/nhl/1617')}">
+                    <li ng-class="{ active: isActive('/league/nhl/1617')}">
                         <a ui-sref="league({leagueabbr: 'nhl', season: '1617'})">
-                            <img src="img/nhl.png">
-                            NHL 2016/17
+                            <img src="img/nhl.png"> NHL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/ahl/1617')}">
                         <a ui-sref="league({leagueabbr: 'ahl', season: '1617'})">
-                            <img src="img/ahl.png">
-                            AHL 2016/17
+                            <img src="img/ahl.png"> AHL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/echl/1617')}">
                         <a ui-sref="league({leagueabbr: 'echl', season: '1617'})">
-                            <img src="img/echl.png">
-                            ECHL 2016/17
+                            <img src="img/echl.png"> ECHL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/chl/1617')}">
                         <a ui-sref="league({leagueabbr: 'chl', season: '1617'})">
-                            <img src="img/chl.png">
-                            CHL 2016/17
+                            <img src="img/chl.png"> CHL 2016/17
                         </a>
                     </li>
-					<li ng-class="{ active: isActive('/league/del/1617')}">
+                    <li ng-class="{ active: isActive('/league/del/1617')}">
                         <a ui-sref="league({leagueabbr: 'del', season: '1617'})">
-                            <img src="img/del.png">
-                            DEL 2016/17
+                            <img src="img/del.png"> DEL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/mol/1617')}">
                         <a ui-sref="league({leagueabbr: 'mol', season: '1617'})">
-                            <img src="img/mol.png">
-                            Mol Liga 2016/17
+                            <img src="img/mol.png"> Mol Liga 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/ebel/1617')}">
                         <a ui-sref="league({leagueabbr: 'ebel', season: '1617'})">
-                            <img src="img/ebel.png">
-                            EBEL 2016/17
+                            <img src="img/ebel.png"> EBEL 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/lnh/1617')}">
                         <a ui-sref="league({leagueabbr: 'lnh', season: '1617'})">
-                            <img src="img/lnh.png">
-                            LNH 2016/17
+                            <img src="img/lnh.png"> LNH 2016/17
                         </a>
                     </li>
                     <li ng-class="{ active: isActive('/league/mk/1617')}">
                         <a ui-sref="league({leagueabbr: 'mk', season: '1617'})">
-                            <img src="img/mjsz.png">
-                            MK 2016/17
+                            <img src="img/mjsz.png"> MK 2016/17
                         </a>
                     </li>
-                </ul>               
+                </ul>
             </div>
         </div>
     </nav>
@@ -115,7 +114,7 @@
         <div class="loading-pos">Loading <i class="glyphicon glyphicon-repeat gly-spin"></i></div>
     </div>
     <div class="container" ng-if="!stateIsLoading" ui-view></div>
-    
+
     <footer ng-if="!stateIsLoading">
         <div class="container">
             <div class="row">
@@ -125,7 +124,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/template-directives.js"></script>
@@ -134,4 +133,5 @@
     <script src="js/functions.js"></script>
     <script src="js/services.js"></script>
 </body>
+
 </html>
