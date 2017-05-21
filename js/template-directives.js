@@ -7,7 +7,7 @@ angular.module('molApp')
             templateUrl: 'partials/league-page-title.html',
             scope: {
                 image: '=',
-                title: '=',
+                title: '=titleString',
                 gameslink: '=',
                 updated: '=',
             }

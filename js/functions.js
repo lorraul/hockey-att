@@ -40,10 +40,13 @@ function getColumnFiltered(objectArray, ligueData, dataColumn, filteredBy, filte
                 } else { //filter by property of associated object, 
                     //if associated object is a team, currently the only case
                     //get filterBy's associated object
-                    var assocObject = _.find(ligueData.teams, function (o) {
-                        return o.long == objectArray[i][filteredBy].trim();
-                    });
-                    if (assocObject.country == filterValue) propertyValues.push(objectArray[i][dataColumn]);
+                    if (angular.isDefined(objectArray[i][filteredBy])){ //check if the filteredBy property has value
+                        var assocObject = _.find(ligueData.teams, function (o) {
+                            return o.long == objectArray[i][filteredBy].trim();
+                        });
+                        if (angular.isDefined(assocObject) && assocObject.country == filterValue) 
+                            propertyValues.push(objectArray[i][dataColumn]);
+                    }
                 }
             }
         }
