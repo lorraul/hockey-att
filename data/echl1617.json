@@ -12,7 +12,7 @@
         "by": "",
         "default": "#dd1818"
     },
-    "months": ["October", "November", "December", "January", "February", "March", "April"],
+    "months": ["October", "November", "December", "January", "February", "March", "April", "May", "June"],
     "stages": [
         {
             "short": "RS",

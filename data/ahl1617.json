@@ -26,7 +26,7 @@
             "color": "#093c8e"
         }
     ],
-    "months": ["October", "November", "December", "January", "February", "March", "April"],
+    "months": ["October", "November", "December", "January", "February", "March", "April", "May", "June"],
     "stages": [
         {
             "short": "RS",

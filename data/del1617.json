@@ -11,7 +11,7 @@
         "by": "",
         "default": "#004c97"
     },
-    "months": ["September", "October", "November", "December", "January", "February", "March"],
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
     "stages": [
         {
             "short": "RS",
