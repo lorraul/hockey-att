@@ -1,4 +1,4 @@
-angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
+angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
 
     .run(['$rootScope', '$state', '$stateParams', '$window', '$location', function ($rootScope, $state, $stateParams, $window, $location) {
         $rootScope.$state = $state;
@@ -26,6 +26,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router'])
             .state({
                 name: 'home',
                 url: '/home',
+                controller: 'HomeCtrl',
                 templateUrl: 'pages/home.html',
                 data: {
                     pageTitle: 'Home - Ice Hockey Attendance Stats'

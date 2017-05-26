@@ -355,4 +355,81 @@ angular.module('molApp')
 
             return returnObject;
         };
+    }])
+
+    .factory('homeGrid', ['$state', function ($state) {
+        return [
+            {
+                img: 'img/nhl.png',
+                text: 'National Hockey League 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'nhl',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/ahl.png',
+                text: 'American Hockey League 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'ahl',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/echl.png',
+                text: 'East Coast Hockey League 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'echl',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/chl.png',
+                text: 'Champions Hockey League 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'chl',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/del.png',
+                text: 'Deutsche Eishockey Liga 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'del',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/mol.png',
+                text: 'MOL Liga 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'mol',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/ebel.png',
+                text: 'Erste Bank Eishockey Liga 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'ebel',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/lnh.png',
+                text: 'Liga Nationala de Hochei 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'lnh',
+                    season: '1617'
+                })
+            },
+            {
+                img: 'img/mjsz.png',
+                text: 'Magyar Kupa 2016/17',
+                target: $state.href('league', {
+                    leagueabbr: 'mk',
+                    season: '1617'
+                })
+            }
+        ];
     }]);

@@ -18,4 +18,8 @@ angular.module('molApp')
         $scope.homeLowSwitch = [];
         $scope.awayRecordSwitch = [];
         $scope.awayLowSwitch = [];
+    }])
+
+    .controller('HomeCtrl', ['$scope', 'homeGrid', function ($scope, homeGrid) {
+        $scope.homeGrid = homeGrid;
     }]);

@@ -1,74 +1,8 @@
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'nhl', season: '1617'})"><img src="img/nhl.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'nhl', season: '1617'})">National Hockey League 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'ahl', season: '1617'})"><img src="img/ahl.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'ahl', season: '1617'})">American Hockey League 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'echl', season: '1617'})"><img src="img/echl.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'echl', season: '1617'})">East Coast Hockey League 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'chl', season: '1617'})"><img src="img/chl.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'chl', season: '1617'})">Champions Hockey League 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'del', season: '1617'})"><img src="img/del.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'del', season: '1617'})">Deutsche Eishockey Liga 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'mol', season: '1617'})"><img src="img/mol.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'mol', season: '1617'})">MOL Liga 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'ebel', season: '1617'})"><img src="img/ebel.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'ebel', season: '1617'})">Erste Bank Eishockey Liga 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'lnh', season: '1617'})"><img src="img/lnh.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'lnh', season: '1617'})">Liga Nationala de Hochei 2016/17</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-offset-2 col-sm-1 home-link-div-img">
-            <a ui-sref="league({leagueabbr: 'mk', season: '1617'})"><img src="img/mjsz.png"></a>
-        </div>
-        <div class="col-xs-12 col-sm-8 home-link-div-text">
-            <a ui-sref="league({leagueabbr: 'mk', season: '1617'})">Magyar Kupa 2016/17</a>
-        </div>
-    </div>
+    <ul class="dynamic-grid" angular-grid="homeGrid" ag-grid-width="200" ag-gutter-size="30" ag-id="gallery" ag-refresh-on-img-load="false">
+        <li data-ng-repeat="gridItem in homeGrid" class="grid">
+            <a ng-href="{{gridItem.target}}" style="cursor:pointer"><img ng-src="{{gridItem.img}}" class="grid-img" />
+                <span ng-bind="gridItem.text"></span></a>
+        </li>
+    </ul>
 </div>
