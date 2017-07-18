@@ -8,6 +8,10 @@ nav img {
     height: 20px;
 }
 
+#no-javascript {
+    text-align: center;
+}
+
 #horizontal-menu {
     float: right;
 }

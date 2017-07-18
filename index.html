@@ -112,7 +112,17 @@
             </div>
         </div>
     </nav>
-    <div class="container" ng-if="stateIsLoading">
+
+    <noscript>
+        <style type="text/css">
+            .hide-on-no-javascript {display:none;}
+        </style>
+        <div id="no-javascript">
+            You need to enable Javascript for this website to work.
+        </div>
+    </noscript>
+
+    <div class="container hide-on-no-javascript" ng-if="stateIsLoading">
         <div class="loading-pos">Loading <i class="glyphicon glyphicon-repeat gly-spin"></i></div>
     </div>
     <div class="container" ng-if="!stateIsLoading" ui-view></div>
