@@ -1,8 +1,12 @@
 <div class="container">
     <ul class="dynamic-grid" angular-grid="homeGrid" ag-grid-width="200" ag-gutter-size="30" ag-id="gallery" ag-refresh-on-img-load="false">
         <li data-ng-repeat="gridItem in homeGrid" class="grid">
-            <a ng-href="{{gridItem.target}}" style="cursor:pointer"><img ng-src="{{gridItem.img}}" class="grid-img" />
-                <span ng-bind="gridItem.text"></span></a>
+            <img ng-src="{{gridItem.img}}" class="grid-img" />
+            <span class="grid-item-title" ng-bind="gridItem.text"></span>
+            <a ng-repeat="season in gridItem.seasons" ng-href="{{$state.href('league', {leagueabbr: gridItem.leagueabbr, season: getSeasonParam(season)})}}" class="grid-item-season">
+                <span ng-bind="gridItem.leagueabbr | uppercase"></span>&nbsp;
+                <span ng-bind="season"></span>
+            </a>
         </li>
     </ul>
 </div>

@@ -20,6 +20,7 @@ angular.module('molApp')
         $scope.awayLowSwitch = [];
     }])
 
-    .controller('HomeCtrl', ['$scope', 'homeGrid', function ($scope, homeGrid) {
-        $scope.homeGrid = homeGrid;
+    .controller('HomeCtrl', ['$scope', 'homeFactory', function ($scope, homeFactory) {
+        $scope.homeGrid = homeFactory.homeGrid;
+        $scope.getSeasonParam = homeFactory.getSeasonParam;
     }]);

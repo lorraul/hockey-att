@@ -357,79 +357,67 @@ angular.module('molApp')
         };
     }])
 
-    .factory('homeGrid', ['$state', function ($state) {
-        return [
+    .factory('homeFactory', ['$state', function ($state) {
+        var returnObject = {};
+        returnObject.homeGrid = [
             {
                 img: 'img/nhl.png',
-                text: 'National Hockey League 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'nhl',
-                    season: '1617'
-                })
+                text: 'National Hockey League',
+                leagueabbr: 'nhl',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/ahl.png',
-                text: 'American Hockey League 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'ahl',
-                    season: '1617'
-                })
+                text: 'American Hockey League',
+                leagueabbr: 'ahl',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/echl.png',
-                text: 'East Coast Hockey League 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'echl',
-                    season: '1617'
-                })
+                text: 'East Coast Hockey League',
+                leagueabbr: 'echl',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/chl.png',
-                text: 'Champions Hockey League 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'chl',
-                    season: '1617'
-                })
+                text: 'Champions Hockey League',
+                leagueabbr: 'chl',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/del.png',
-                text: 'Deutsche Eishockey Liga 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'del',
-                    season: '1617'
-                })
+                text: 'Deutsche Eishockey Liga',
+                leagueabbr: 'del',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/mol.png',
-                text: 'MOL Liga 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'mol',
-                    season: '1617'
-                })
+                text: 'Erste/MOL Liga',
+                leagueabbr: 'mol',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/ebel.png',
-                text: 'Erste Bank Eishockey Liga 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'ebel',
-                    season: '1617'
-                })
+                text: 'Erste Bank Eishockey Liga',
+                leagueabbr: 'ebel',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/lnh.png',
-                text: 'Liga Nationala de Hochei 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'lnh',
-                    season: '1617'
-                })
+                text: 'Liga Nationala de Hochei',
+                leagueabbr: 'lnh',
+                seasons: ['2016/17', '2017/18']
             },
             {
                 img: 'img/mjsz.png',
-                text: 'Magyar Kupa 2016/17',
-                target: $state.href('league', {
-                    leagueabbr: 'mk',
-                    season: '1617'
-                })
+                text: 'Magyar Kupa',
+                leagueabbr: 'mk',
+                seasons: ['2016/17', '2017/18']
             }
         ];
+        returnObject.getSeasonParam = function (season) {
+            return season.substring(2).replace('/', '');;
+        }
+
+        return returnObject;
     }]);
