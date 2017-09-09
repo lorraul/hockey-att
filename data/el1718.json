@@ -1,0 +1,148 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "5",
+    "image": "el.png",
+    "title": "Erste Liga 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 1]
+    },
+    "teamColors": {
+        "by": "country",
+        "default": "#8db600"
+    },
+    "country": [
+        {
+            "name": "Austria",
+            "two": "at",
+            "three": "AUT",
+            "color": "#cc0000"
+        },
+        {
+            "name": "Hungary",
+            "two": "hu",
+            "three": "HUN",
+            "color": "#8db600"
+        },
+        {
+            "name": "Romania",
+            "two": "ro",
+            "three": "ROM",
+            "color": "#fdb600"
+        }
+    ],
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular season"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bra",
+            "long": "ASC Corona Brasov",
+            "label": "Brasov",
+            "country": "ROM",
+            "location": {
+                "lat": "45.6333",
+                "lon": "25.5833"
+            }
+        },
+        {
+            "short": "Dab",
+            "long": "Dunaújvárosi Acélbikák",
+            "label": "Dunaújváros",
+            "country": "HUN",
+            "location": {
+                "lat": "46.9807",
+                "lon": "18.9327"
+            }
+        },
+        {
+            "short": "Mis",
+            "long": "DVTK Jegesmedvék",
+            "label": "Miskolc",
+            "country": "HUN",
+            "location": {
+                "lat": "48.1000",
+                "lon": "20.7833"
+            }
+        },
+        {
+            "short": "Feh",
+            "long": "Fehérvári Titánok",
+            "label": "Fehérvár",
+            "country": "HUN",
+            "location": {
+                "lat": "47.1955",
+                "lon": "18.4096"
+            }
+        },
+        {
+            "short": "Fer",
+            "long": "Ferencvárosi TC",
+            "label": "Ferencváros",
+            "country": "HUN",
+            "location": {
+                "lat": "47.4858",
+                "lon": "19.0701"
+            }
+        },
+        {
+            "short": "Mac",
+            "long": "MAC Budapest",
+            "label": "MAC",
+            "country": "HUN",
+            "location": {
+                "lat": "47.4731629",
+                "lon": "19.0548799"
+            }
+        },
+        {
+            "short": "Csi",
+            "long": "SC Csíkszereda",
+            "label": "Csíkszereda",
+            "country": "ROM",
+            "location": {
+                "lat": "46.357707",
+                "lon": "25.7981105"
+            }
+        },
+        {
+            "short": "Ute",
+            "long": "Újpesti TE",
+            "label": "Újpest",
+            "country": "HUN",
+            "location": {
+                "lat": "47.5686",
+                "lon": "19.0846"
+            }
+        },
+        {
+            "short": "Vc2",
+            "long": "Vienna Capitals 2",
+            "label": "Vienna",
+            "country": "AUT",
+            "location": {
+                "lat": "48.2000",
+                "lon": "16.3667"
+            }
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://www.ersteliga.hu/"
+    ]
+}

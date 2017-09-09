@@ -1,0 +1,395 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "4",
+    "chartsby": "division",
+    "image": "echl.png",
+    "title": "ECHL 2017/18",
+    "map": {
+        "region": "north america",
+        "offset": [2, 1]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#dd1818"
+    },
+    "months": ["October", "November", "December", "January", "February", "March", "April", "May", "June"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season"
+        },
+        {
+            "short": "CQ",
+            "long": "Conference Quarterfinals"
+        },
+        {
+            "short": "CS",
+            "long": "Conference Semifinals"
+        },
+        {
+            "short": "CF",
+            "long": "Conference Finals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "conference": [
+        {
+            "short": "Eastern",
+            "long": "Eastern Conference"
+		},
+        {
+            "short": "Western",
+            "long": "Western Conference"
+		}
+	],
+    "division": [
+        {
+            "short": "South",
+            "long": "South Division"
+		},
+        {
+            "short": "North",
+            "long": "North Division"
+		},
+        {
+            "short": "Central",
+            "long": "Central Division"
+		},
+        {
+            "short": "Mountain",
+            "long": "Mountain Division"
+		}
+	],
+    "teams": [
+        {
+            "short": "Adi",
+            "long": "Adirondack Thunder",
+            "label": "Adirondack",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "43.3101",
+                "lon": "-73.6432"
+            }
+        },
+        {
+            "short": "All",
+            "long": "Allen Americans",
+            "label": "Allen",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "location": {
+                "lat": "33.0989",
+                "lon": "-96.6526"
+            }
+        },
+        {
+            "short": "Atl",
+            "long": "Atlanta Gladiators",
+            "label": "Atlanta",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "33.8444",
+                "lon": "-84.4741"
+            }
+        },
+        {
+            "short": "Bra",
+            "long": "Brampton Beast",
+            "label": "Brampton",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "location": {
+                "lat": "43.6833",
+                "lon": "-79.7667"
+            }
+        },
+        {
+            "short": "Cin",
+            "long": "Cincinnati Cyclones",
+            "label": "Cincinnati",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "39.1699",
+                "lon": "-84.4859"
+            }
+        },
+        {
+            "short": "Col",
+            "long": "Colorado Eagles",
+            "label": "Colorado",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "location": {
+                "lat": "40.4999",
+                "lon": "-105.2647"
+            }
+        },
+        {
+            "short": "Flo",
+            "long": "Florida Everblades",
+            "label": "Florida",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "26.3997",
+                "lon": "-81.7011"
+            }
+        },
+        {
+            "short": "For",
+            "long": "Fort Wayne Komets",
+            "label": "Fort Wayne",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.0791",
+                "lon": "-85.1423"
+            }
+        },
+        {
+            "short": "Gre",
+            "long": "Greenville Swamp Rabbits",
+            "label": "Greenville",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "34.8477",
+                "lon": "-82.3791"
+            }
+        },
+        {
+            "short": "Ida",
+            "long": "Idaho Steelheads",
+            "label": "Idaho",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "location": {
+                "lat": "43.4599",
+                "lon": "-116.2440"
+            }
+        },
+        {
+            "short": "Indy",
+            "long": "Indy Fuel",
+            "label": "Indy",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "39.7795",
+                "lon": "-86.1328"
+            }
+        },
+		{
+            "short": "Jac",
+            "long": "Jacksonville IceMen",
+            "label": "Jacksonville",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "30.325811",
+                "lon": "-81.6472467"
+            }
+        },
+        {
+            "short": "Kal",
+            "long": "Kalamazoo Wings",
+            "label": "Kalamazoo",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "42.2899",
+                "lon": "-85.5883"
+            }
+        },
+		{
+            "short": "Kan",
+            "long": "Kansas City Mavericks",
+            "label": "Kansas City",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "39.042161",
+                "lon": "-94.4334283"
+            }
+        },
+        {
+            "short": "Man",
+            "long": "Manchester Monarchs",
+            "label": "Manchester",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "42.9521",
+                "lon": "-71.6539"
+            }
+        },
+        {
+            "short": "Nor",
+            "long": "Norfolk Admirals",
+            "label": "Norfolk",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "36.8530",
+                "lon": "-76.2882"
+            }
+        },
+        {
+            "short": "Orl",
+            "long": "Orlando Solar Bears",
+            "label": "Orlando",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "28.5037",
+                "lon": "-81.3306"
+            }
+        },
+        {
+            "short": "Qua",
+            "long": "Quad City Mallards",
+            "label": "Quad City",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.4870",
+                "lon": "-90.4773"
+            }
+        },
+        {
+            "short": "Rap",
+            "long": "Rapid City Rush",
+            "label": "Rapid City",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "location": {
+                "lat": "44.0260",
+                "lon": "-103.0755"
+            }
+        },
+        {
+            "short": "Rea",
+            "long": "Reading Royals",
+            "label": "Reading",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "40.3548",
+                "lon": "-75.9075"
+            }
+        },
+        {
+            "short": "Sou",
+            "long": "South Carolina Stingrays",
+            "label": "South Carolina",
+            "conference": "Eastern",
+            "division": "South",
+            "country": "USA",
+            "location": {
+                "lat": "32.9501",
+                "lon": "-80.0896"
+            }
+        },
+        {
+            "short": "Tol",
+            "long": "Toledo Walleye",
+            "label": "Toledo",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.6782",
+                "lon": "-83.4972"
+            }
+        },
+        {
+            "short": "Tul",
+            "long": "Tulsa Oilers",
+            "label": "Tulsa",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "36.0971",
+                "lon": "-95.9627"
+            }
+        },
+        {
+            "short": "Uta",
+            "long": "Utah Grizzlies",
+            "label": "Utah",
+            "conference": "Western",
+            "division": "Mountain",
+            "country": "USA",
+            "location": {
+                "lat": "40.7242",
+                "lon": "-111.8787"
+            }
+        },
+        {
+            "short": "Whe",
+            "long": "Wheeling Nailers",
+            "label": "Wheeling",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "40.0582",
+                "lon": "-80.6362"
+            }
+        },
+        {
+            "short": "Wic",
+            "long": "Wichita Thunder",
+            "label": "Wichita",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "37.6150",
+                "lon": "-97.4346"
+            }
+        },
+        {
+            "short": "Wor",
+            "long": "Worcester Railers",
+            "label": "Worcester",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "42.2653391",
+                "lon": "-71.801024"
+            }
+        }
+    ],
+    "sources": [
+        "ECHL Game Reports: http://www.echl.com/"
+    ]
+}

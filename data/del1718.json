@@ -1,0 +1,168 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "6",
+    "image": "del.png",
+    "title": "DEL 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 6]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#004c97"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season"
+        },
+        {
+            "short": "R16",
+            "long": "Round 16"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Man",
+            "long": "Adler Mannheim",
+            "label": "Mannheim",
+            "location": {
+                "lat": "49.4883",
+                "lon": "8.4647"
+            }
+        },
+        {
+            "short": "Aug",
+            "long": "Augsburger Panther",
+            "label": "Augsburg",
+            "location": {
+                "lat": "48.3667",
+                "lon": "10.8833"
+            }
+        },
+        {
+            "short": "Deg",
+            "long": "Düsseldorfer EG",
+            "label": "Düsseldorf",
+            "location": {
+                "lat": "51.2167",
+                "lon": "6.7667"
+            }
+        },
+        {
+            "short": "Muc",
+            "long": "EHC München",
+            "label": "München",
+            "location": {
+                "lat": "48.1633695",
+                "lon": "11.5962521"
+            }
+        },
+        {
+            "short": "Ebb",
+            "long": "Eisbären Berlin",
+            "label": "Berlin",
+            "location": {
+                "lat": "52.505176",
+                "lon": "13.4419932"
+            }
+        },
+        {
+            "short": "Ing",
+            "long": "ERC Ingolstadt",
+            "label": "Ingolstadt",
+            "location": {
+                "lat": "48.7667",
+                "lon": "11.4333"
+            }
+        },
+        {
+            "short": "Bhv",
+            "long": "Fischtown Pinguins",
+            "label": "Bremerhaven",
+            "location": {
+                "lat": "53.5500",
+                "lon": "8.5833"
+            }
+        },
+        {
+            "short": "Wob",
+            "long": "Grizzlys Wolfsburg",
+            "label": "Wolfsburg",
+            "location": {
+                "lat": "52.4333",
+                "lon": "10.8000"
+            }
+        },
+        {
+            "short": "Iec",
+            "long": "Iserlohn Roosters",
+            "label": "Iserlohn",
+            "location": {
+                "lat": "51.3667",
+                "lon": "7.7000"
+            }
+        },
+        {
+            "short": "Kev",
+            "long": "Krefeld Pinguine",
+            "label": "Krefeld",
+            "location": {
+                "lat": "51.3333",
+                "lon": "6.5667"
+            }
+        },
+        {
+            "short": "Kec",
+            "long": "Kölner Haie",
+            "label": "Köln",
+            "location": {
+                "lat": "50.9333",
+                "lon": "6.9500"
+            }
+        },
+        {
+            "short": "Nit",
+            "long": "Nürnberg Ice Tigers",
+            "label": "Nürnberg",
+            "location": {
+                "lat": "49.4478",
+                "lon": "11.0683"
+            }
+        },
+        {
+            "short": "Sww",
+            "long": "Schwenninger WW",
+            "label": "Schwenninger",
+            "location": {
+                "lat": "48.062604",
+                "lon": "8.5351513"
+            }
+        },
+        {
+            "short": "Str",
+            "long": "Straubing Tigers",
+            "label": "Straubing",
+            "location": {
+                "lat": "48.8831501",
+                "lon": "12.5036133"
+            }
+        }
+    ],
+    "sources": [
+        "Official game sheets: https://www.del.org/spielplan"
+    ]
+}
