@@ -11,7 +11,7 @@
         "by": "",
         "default": "#8db600"
     },
-    "months": ["October", "November", "December", "January"],
+    "months": ["September", "October", "November", "December", "January"],
     "stages": [
         {
             "short": "QF",
@@ -56,7 +56,7 @@
         },
         {
             "short": "Feh",
-            "long": "Fehérvár AV19",
+            "long": "Fehérvári Titánok",
             "label": "Fehérvár",
             "location": {
                 "lat": "47.1955",

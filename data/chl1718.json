@@ -335,16 +335,6 @@
             }
 		},
         {
-            "short": "Kac",
-            "long": "Klagenfurter AC",
-            "label": "Klagenfurt",
-            "country": "AUT",
-            "location": {
-                "lat": "46.6414215",
-                "lon": "14.2427147"
-            }
-		},
-        {
             "short": "Mal",
             "long": "Malmö Redhawks",
             "label": "Malmö",
