@@ -10,6 +10,7 @@ angular.module('molApp')
                 title: '=titleString',
                 gameslink: '=',
                 updated: '=',
+                notStarted: '='
             }
         };
     })

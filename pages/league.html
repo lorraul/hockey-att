@@ -1,6 +1,10 @@
-<div class="container">
+<div class="container" ng-if="noData">
+    No data for this page.
+</div>
 
-    <league-page-title image="ligueData.image" title-string="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated"></league-page-title>
+<div class="container" ng-if="!noData">
+
+    <league-page-title image="ligueData.image" title-string="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated" not-started="ligueStats.notStarted"></league-page-title>
 
     <total-average data="ligueStats.dataTotal"></total-average>
 

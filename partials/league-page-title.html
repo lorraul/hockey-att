@@ -4,3 +4,6 @@
         <a ng-href="{{gameslink}}">Attendances by game</a> - Last update: {{updated}}<br> Game listing format: Home vs Away.
     </div>
 </div>
+<div class="alert alert-info" ng-if="notStarted">
+    <strong>{{title}}</strong> season not started yet.
+</div>

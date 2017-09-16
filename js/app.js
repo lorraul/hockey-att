@@ -19,7 +19,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
         });
     }])
 
-    .config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
+    .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', function ($locationProvider, $stateProvider, $urlRouterProvider) {
         $locationProvider.html5Mode(true);
         $locationProvider.hashPrefix('!');
         $stateProvider
@@ -45,4 +45,4 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
                 }
             });
         $urlRouterProvider.otherwise('/home');
-    });
+    }]);

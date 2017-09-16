@@ -36,6 +36,7 @@ angular.module('molApp')
         return function (leagueabbr, season) {
             return LeagueData(leagueabbr, season).then(
                 function (leagueData) {
+                    if (!leagueData.spreadsheet) return null;
                     return AttendanceRawData(leagueData.spreadsheet, leagueData.sheetnr).then(
                         function (data) {
                             if (data == 'error') return 'error';
@@ -168,8 +169,9 @@ angular.module('molApp')
             var i, j, returnObject = {};
             //meta
             var latestDate = getLatestDate(getColumnFiltered(AttendanceDataRes.dataArray, null, 'date'));
-            returnObject.updated = latestDate.getFullYear().toString() + '-' + (latestDate.getMonth() + 1).toString() + '-' + latestDate.getDate().toString();
+            returnObject.updated = (latestDate) ? latestDate.getFullYear().toString() + '-' + (latestDate.getMonth() + 1).toString() + '-' + latestDate.getDate().toString() : 'no dates yet';
             returnObject.gamesLink = AttendanceDataRes.metaData.gamesLink;
+            returnObject.notStarted = (latestDate) ? false : true;
 
             //total average
             returnObject.dataTotal = {
@@ -422,8 +424,8 @@ angular.module('molApp')
             }
         ];
         returnObject.getSeasonParam = function (season) {
-            return season.substring(2).replace('/', '');;
-        }
+            return season.substring(2).replace('/', '');
+        };
 
         return returnObject;
     }]);

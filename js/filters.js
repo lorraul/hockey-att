@@ -24,7 +24,7 @@ angular.module('molApp')
         };
     })
 
-    .filter('showMore', function ($filter) {
+    .filter('showMore', ['$filter', function ($filter) {
         return function (all, showMore) {
             if (!showMore) return;
             var result = [];
@@ -33,4 +33,4 @@ angular.module('molApp')
             }
             return result;
         };
-    });
+    }]);

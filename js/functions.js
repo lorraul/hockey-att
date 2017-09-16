@@ -40,11 +40,11 @@ function getColumnFiltered(objectArray, ligueData, dataColumn, filteredBy, filte
                 } else { //filter by property of associated object, 
                     //if associated object is a team, currently the only case
                     //get filterBy's associated object
-                    if (angular.isDefined(objectArray[i][filteredBy])){ //check if the filteredBy property has value
+                    if (angular.isDefined(objectArray[i][filteredBy])) { //check if the filteredBy property has value
                         var assocObject = _.find(ligueData.teams, function (o) {
                             return o.long == objectArray[i][filteredBy].trim();
                         });
-                        if (angular.isDefined(assocObject) && assocObject.country == filterValue) 
+                        if (angular.isDefined(assocObject) && assocObject.country == filterValue)
                             propertyValues.push(objectArray[i][dataColumn]);
                     }
                 }
@@ -110,7 +110,7 @@ function getMax(objectArray, property, filteredBy, filterValue) {
             }
         }
     }
-    return returnArray;
+    return returnArray ? returnArray : null;
 }
 
 //get object from objectarray with property being min, multiple cases included
@@ -118,7 +118,8 @@ function getMin(objectArray, property, filteredBy, filterValue) {
     var i;
     if (objectArray.length === 0) return {};
     var returnArray = [];
-    var minVal = getMax(objectArray, property)[0].attendance;
+    var maxObject = getMax(objectArray, property)[0];
+    var minVal = maxObject ? maxObject.attendance : null;
     if (!filteredBy || !filterValue) {
         for (i in objectArray) {
             if (parseInt(objectArray[i][property]) < minVal) {
@@ -149,11 +150,12 @@ function getMin(objectArray, property, filteredBy, filterValue) {
 
 //get the latest date from an array of dates
 function getLatestDate(dateArray) {
+    if (dateArray.length === 0) return null;
     for (var i in dateArray) {
         dateArray[i] = new Date(dateArray[i]);
     }
-    var maxDate = new Date(Math.max.apply(null, dateArray));
-    return maxDate;
+    var maxValue = Math.max.apply(null, dateArray);
+    return !isNaN(maxValue) ? new Date(maxValue) : null;
 }
 
 function getMonthNr(month) {
@@ -195,9 +197,9 @@ function capitalize(string) {
 //object sorting by property, decreasing order
 //Source: http://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value-in-javascript
 function compareAttendance(a, b) {
-    if (a.attendance < b.attendance)
+    if (a.attendance < b.attendance || (isNaN(a.attendance) && !isNaN(b.attendance)))
         return 1;
-    if (a.attendance > b.attendance)
+    if (a.attendance > b.attendance || (!isNaN(a.attendance) && isNaN(b.attendance)))
         return -1;
     return 0;
 }
