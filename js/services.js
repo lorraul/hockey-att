@@ -399,6 +399,12 @@ angular.module('molApp')
                 seasons: ['2017/18']
             },
             {
+                img: 'img/shl.png',
+                text: 'Svenska hockeyligan',
+                leagueabbr: 'shl',
+                seasons: ['2016/17', '2017/18']
+            },
+            {
                 img: 'img/mol.png',
                 text: 'MOL Liga',
                 leagueabbr: 'mol',

@@ -1,0 +1,182 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "11",
+    "image": "shl.png",
+    "title": "SHL 2017/18",
+    "map": {
+        "region": "sweden",
+        "offset": [2, 5]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#fcd116"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular season"
+        },
+        {
+            "short": "R16",
+            "long": "Round of 16"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bryn",
+            "long": "Brynäs",
+            "label": "Brynäs",
+            "country": "SWE",
+            "location": {
+                "lat": "60.6911459",
+                "lon": "17.1301961"
+            }
+        },
+        {
+            "short": "Dju",
+            "long": "Djurgården",
+            "label": "Djurgården",
+            "country": "SWE",
+            "location": {
+                "lat": "59.2948651",
+                "lon": "18.0796055"
+            }
+        },
+        {
+            "short": "Fär",
+            "long": "Färjestad",
+            "label": "Färjestad",
+            "country": "SWE",
+            "location": {
+                "lat": "59.4076565",
+                "lon": "13.4985885"
+            }
+        },
+        {
+            "short": "Frö",
+            "long": "Frölunda",
+            "label": "Frölunda",
+            "country": "SWE",
+            "location": {
+                "lat": "57.6999301",
+                "lon": "11.9865947"
+            }
+        },
+        {
+            "short": "HV71",
+            "long": "HV71",
+            "label": "HV71",
+            "country": "SWE",
+            "location": {
+                "lat": "57.787377",
+                "lon": "14.2322771"
+            }
+        },
+        {
+            "short": "Kar",
+            "long": "Karlskrona",
+            "label": "Karlskrona",
+            "country": "SWE",
+            "location": {
+                "lat": "56.2181633",
+                "lon": "15.6007455"
+            }
+        },
+        {
+            "short": "Lin",
+            "long": "Linköping",
+            "label": "Linköping",
+            "country": "SWE",
+            "location": {
+                "lat": "58.417467",
+                "lon": "15.6332419"
+            }
+        },
+        {
+            "short": "Lul",
+            "long": "Luleå",
+            "label": "Luleå",
+            "country": "SWE",
+            "location": {
+                "lat": "65.5977545",
+                "lon": "22.1461304"
+            }
+        },
+        {
+            "short": "Mal",
+            "long": "Malmö",
+            "label": "Malmö",
+            "country": "SWE",
+            "location": {
+                "lat": "55.56377",
+                "lon": "12.9740713"
+            }
+        },
+        {
+            "short": "Mor",
+            "long": "Mora",
+            "label": "Mora",
+            "country": "SWE",
+            "location": {
+                "lat": "61.0071533",
+                "lon": "14.5298342"
+            }
+        },
+        {
+            "short": "Öre",
+            "long": "Örebro",
+            "label": "Örebro",
+            "country": "SWE",
+            "location": {
+                "lat": "59.2662609",
+                "lon": "15.2211635"
+            }
+        },
+        {
+            "short": "Rög",
+            "long": "Rögle",
+            "label": "Rögle",
+            "country": "SWE",
+            "location": {
+                "lat": "56.2258094",
+                "lon": "12.8426742"
+            }
+        },
+        {
+            "short": "Ske",
+            "long": "Skellefteå",
+            "label": "Skellefteå",
+            "country": "SWE",
+            "location": {
+                "lat": "64.7613763",
+                "lon": "20.9651122"
+            }
+        },
+        {
+            "short": "Väx",
+            "long": "Växjö",
+            "label": "Växjö",
+            "country": "SWE",
+            "location": {
+                "lat": "56.8796222",
+                "lon": "14.7707476"
+            }
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://www.shl.se"
+    ]
+}
