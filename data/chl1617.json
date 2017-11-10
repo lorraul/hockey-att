@@ -95,7 +95,8 @@
     "stages": [
         {
             "short": "GS",
-            "long": "Group stage"
+            "long": "Group stage",
+            "fixed": true
         },
         {
             "short": "R32",

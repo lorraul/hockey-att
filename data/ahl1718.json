@@ -30,7 +30,8 @@
     "stages": [
         {
             "short": "RS",
-            "long": "Regular Season"
+            "long": "Regular Season",
+            "fixed": true
         },
         {
             "short": "DS",
@@ -90,7 +91,7 @@
                 "lon": "-118.9052"
             }
         },
-		{
+        {
             "short": "Bel",
             "long": "Belleville Senators",
             "label": "Belleville",
@@ -210,7 +211,7 @@
                 "lon": "-93.5722"
             }
         },
-		{
+        {
             "short": "Lav",
             "long": "Laval Rocket",
             "label": "Laval",

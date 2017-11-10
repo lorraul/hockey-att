@@ -47,7 +47,8 @@
     "stages": [
         {
             "short": "RS",
-            "long": "Regular season"
+            "long": "Regular season",
+            "fixed": true
         },
         {
             "short": "QR",

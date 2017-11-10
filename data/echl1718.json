@@ -16,7 +16,8 @@
     "stages": [
         {
             "short": "RS",
-            "long": "Regular Season"
+            "long": "Regular Season",
+            "fixed": true
         },
         {
             "short": "CQ",
@@ -196,7 +197,7 @@
                 "lon": "-86.1328"
             }
         },
-		{
+        {
             "short": "Jac",
             "long": "Jacksonville IceMen",
             "label": "Jacksonville",
@@ -220,7 +221,7 @@
                 "lon": "-85.5883"
             }
         },
-		{
+        {
             "short": "Kan",
             "long": "Kansas City Mavericks",
             "label": "Kansas City",

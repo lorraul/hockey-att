@@ -16,7 +16,8 @@
     "stages": [
         {
             "short": "RS",
-            "long": "Regular Season"
+            "long": "Regular Season",
+            "fixed": true
         },
         {
             "short": "CQ",

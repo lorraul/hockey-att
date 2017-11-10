@@ -15,7 +15,8 @@
     "stages": [
         {
             "short": "QF",
-            "long": "Qualifications"
+            "long": "Qualifications",
+            "fixed": true
         },
         {
             "short": "SF",

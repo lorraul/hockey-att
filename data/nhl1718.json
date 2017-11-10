@@ -30,7 +30,8 @@
     "stages": [
         {
             "short": "RS",
-            "long": "Regular Season"
+            "long": "Regular Season",
+            "fixed": true
         },
         {
             "short": "FR",
@@ -414,7 +415,7 @@
                 "lon": "-123.1333"
             }
         },
-		{
+        {
             "short": "Veg",
             "long": "Vegas Golden Knights",
             "label": "Vegas",
