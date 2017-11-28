@@ -4,6 +4,9 @@ body {
   color: #d9d9d9;
   font-family: 'Open Sans', sans-serif;
 }
+h4 {
+  margin: 20px 0;
+}
 nav img {
   height: 20px;
 }
@@ -139,6 +142,12 @@ footer .row {
 }
 .more-button {
   cursor: pointer;
+}
+.datacheck-section .glyphicon-ok {
+  color: #37960c;
+}
+.datacheck-section .glyphicon-remove {
+  color: #ea3a3a;
 }
 /*
 Loading spin 

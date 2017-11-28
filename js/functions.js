@@ -11,6 +11,10 @@ filterProperty - string: property of the object from filterBy column
 leagueData - league data object
 
 example calls (controller level):
+
+get the attendances of games where team1 is 'New Jersey Devils'
+getColumnFiltered(AttendanceDataRes.dataArray, null, 'attendance', 'team1', null, 'New Jersey Devils')
+
 getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'date');
 getColumnFiltered(AttendanceDataRes.attendanceData.dataArray,AttendanceDataRes.leagueData,'attendance','team1','country','ROM');
 getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'attendance', 'team1', null, 'HK Beograd');

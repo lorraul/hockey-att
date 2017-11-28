@@ -1,0 +1,62 @@
+<div class="container" ng-if="noData">
+    No data for this page.
+</div>
+
+<div class="container" ng-if="!noData">
+    <div class="row" id="title">
+        <div class="col-xs-12 pagetitle"><img ng-src="img/{{ligueData.image}}" title="{{ligueData.title}}"> {{ligueData.title }} - Data consistency check</div>
+    </div>
+
+    <!-- unrecognized team in data source -->
+    <h4 class="datacheck-section">Unrecognized teams
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" ng-if="dataCheck.unrecognizedTeams.length==0"></span>
+        <span class="glyphicon glyphicon-remove" aria-hidden="true" ng-if="dataCheck.unrecognizedTeams.length>0"></span>
+    </h4>
+    <div ng-if="dataCheck.unrecognizedTeams.length==0">No unrecognized teams in the data source.</div>
+    <div class="table" ng-if="dataCheck.unrecognizedTeams.length>0">
+        <div class="tableheading">
+            <div class="tablehead">Row</div>
+            <div class="tablehead">Value</div>
+        </div>
+        <div class="tablerow" ng-repeat="i in dataCheck.unrecognizedTeams">
+            <div class="tablecell">{{i.row}}</div>
+            <div class="tablecell">{{i.data}}</div>
+        </div>
+    </div>
+
+    <!-- unrecognized competition stage in source -->
+    <h4 class="datacheck-section">Unrecognized competition stages
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" ng-if="dataCheck.unrecognizedStage.length==0"></span>
+        <span class="glyphicon glyphicon-remove" aria-hidden="true" ng-if="dataCheck.unrecognizedStage.length>0"></span>
+    </h4>
+    <div ng-if="dataCheck.unrecognizedStage.length==0">No unrecognized competition stages in the data source.</div>
+    <div class="table" ng-if="dataCheck.unrecognizedStage.length>0">
+        <div class="tableheading">
+            <div class="tablehead">Row</div>
+            <div class="tablehead">Value</div>
+        </div>
+        <div class="tablerow" ng-repeat="i in dataCheck.unrecognizedStage">
+            <div class="tablecell">{{i.row}}</div>
+            <div class="tablecell">{{i.data}}</div>
+        </div>
+    </div>
+
+    <!-- equal rs game count by league data team on finished seasons -->
+    <h4 class="datacheck-section">Fixed stage game equality
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" ng-if="dataCheck.fixedStageInconsistency.length==0"></span>
+        <span class="glyphicon glyphicon-remove" aria-hidden="true" ng-if="dataCheck.fixedStageInconsistency.length>0"></span>
+    </h4>
+    <div ng-if="dataCheck.fixedStageInconsistency.length==0">Fixed stage consistency check passed.</div>
+    <div class="table" ng-if="dataCheck.fixedStageInconsistency.length>0">
+        <div class="tableheading">
+            <div class="tablehead">Team</div>
+            <div class="tablehead">Game count</div>
+        </div>
+        <div class="tablerow" ng-repeat="i in dataCheck.fixedStageInconsistency">
+            <div class="tablecell">{{i.team}}</div>
+            <div class="tablecell">{{i.gameNr}}</div>
+        </div>
+    </div>
+
+    <!--<pre>{{dataCheck|json}}</pre>-->
+</div>

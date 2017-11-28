@@ -43,6 +43,18 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
                         return AttendanceData($stateParams.leagueabbr, $stateParams.season);
                     }
                 }
+            })
+            .state({
+                name: 'check',
+                url: '/league/:leagueabbr/:season/check',
+                controller: 'DataCheckCtrl',
+                templateUrl: 'pages/check.html',
+                data: {},
+                resolve: {
+                    AttendanceDataRes: function (AttendanceData, $stateParams) {
+                        return AttendanceData($stateParams.leagueabbr, $stateParams.season);
+                    }
+                }
             });
         $urlRouterProvider.otherwise('/home');
     }]);

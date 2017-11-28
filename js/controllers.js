@@ -1,9 +1,19 @@
 angular.module('molApp')
 
-    .controller("NavbarCtrl", ['$scope', '$location', function ($scope, $location) {
-        $scope.isActive = function (viewLocation) {
-            return $location.path().indexOf(viewLocation) === 0;
-        };
+    .controller("DataCheckCtrl", ['$scope', '$state', 'AttendanceDataRes', 'dataCheckService', function ($scope, $state, AttendanceDataRes, dataCheckService) {
+        $scope.noData = !AttendanceDataRes ? true : false;
+
+        if (AttendanceDataRes) {
+            $state.current.data.pageTitle = AttendanceDataRes.leagueData.title + ' - Data Check';
+            $scope.ligueData = AttendanceDataRes.leagueData;
+            $scope.attData = AttendanceDataRes.attendanceData;
+            $scope.dataCheck = dataCheckService(AttendanceDataRes.attendanceData, AttendanceDataRes.leagueData);
+        }
+    }])
+
+    .controller('HomeCtrl', ['$scope', 'homeFactory', function ($scope, homeFactory) {
+        $scope.homeGrid = homeFactory.homeGrid;
+        $scope.getSeasonParam = homeFactory.getSeasonParam;
     }])
 
     .controller("LeagueCtrl", ['$scope', '$state', 'AttendanceDataRes', 'ligueStats', function ($scope, $state, AttendanceDataRes, ligueStats) {
@@ -23,7 +33,8 @@ angular.module('molApp')
         }
     }])
 
-    .controller('HomeCtrl', ['$scope', 'homeFactory', function ($scope, homeFactory) {
-        $scope.homeGrid = homeFactory.homeGrid;
-        $scope.getSeasonParam = homeFactory.getSeasonParam;
+    .controller("NavbarCtrl", ['$scope', '$location', function ($scope, $location) {
+        $scope.isActive = function (viewLocation) {
+            return $location.path().indexOf(viewLocation) === 0;
+        };
     }]);
