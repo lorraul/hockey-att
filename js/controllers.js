@@ -17,8 +17,8 @@ angular.module('molApp')
     }])
 
     .controller("LeagueCtrl", ['$scope', '$state', 'AttendanceDataRes', 'ligueStats', function ($scope, $state, AttendanceDataRes, ligueStats) {
-        $scope.noData = !AttendanceDataRes ? true : false;
-        if (AttendanceDataRes) {
+        $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
+        if (!$scope.noData) {
             $state.current.data.pageTitle = AttendanceDataRes.leagueData.title + ' - Ice Hockey Attendance Stats';
             $scope.ligueData = AttendanceDataRes.leagueData;
             if (AttendanceDataRes.leagueData.chartsby)

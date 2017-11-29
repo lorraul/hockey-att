@@ -24,7 +24,7 @@ getColumnFiltered(AttendanceDataRes.attendanceData.dataArray, null, 'attendance'
 function getColumnFiltered(objectArray, ligueData, dataColumn, filteredBy, filterProperty, filterValue) {
     var i;
     var propertyValues = [];
-    var filterMonthNr, entryDate;
+    var entryDate;
     for (i in objectArray) {
         if (!filteredBy || !filterValue) {
             propertyValues.push(objectArray[i][dataColumn]);
@@ -114,7 +114,7 @@ function getMax(objectArray, property, filteredBy, filterValue) {
             }
         }
     }
-    return returnArray ? returnArray : null;
+    return returnArray;
 }
 
 //get object from objectarray with property being min, multiple cases included

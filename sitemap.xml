@@ -4,82 +4,162 @@
 
     <url>
 
-       <loc>http://sigmagfx.com/hockey/home</loc>
+        <loc>http://sigmagfx.com/hockey/home</loc>
 
-       <changefreq>monthly</changefreq>
+        <changefreq>monthly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/nhl/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/nhl/1617</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/ahl/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/nhl/1718</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/echl/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/ahl/1617</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/chl/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/ahl/1718</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/del/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/echl/1617</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/mol/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/echl/1718</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/ebel/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/chl/1617</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/lnh/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/chl/1718</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
-      <loc>http://sigmagfx.com/hockey/league/mk/1617</loc>
+        <loc>http://sigmagfx.com/hockey/league/del/1617</loc>
 
-      <changefreq>weekly</changefreq>
+        <changefreq>weekly</changefreq>
 
     </url>
 
-</urlset> 
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/del/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/mol/1617</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/el/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/ebel/1617</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/ebel/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/lnh/1617</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/mk/1617</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/mk/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/shl/1617</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/shl/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+</urlset>

@@ -24,9 +24,6 @@ angular.module('molApp')
             }).$promise.then(
                 function (data) {
                     return data.feed;
-                },
-                function (error) {
-                    return 'error';
                 }
             );
         };
@@ -67,6 +64,9 @@ angular.module('molApp')
                             returnObject.attendanceData.metaData = metaData;
                             returnObject.leagueData = leagueData;
                             return returnObject;
+                        },
+                        function (error) {
+                            return 'error';
                         }
                     );
                 },

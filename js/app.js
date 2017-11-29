@@ -39,9 +39,9 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
                 templateUrl: 'pages/league.html',
                 data: {},
                 resolve: {
-                    AttendanceDataRes: function (AttendanceData, $stateParams) {
+                    AttendanceDataRes: ['AttendanceData', '$stateParams', function (AttendanceData, $stateParams) {
                         return AttendanceData($stateParams.leagueabbr, $stateParams.season);
-                    }
+                    }]
                 }
             })
             .state({
@@ -51,9 +51,9 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
                 templateUrl: 'pages/check.html',
                 data: {},
                 resolve: {
-                    AttendanceDataRes: function (AttendanceData, $stateParams) {
+                    AttendanceDataRes: ['AttendanceData', '$stateParams', function (AttendanceData, $stateParams) {
                         return AttendanceData($stateParams.leagueabbr, $stateParams.season);
-                    }
+                    }]
                 }
             });
         $urlRouterProvider.otherwise('/home');
