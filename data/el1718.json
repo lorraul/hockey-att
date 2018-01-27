@@ -39,6 +39,14 @@
             "fixed": true
         },
         {
+            "short": "LS",
+            "long": "Loosers stage"
+        },
+        {
+            "short": "WS",
+            "long": "Winners stage"
+        },
+        {
             "short": "QF",
             "long": "Quarterfinals"
         },

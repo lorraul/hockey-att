@@ -495,7 +495,7 @@ angular.module('molApp')
                 img: 'img/lnh.png',
                 text: 'Liga Nationala de Hochei',
                 leagueabbr: 'lnh',
-                seasons: ['2016/17', '2017/18']
+                seasons: ['2016/17']
             },
             {
                 img: 'img/mjsz.png',
