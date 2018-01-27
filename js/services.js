@@ -498,6 +498,12 @@ angular.module('molApp')
                 seasons: ['2016/17']
             },
             {
+                img: 'img/vc.png',
+                text: 'Visegrád Cup',
+                leagueabbr: 'vc',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/mjsz.png',
                 text: 'Magyar Kupa',
                 leagueabbr: 'mk',
