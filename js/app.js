@@ -35,7 +35,7 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
             .state({
                 name: 'league',
                 url: '/league/:leagueabbr/:season',
-                controller: 'LeagueCtrl',
+                controller: 'CompCtrl',
                 templateUrl: 'pages/league.html',
                 data: {},
                 resolve: {
@@ -45,8 +45,20 @@ angular.module('molApp', ['chart.js', 'ngResource', 'ui.router', 'angularGrid'])
                 }
             })
             .state({
+                name: 'tournament',
+                url: '/tournament/:leagueabbr/:season',
+                controller: 'CompCtrl',
+                templateUrl: 'pages/tournament.html',
+                data: {},
+                resolve: {
+                    AttendanceDataRes: ['AttendanceData', '$stateParams', function (AttendanceData, $stateParams) {
+                        return AttendanceData($stateParams.leagueabbr, $stateParams.season);
+                    }]
+                }
+            })
+            .state({
                 name: 'check',
-                url: '/league/:leagueabbr/:season/check',
+                url: '/:comp/:leagueabbr/:season/check',
                 controller: 'DataCheckCtrl',
                 templateUrl: 'pages/check.html',
                 data: {},

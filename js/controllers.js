@@ -16,7 +16,7 @@ angular.module('molApp')
         $scope.getSeasonParam = homeFactory.getSeasonParam;
     }])
 
-    .controller("LeagueCtrl", ['$scope', '$state', 'AttendanceDataRes', 'ligueStats', function ($scope, $state, AttendanceDataRes, ligueStats) {
+    .controller("CompCtrl", ['$scope', '$state', 'AttendanceDataRes', 'ligueStats', function ($scope, $state, AttendanceDataRes, ligueStats) {
         $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
         if (!$scope.noData) {
             $state.current.data.pageTitle = AttendanceDataRes.leagueData.title + ' - Ice Hockey Attendance Stats';

@@ -92,53 +92,69 @@ angular.module('molApp')
                 map: '=',
                 attendance: '=',
                 teams: '=',
-                averageatt: '='
+                averageatt: '=',
+                competitionType: '=?',
+                stages: '=?'
             },
             link: function (scope) {
-                var cityAtt = scope.attendance,
-                    cityName = scope.teams.map(function (team) {
-                        return team.label;
-                    }),
-                    cityLat = scope.teams.map(function (team) {
-                        return team.location.lat;
-                    }),
-                    cityLon = scope.teams.map(function (team) {
-                        return team.location.lon;
-                    }),
-                    citySize = [],
+                var attendances = scope.attendance;
+                var labels, latitudes, longitudes,
+                    bubbleSizes = [],
                     hoverText = [],
                     scale = scope.averageatt / 250;
 
-                for (var i = 0; i < cityAtt.length; i++) {
+                if (scope.competitionType == 'tournament') {
+                    labels = scope.stages.map(function (stage) {
+                        return stage.location.label + ' (' + stage.long + ')';
+                    });
+                    latitudes = scope.stages.map(function (stage) {
+                        return stage.location.location.lat;
+                    });
+                    longitudes = scope.stages.map(function (stage) {
+                        return stage.location.location.lon;
+                    });
+                } else {
+                    labels = scope.teams.map(function (team) {
+                        return team.label;
+                    });
+                    latitudes = scope.teams.map(function (team) {
+                        return team.location.lat;
+                    });
+                    longitudes = scope.teams.map(function (team) {
+                        return team.location.lon;
+                    });
+                }
+
+                for (var i = 0; i < attendances.length; i++) {
                     //size of bubbles
-                    citySize.push(((cityAtt[i] / scale) - 10) * 2);
+                    bubbleSizes.push(((attendances[i] / scale) - 10) * 2);
                     //popup text
-                    hoverText.push(cityName[i] + "<br>Att: " + cityAtt[i]);
+                    hoverText.push(labels[i] + "<br>Att: " + attendances[i]);
                 }
 
                 var data = [{
                     type: 'scattergeo',
                     mode: 'markers',
-                    lat: cityLat,
-                    lon: cityLon,
+                    lat: latitudes,
+                    lon: longitudes,
                     text: hoverText,
                     hoverinfo: 'text',
                     marker: {
-                        size: citySize,
+                        size: bubbleSizes,
                         sizemin: 10,
                         sizemode: 'area',
                         line: {
                             color: 'black',
                             width: 2
                         },
-                        color: citySize,
+                        color: bubbleSizes,
                         colorscale: 'Bluered'
                     }
                 }];
 
                 //map limits
-                var latOffset = _.has(scope, 'map.offset') ? scope.map.offset[0] : (_.max(_.map(cityLat, Number)) - _.min(_.map(cityLat, Number))) / 10,
-                    lonOffset = _.has(scope, 'map.offset') ? scope.map.offset[1] : (_.max(_.map(cityLon, Number)) - _.min(_.map(cityLon, Number))) / 10;
+                var latOffset = _.has(scope, 'map.offset') ? scope.map.offset[0] : (_.max(_.map(latitudes, Number)) - _.min(_.map(latitudes, Number))) / 10,
+                    lonOffset = _.has(scope, 'map.offset') ? scope.map.offset[1] : (_.max(_.map(longitudes, Number)) - _.min(_.map(longitudes, Number))) / 10;
 
                 var layout = {
                     /*title: 'Attendances in ' + scope.league,
@@ -175,10 +191,10 @@ angular.module('molApp')
                         subunitcolor: '#ffffff',
                         bgcolor: '#606060',
                         lonaxis: {
-                            'range': [_.min(_.map(cityLon, Number)) - lonOffset, _.max(_.map(cityLon, Number)) + lonOffset]
+                            'range': [_.min(_.map(longitudes, Number)) - lonOffset, _.max(_.map(longitudes, Number)) + lonOffset]
                         },
                         lataxis: {
-                            'range': [_.min(_.map(cityLat, Number)) - latOffset, _.max(_.map(cityLat, Number)) + latOffset]
+                            'range': [_.min(_.map(latitudes, Number)) - latOffset, _.max(_.map(latitudes, Number)) + latOffset]
                         }
                     },
                 };

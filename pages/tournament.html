@@ -1,0 +1,19 @@
+<div class="container" ng-if="noData">
+    No data for this page.
+</div>
+
+<div class="container" ng-if="!noData">
+
+    <league-page-title image="ligueData.image" title-string="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated" not-started="ligueStats.notStarted"></league-page-title>
+
+    <total-average data="ligueStats.dataTotal"></total-average>
+
+    <stage data="ligueStats.dataStage" labels="ligueStats.labelsStage" options="ligueStats.optionsLineChart" colors="ligueStats.colorsStage" stages="ligueData.stages"></stage>
+
+    <team-home-map map="ligueData.map" attendance="ligueStats.dataStage[0]" teams="ligueData.teams" averageatt="ligueStats.dataTotal.total" competition-type="ligueData.competitionType" stages="ligueData.stages"></team-home-map>
+
+    <team-home-away data="ligueStats.dataHomeAway" dataall="ligueStats.dataHomeAwayAll" datasorted="ligueStats.dataHomeAwayAllSorted" databottom="ligueStats.dataHomeAwayBottom" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home-away>
+
+    <sources data="ligueData.sources"></sources>
+
+</div>
