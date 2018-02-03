@@ -462,6 +462,12 @@ angular.module('molApp')
                 seasons: ['2016/17', '2017/18']
             },
             {
+                img: 'img/cc.png',
+                text: 'Continental Cup',
+                leagueabbr: 'cc',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/del.png',
                 text: 'Deutsche Eishockey Liga',
                 leagueabbr: 'del',

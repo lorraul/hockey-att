@@ -1,0 +1,369 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "12",
+    "image": "cc.png",
+    "title": "Continental Cup 2017/18",
+    "competitionType": "tournament",
+    "map": {
+        "region": "europe",
+        "offset": [1, 18]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#1852af"
+    },
+    "country": [
+        {
+            "name": "Belarus",
+            "two": "by",
+            "three": "BLR",
+            "color": "#8db600"
+        },
+        {
+            "name": "Bulgaria",
+            "two": "bg",
+            "three": "BUL",
+            "color": "#00966e"
+        },
+        {
+            "name": "Denmark",
+            "two": "dk",
+            "three": "DEN",
+            "color": "#ff9900"
+        },
+        {
+            "name": "Estonia",
+            "two": "ee",
+            "three": "EST",
+            "color": "#4891d9"
+        },
+        {
+            "name": "France",
+            "two": "fr",
+            "three": "FRA",
+            "color": "#0975b5"
+        },
+        {
+            "name": "Hungary",
+            "two": "hu",
+            "three": "HUN",
+            "color": "#8db600"
+        },
+        {
+            "name": "Iceland",
+            "two": "ic",
+            "three": "ICE",
+            "color": "#02529c"
+        },
+        {
+            "name": "Italy",
+            "two": "it",
+            "three": "ITA",
+            "color": "#ff9900"
+        },
+        {
+            "name": "Kazakhstan",
+            "two": "kz",
+            "three": "KAZ",
+            "color": "#098cb5"
+        },
+        {
+            "name": "Latvia",
+            "two": "lt",
+            "three": "LAT",
+            "color": "#740d09"
+        },
+        {
+            "name": "Poland",
+            "two": "pl",
+            "three": "POL",
+            "color": "#bf3535"
+        },
+        {
+            "name": "Romania",
+            "two": "ro",
+            "three": "ROM",
+            "color": "#fdb600"
+        },
+        {
+            "name": "Serbia",
+            "two": "rs",
+            "three": "SRB",
+            "color": "#1aa3ff"
+        },
+        {
+            "name": "Spain",
+            "two": "es",
+            "three": "SPA",
+            "color": "#ffff00"
+        },
+        {
+            "name": "Turkey",
+            "two": "tr",
+            "three": "TUR",
+            "color": "#c70000"
+        },
+        {
+            "name": "Ukraine",
+            "two": "ua",
+            "three": "UKR",
+            "color": "#ffcc00"
+        },
+        {
+            "name": "United Kingdom",
+            "two": "gb",
+            "three": "GBR",
+            "color": "#818c09"
+        }
+    ],
+    "months": ["September", "October", "November", "January"],
+    "stages": [
+        {
+            "short": "Group A",
+            "long": "Group A",
+            "location": {
+                "label": "Belgrade",
+                "country": "SRB",
+                "location": {
+                    "lat": "44.8186",
+                    "lon": "20.4681"
+                }
+            }
+        },
+        {
+            "short": "Group B",
+            "long": "Group B",
+            "location": {
+                "label": "Riga",
+                "country": "LAT",
+                "location": {
+                    "lat": "56.8909715",
+                    "lon": "24.2053596"
+                }
+            }
+        },
+        {
+            "short": "Group C",
+            "long": "Group C",
+            "location": {
+                "label": "Brasov",
+                "country": "ROM",
+                "location": {
+                    "lat": "45.6333",
+                    "lon": "25.5833"
+                }
+            }
+        },
+        {
+            "short": "Group D",
+            "long": "Group D",
+            "location": {
+                "label": "Rungsted",
+                "country": "DEN",
+                "location": {
+                    "lat": "55.8958323",
+                    "lon": "12.5159274"
+                }
+            }
+        },
+        {
+            "short": "Group E",
+            "long": "Group E",
+            "location": {
+                "label": "Ritten",
+                "country": "ITA",
+                "location": {
+                    "lat": "46.538382",
+                    "lon": "11.4525392"
+                }
+            }
+        },
+        {
+            "short": "FIN",
+            "long": "Final",
+            "location": {
+                "label": "Minsk",
+                "country": "BLR",
+                "location": {
+                    "lat": "53.9000",
+                    "lon": "27.5667"
+                }
+            }
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bra",
+            "long": "ASC Corona Brasov",
+            "label": "Brasov",
+            "country": "ROM",
+            "location": {
+                "lat": "45.6333",
+                "lon": "25.5833"
+            }
+        },
+        {
+            "short": "Czb",
+            "long": "Crvena Zvezda Belgrade",
+            "label": "Belgrade",
+            "country": "SRB",
+            "location": {
+                "lat": "44.8186",
+                "lon": "20.4681"
+            }
+        },
+        {
+            "short": "Rey",
+            "long": "Esja Reykjavik",
+            "label": "Reykjavik",
+            "country": "ICE",
+            "location": {
+                "lat": "64.1406223",
+                "lon": "-21.87553"
+            }
+        },
+        {
+            "short": "Mis",
+            "long": "DVTK Jegesmedvék",
+            "label": "Miskolc",
+            "country": "HUN",
+            "location": {
+                "lat": "48.1000",
+                "lon": "20.7833"
+            }
+        },
+        {
+            "short": "Tyc",
+            "long": "GKS Tychy",
+            "label": "Tychy",
+            "country": "POL",
+            "location": {
+                "lat": "50.1079801",
+                "lon": "18.9991762"
+            }
+        },
+        {
+            "short": "Gre",
+            "long": "Grenoble Bruleurs de Loups",
+            "label": "Grenoble",
+            "country": "FRA",
+            "location": {
+                "lat": "45.1575756",
+                "lon": "5.7325075"
+            }
+        },
+        {
+            "short": "Don",
+            "long": "HC Donbass",
+            "label": "Donbass",
+            "country": "UKR",
+            "location": {
+                "lat": "48.613832",
+                "lon": "37.526958"
+            }
+        },
+        {
+            "short": "Sof",
+            "long": "Irbis-Skate Sofia",
+            "label": "Sofia",
+            "country": "BUL",
+            "location": {
+                "lat": "42.6442824",
+                "lon": "23.340953"
+            }
+        },
+        {
+            "short": "Rig",
+            "long": "Kurbads Riga",
+            "label": "Riga",
+            "country": "LAT",
+            "location": {
+                "lat": "56.8909715",
+                "lon": "24.2053596"
+            }
+        },
+        {
+            "short": "Nar",
+            "long": "Narva PSK",
+            "label": "Narva",
+            "country": "EST",
+            "location": {
+                "lat": "59.3644411",
+                "lon": "28.1833039"
+            }
+        },
+        {
+            "short": "Ast",
+            "long": "Nomad Astana",
+            "label": "Astana",
+            "country": "KAZ",
+            "location": {
+                "lat": "51.155824",
+                "lon": "71.4630087"
+            }
+        },
+        {
+            "short": "Rit",
+            "long": "Ritten Sport",
+            "label": "Ritten",
+            "country": "ITA",
+            "location": {
+                "lat": "46.538382",
+                "lon": "11.4525392"
+            }
+        },
+        {
+            "short": "Rug",
+            "long": "Rungsted Ishockey",
+            "label": "Rungsted",
+            "country": "DEN",
+            "location": {
+                "lat": "55.8958323",
+                "lon": "12.5159274"
+            }
+		},
+        {
+            "short": "She",
+            "long": "Sheffield Steelers",
+            "label": "Sheffield",
+            "country": "GBR",
+            "location": {
+                "lat": "53.3667",
+                "lon": "-1.5000"
+            }
+		},
+        {
+            "short": "Txu",
+            "long": "Txuri Urdin San Sebastian",
+            "label": "Txuri",
+            "country": "ESP",
+            "location": {
+                "lat": "43.3019438",
+                "lon": "-1.9733348"
+            }
+        },
+        {
+            "short": "Min",
+            "long": "Yunost Minsk",
+            "label": "Minsk",
+            "country": "BLR",
+            "location": {
+                "lat": "53.9000",
+                "lon": "27.5667"
+            }
+		},
+        {
+            "short": "Ist",
+            "long": "Zeytinburnu Istanbul",
+            "label": "Istanbul",
+            "country": "TUR",
+            "location": {
+                "lat": "40.9906503",
+                "lon": "28.8873852"
+            }
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://iihf.com/"
+    ]
+}

@@ -162,4 +162,20 @@
 
     </url>
 
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/vc/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/tournament/cc/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
 </urlset>
