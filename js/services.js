@@ -465,6 +465,7 @@ angular.module('molApp')
                 img: 'img/cc.png',
                 text: 'Continental Cup',
                 leagueabbr: 'cc',
+                competitionType: 'tournament',
                 seasons: ['2017/18']
             },
             {

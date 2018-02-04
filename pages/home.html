@@ -3,7 +3,7 @@
         <li data-ng-repeat="gridItem in homeGrid" class="grid">
             <img ng-src="{{gridItem.img}}" class="grid-img" />
             <span class="grid-item-title" ng-bind="gridItem.text"></span>
-            <a ng-repeat="season in gridItem.seasons" ng-href="{{$state.href('league', {leagueabbr: gridItem.leagueabbr, season: getSeasonParam(season)})}}" class="grid-item-season">
+            <a ng-repeat="season in gridItem.seasons" ng-href="{{$state.href(gridItem.competitionType || 'league', {leagueabbr: gridItem.leagueabbr, season: getSeasonParam(season)})}}" class="grid-item-season">
                 <span ng-bind="gridItem.leagueabbr | uppercase"></span>&nbsp;
                 <span ng-bind="season"></span>
             </a>
