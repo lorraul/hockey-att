@@ -1,0 +1,367 @@
+{
+    "spreadsheet": "1uGOxMEjO9baAImKO_Ax40NWjXHwwHUW_zkARVQC3ptw",
+    "sheetnr": "12",
+    "image": "cc.png",
+    "title": "Continental Cup 2016/17",
+    "competitionType": "tournament",
+    "map": {
+        "region": "europe",
+        "offset": [1, 18]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#1852af"
+    },
+    "country": [
+        {
+            "name": "Belarus",
+            "two": "by",
+            "three": "BLR",
+            "color": "#8db600"
+        },
+        {
+            "name": "Bulgaria",
+            "two": "bg",
+            "three": "BUL",
+            "color": "#00966e"
+        },
+        {
+            "name": "Denmark",
+            "two": "dk",
+            "three": "DEN",
+            "color": "#ff9900"
+        },
+        {
+            "name": "France",
+            "two": "fr",
+            "three": "FRA",
+            "color": "#0975b5"
+        },
+        {
+            "name": "Hungary",
+            "two": "hu",
+            "three": "HUN",
+            "color": "#8db600"
+        },
+        {
+            "name": "Israel",
+            "two": "il",
+            "three": "ISR",
+            "color": "#0038b8"
+        },
+        {
+            "name": "Italy",
+            "two": "it",
+            "three": "ITA",
+            "color": "#ff9900"
+        },
+        {
+            "name": "Kazakhstan",
+            "two": "kz",
+            "three": "KAZ",
+            "color": "#098cb5"
+        },
+        {
+            "name": "Latvia",
+            "two": "lt",
+            "three": "LAT",
+            "color": "#740d09"
+        },
+        {
+            "name": "Poland",
+            "two": "pl",
+            "three": "POL",
+            "color": "#bf3535"
+        },
+        {
+            "name": "Romania",
+            "two": "ro",
+            "three": "ROM",
+            "color": "#fdb600"
+        },
+        {
+            "name": "Serbia",
+            "two": "rs",
+            "three": "SRB",
+            "color": "#1aa3ff"
+        },
+        {
+            "name": "Slovenia",
+            "two": "si",
+            "three": "SVN",
+            "color": "#0066ff"
+        },
+        {
+            "name": "Spain",
+            "two": "es",
+            "three": "SPA",
+            "color": "#ffff00"
+        },
+        {
+            "name": "Turkey",
+            "two": "tr",
+            "three": "TUR",
+            "color": "#c70000"
+        },
+        {
+            "name": "Ukraine",
+            "two": "ua",
+            "three": "UKR",
+            "color": "#ffcc00"
+        },
+        {
+            "name": "United Kingdom",
+            "two": "gb",
+            "three": "GBR",
+            "color": "#818c09"
+        }
+    ],
+    "months": ["September", "October", "November", "January"],
+    "stages": [
+        {
+            "short": "Group A",
+            "long": "Group A",
+            "location": {
+                "label": "Sofia",
+                "country": "BUL",
+                "location": {
+                    "lat": "42.6442824",
+                    "lon": "23.340953"
+                }
+            }
+},
+        {
+            "short": "Group B",
+            "long": "Group B",
+            "location": {
+                "label": "Jaca",
+                "country": "ESP",
+                "location": {
+                    "lat": "42.5655127",
+                    "lon": "-0.5495657"
+                }
+            }
+},
+        {
+            "short": "Group C",
+            "long": "Group C",
+            "location": {
+                "label": "Tychy",
+                "country": "POL",
+                "location": {
+                    "lat": "50.1079801",
+                    "lon": "18.9991762"
+                }
+            }
+},
+        {
+            "short": "Group D",
+            "long": "Group D",
+            "location": {
+                "label": "Odense",
+                "country": "DEN",
+                "location": {
+                    "lat": "55.4002375",
+                    "lon": "10.3500154"
+                }
+            }
+},
+        {
+            "short": "Group E",
+            "long": "Group E",
+            "location": {
+                "label": "Ritten",
+                "country": "ITA",
+                "location": {
+                    "lat": "46.538382",
+                    "lon": "11.4525392"
+                }
+            }
+},
+        {
+            "short": "FIN",
+            "long": "Final",
+            "location": {
+                "label": "Ritten",
+                "country": "ITA",
+                "location": {
+                    "lat": "46.538382",
+                    "lon": "12.4525392"
+                }
+            }
+}
+],
+    "teams": [
+        {
+            "short": "Jes",
+            "long": "Acroni Jesenice",
+            "label": "Jesenice",
+            "country": "SVN",
+            "location": {
+                "lat": "46.4330656",
+                "lon": "14.050312"
+            }
+        },
+        {
+            "short": "Aty",
+            "long": "Beibarys Atyrau",
+            "label": "Atyrau",
+            "country": "KAZ",
+            "location": {
+                "lat": "47.1065726",
+                "lon": "51.9156798"
+            }
+        },
+        {
+            "short": "Jac",
+            "long": "CH Jaca",
+            "label": "Jaca",
+            "country": "ESP",
+            "location": {
+                "lat": "42.5652331",
+                "lon": "-0.5521581"
+            }
+        },
+        {
+            "short": "Ang",
+            "long": "Ducs d'Angers",
+            "label": "Angers",
+            "country": "FRA",
+            "location": {
+                "lat": "47.4655822",
+                "lon": "-0.5550068"
+            }
+        },
+        {
+            "short": "Gal",
+            "long": "Dunărea Galați",
+            "label": "Galați",
+            "country": "ROM",
+            "location": {
+                "lat": "45.4500",
+                "lon": "28.0500"
+            }
+        },
+        {
+            "short": "Mis",
+            "long": "DVTK Jegesmedvék",
+            "label": "Miskolc",
+            "country": "HUN",
+            "location": {
+                "lat": "48.1000",
+                "lon": "20.7833"
+            }
+        },
+        {
+            "short": "Tyc",
+            "long": "GKS Tychy",
+            "label": "Tychy",
+            "country": "POL",
+            "location": {
+                "lat": "50.1079801",
+                "lon": "18.9991762"
+            }
+        },
+        {
+            "short": "Bat",
+            "long": "HC Bat Yam",
+            "label": "Bat Yam",
+            "country": "ISR",
+            "location": {
+                "lat": "32.0028097",
+                "lon": "34.7969755"
+            }
+        },
+        {
+            "short": "Don",
+            "long": "HC Donbass",
+            "label": "Donbass",
+            "country": "UKR",
+            "location": {
+                "lat": "48.613832",
+                "lon": "37.526958"
+            }
+        },
+        {
+            "short": "Lie",
+            "long": "HK Liepaja",
+            "label": "Liepaja",
+            "country": "LAT",
+            "location": {
+                "lat": "56.5143219",
+                "lon": "21.0135578"
+            }
+        },
+        {
+            "short": "Sof",
+            "long": "Irbis-Skate Sofia",
+            "label": "Sofia",
+            "country": "BUL",
+            "location": {
+                "lat": "42.6442824",
+                "lon": "23.340953"
+            }
+        },
+        {
+            "short": "Not",
+            "long": "Nottingham Panthers",
+            "label": "Nottingham",
+            "country": "GBR",
+            "location": {
+                "lat": "52.954147",
+                "lon": "-1.3101461"
+            }
+		},
+        {
+            "short": "Ode",
+            "long": "Odense Bulldogs",
+            "label": "Odense",
+            "country": "DEN",
+            "location": {
+                "lat": "55.4002031",
+                "lon": "10.3476539"
+            }
+        },
+        {
+            "short": "Par",
+            "long": "Partizan Beograd",
+            "label": "Belgrade",
+            "country": "SRB",
+            "location": {
+                "lat": "44.8186",
+                "lon": "20.4681"
+            }
+        },
+        {
+            "short": "Rit",
+            "long": "Ritten Sport",
+            "label": "Ritten",
+            "country": "ITA",
+            "location": {
+                "lat": "46.538382",
+                "lon": "11.4525392"
+            }
+        },
+        {
+            "short": "Sol",
+            "long": "Shakhtyor Soligorsk",
+            "label": "Soligorsk",
+            "country": "BLR",
+            "location": {
+                "lat": "52.7901065",
+                "lon": "27.5285511"
+            }
+        },
+        {
+            "short": "Ist",
+            "long": "Zeytinburnu Istanbul",
+            "label": "Istanbul",
+            "country": "TUR",
+            "location": {
+                "lat": "40.9906503",
+                "lon": "28.8873852"
+            }
+        }
+],
+    "sources": ["Official game sheets: http://iihf.com/"]
+}
