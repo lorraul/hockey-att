@@ -1,3 +1,5 @@
+/* globals moment */
+
 //directives
 angular.module('molApp')
 
@@ -21,6 +23,134 @@ angular.module('molApp')
             templateUrl: 'partials/total-average.html',
             scope: {
                 data: '=',
+            }
+        };
+    })
+
+    .directive('attendanceDate', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'partials/attendance-date.html',
+            scope: {
+                data: '='
+            },
+            link: function (scope, element, attrs) {
+
+                var series, chartData = [],
+                    colors, options, seriesBy;
+
+                colors = [
+                    {
+                        borderColor: '#1aa3ff',
+                        backgroundColor: '#1aa3ff'
+                    },
+                    {
+                        borderColor: '#8db600',
+                        backgroundColor: '#8db600'
+                    },
+                    {
+                        borderColor: '#ff6c0a',
+                        backgroundColor: '#ff6c0a'
+                    },
+                    {
+                        borderColor: '#db0404',
+                        backgroundColor: '#db0404'
+                    }
+                ];
+
+                if (scope.data.leagueData.chartsby) {
+                    seriesBy = scope.data.leagueData.chartsby;
+                    series = _.map(scope.data.leagueData[scope.data.leagueData.chartsby], function (propertyObject) {
+                        return propertyObject.short;
+                    });
+                } else if (scope.data.leagueData.teamColors.by) {
+                    seriesBy = scope.data.leagueData.teamColors.by;
+                    series = _.map(scope.data.leagueData[scope.data.leagueData.teamColors.by], function (propertyObject) {
+                        return propertyObject.three;
+                    });
+                    colors = _.map(scope.data.leagueData[scope.data.leagueData.teamColors.by], function (propertyObject) {
+                        return {
+                            borderColor: propertyObject.color,
+                            backgroundColor: propertyObject.color
+                        };
+                    });
+                } else {
+                    series = [];
+                }
+
+                options = {
+                    scales: {
+                        xAxes: [{
+                            type: 'time',
+                            gridLines: {
+                                color: '#262626',
+                                lineWidth: 1
+                            },
+                            ticks: {
+                                fontColor: '#d9d9d9'
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                color: '#262626',
+                                lineWidth: 1
+                            },
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    tooltips: {
+                        callbacks: {
+                            label: function (t, d) {
+                                var dateString = moment(t.xLabel).format("MMM DD, YYYY");
+                                return [dateString + ': ', d.datasets[t.datasetIndex].data[t.index].team1 + '-' + d.datasets[t.datasetIndex].data[t.index].team2, 'Att: ' + t.yLabel];
+                            }
+                        },
+                        mode: 'single'
+                    },
+                    legend: {
+                        display: (series.length > 0) ? true : false
+                    }
+                };
+
+                var dataSeries = [];
+                //initialize datasets with keys in the same order as 'series' to match the colors
+                if (series.length > 0) {
+                    for (var i in series) {
+                        dataSeries[series[i]] = [];
+                    }
+                } else {
+                    dataSeries[0] = [];
+                }
+
+                scope.data.attendanceData.dataArray.map(function (dataRow) {
+                    var bubble = {
+                        x: new Date(dataRow.date).getTime(),
+                        y: dataRow.attendance,
+                        r: 3,
+                        team1: dataRow.team1,
+                        team2: dataRow.team2,
+                    };
+
+                    if (series.length > 0) {
+                        var seriesByPropertyValue = _.find(scope.data.leagueData.teams, {
+                            'long': dataRow.team1
+                        })[seriesBy];
+                        dataSeries[seriesByPropertyValue].push(bubble);
+                    } else {
+                        dataSeries[0].push(bubble);
+                    }
+                });
+
+                Object.keys(dataSeries).forEach(function (key) {
+                    chartData.push(dataSeries[key]);
+                });
+
+                scope.series = series;
+                scope.chartData = chartData;
+                scope.colors = colors;
+                scope.options = options;
             }
         };
     })

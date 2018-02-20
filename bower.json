@@ -25,6 +25,7 @@
     "chartjs-plugin-annotation": "npm:chartjs-plugin-annotation#^0.5.2",
     "lodash": "^4.17.4",
     "plotly.js": "npm:plotly.js#^1.25.2",
-    "angulargrid": "npm:angulargrid#^0.6.5"
+    "angulargrid": "npm:angulargrid#^0.6.5",
+    "moment": "^2.20.1"
   }
 }
