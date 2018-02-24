@@ -484,7 +484,7 @@ angular.module('molApp')
                 img: 'img/shl.png',
                 text: 'Svenska hockeyligan',
                 leagueabbr: 'shl',
-                seasons: ['2016/17', '2017/18']
+                seasons: ['2015/16', '2016/17', '2017/18']
             },
             {
                 img: 'img/mol.png',
