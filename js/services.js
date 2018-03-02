@@ -49,6 +49,11 @@ angular.module('molApp')
                                     dataObjectElements[j].split(": ");
                                     dataObject[dataObjectElements[j].split(": ")[0]] = dataObjectElements[j].split(": ")[1];
                                 }
+                                if (!dataObject.stage ||
+                                    !dataObject.date || !dataObject.team1 || !dataObject.team2 ||
+                                    !dataObject.attendance) {
+                                    continue;
+                                }
                                 dataArray.push(dataObject);
                             }
 
