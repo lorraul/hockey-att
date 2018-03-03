@@ -77,7 +77,6 @@ angular.module('molApp')
                 } else {
                     series = [];
                 }
-
                 options = {
                     scales: {
                         xAxes: [{
@@ -97,6 +96,10 @@ angular.module('molApp')
                             },
                             ticks: {
                                 beginAtZero: true
+                            },
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Attendance'
                             }
                         }]
                     },
@@ -111,6 +114,32 @@ angular.module('molApp')
                     },
                     legend: {
                         display: (series.length > 0) ? true : false
+                    },
+                    annotation: {
+                        annotations: [{
+                            type: 'line',
+                            mode: 'horizontal',
+                            scaleID: 'y-axis-0',
+                            value: getAverage(getColumnFiltered(scope.data.attendanceData.dataArray, null, 'attendance')),
+                            borderColor: 'red',
+                            borderWidth: 1,
+                            label: {
+                                backgroundColor: 'transparent',
+                                fontFamily: "sans-serif",
+                                fontSize: 12,
+                                fontStyle: 'bold',
+                                fontColor: '#d9d9d9',
+                                xPadding: 6,
+                                yPadding: 6,
+                                cornerRadius: 6,
+                                position: 'left',
+                                xAdjust: 30,
+                                yAdjust: 0,
+                                enabled: true,
+                                content: 'Average'
+                            }
+                        }],
+                        drawTime: 'beforeDatasetsDraw'
                     }
                 };
 
