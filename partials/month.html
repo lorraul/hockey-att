@@ -6,21 +6,21 @@
 
     <div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
         <div ng-repeat-start="month in months | teamsColumn:0" class="team-label">{{month}}</div>
-        <div class="team-stat" ng-repeat-end>{{data[0][months.indexOf(month)]}}</div>
+        <div class="team-stat" ng-repeat-end>{{dataArray[0][months.indexOf(month)]}}</div>
     </div>
 
     <div class="col-xs-12 col-sm-4 col-md-3">
         <div ng-repeat-start="month in months | teamsColumn:1" class="team-label">{{month}}</div>
-        <div class="team-stat" ng-repeat-end>{{data[0][months.indexOf(month)]}}</div>
+        <div class="team-stat" ng-repeat-end>{{dataArray[0][months.indexOf(month)]}}</div>
     </div>
 
     <div class="col-xs-12 col-sm-4 col-md-4">
         <div ng-repeat-start="month in months | teamsColumn:2" class="team-label">{{month}}</div>
-        <div class="team-stat" ng-repeat-end>{{data[0][months.indexOf(month)]}}</div>
+        <div class="team-stat" ng-repeat-end>{{dataArray[0][months.indexOf(month)]}}</div>
     </div>
 
     <div class="col-xs-12 divider-space">&nbsp;</div>
 
-    <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"><canvas class="chart chart-line" chart-data="data" chart-labels="labels" chart-options="options" chart-colors="colors"> </canvas></div>
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"><canvas class="chart chart-line" chart-data="dataArray" chart-labels="labels" chart-options="options" chart-colors="colors"> </canvas></div>
 
 </div>

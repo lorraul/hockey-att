@@ -6,7 +6,7 @@
     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
         <table class="table table-inverse team-table">
             <tbody>
-                <tr ng-repeat-start="recordsByTeam in ligueStats.dataAwayLow" class="team-separator">
+                <tr ng-repeat-start="recordsByTeam in dataArray" class="team-separator">
                     <td colspan="4">{{recordsByTeam.team}}</td>
                 </tr>
                 <tr class="game-line" ng-if="!awayLowSwitch[$index]">

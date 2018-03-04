@@ -4,34 +4,34 @@
 
 <div class="container" ng-if="!noData">
 
-    <league-page-title image="ligueData.image" title-string="ligueData.title" gameslink="ligueStats.gamesLink" updated="ligueStats.updated" not-started="ligueStats.notStarted"></league-page-title>
+    <league-page-title data="leagueData" common-data="commonData"></league-page-title>
 
-    <total-average data="ligueStats.dataTotal"></total-average>
+    <total-average data="leagueData" common-data="commonData"></total-average>
 
-    <attendance-date data="leagueData"></attendance-date>
+    <attendance-date data="leagueData" common-data="commonData"></attendance-date>
 
-    <country data="ligueStats.dataCountry" labels="ligueStats.labelsCountry" options="ligueStats.optionsBarChart" colors="ligueStats.colorsCountry" countries="ligueData.country"></country>
+    <country data="leagueData" common-data="commonData"></country>
 
-    <month data="ligueStats.dataMonth" labels="ligueStats.labelsMonth" options="ligueStats.optionsLineChart" colors="ligueStats.colorsMonth" months="ligueData.months"></month>
+    <month data="leagueData" common-data="commonData"></month>
 
-    <stage data="ligueStats.dataStage" labels="ligueStats.labelsStage" options="ligueStats.optionsLineChart" colors="ligueStats.colorsStage" stages="ligueData.stages"></stage>
+    <stage data="leagueData" common-data="commonData"></stage>
 
-    <team-home-away data="ligueStats.dataHomeAway" dataall="ligueStats.dataHomeAwayAll" datasorted="ligueStats.dataHomeAwayAllSorted" databottom="ligueStats.dataHomeAwayBottom" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home-away>
+    <team-home-away data="leagueData" common-data="commonData"></team-home-away>
 
-    <team-home data="ligueStats.dataHome" dataall="ligueStats.dataHomeAll" datasorted="ligueStats.dataHomeAllSorted" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-home>
+    <team-home data="leagueData" common-data="commonData"></team-home>
 
-    <team-home-map map="ligueData.map" attendance="ligueStats.dataHomeAll" teams="ligueData.teams" averageatt="ligueStats.dataTotal.total"></team-home-map>
+    <team-home-map data="leagueData" common-data="commonData"></team-home-map>
 
-    <team-record-home data="ligueStats.dataHomeRecord"></team-record-home>
+    <team-record-home data="leagueData" common-data="commonData"></team-record-home>
 
-    <team-lowest-home data="ligueStats.dataHomeLow"></team-lowest-home>
+    <team-lowest-home data="leagueData" common-data="commonData"></team-lowest-home>
 
-    <team-away data="ligueStats.dataAway" dataall="ligueStats.dataAwayAll" datasorted="ligueStats.dataAwayAllSorted" labels="ligueStats.labelsTeams" options="ligueStats.optionsBarChart" colors="ligueStats.colorsTeams" teams="ligueData.teams" chartlabels="ligueStats.teamChartsBy"></team-away>
+    <team-away data="leagueData" common-data="commonData"></team-away>
 
-    <team-record-away data="ligueStats.dataAwayRecord"></team-record-away>
+    <team-record-away data="leagueData" common-data="commonData"></team-record-away>
 
-    <team-lowest-away data="ligueStats.dataAwayLow"></team-lowest-away>
+    <team-lowest-away data="leagueData" common-data="commonData"></team-lowest-away>
 
-    <sources data="ligueData.sources"></sources>
+    <sources data="leagueData"></sources>
 
 </div>

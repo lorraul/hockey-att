@@ -16,21 +16,12 @@ angular.module('molApp')
         $scope.getSeasonParam = homeFactory.getSeasonParam;
     }])
 
-    .controller("CompCtrl", ['$scope', '$state', 'AttendanceDataRes', 'ligueStats', function ($scope, $state, AttendanceDataRes, ligueStats) {
+    .controller("CompCtrl", ['$scope', '$state', 'AttendanceDataRes', 'commonDataService', function ($scope, $state, AttendanceDataRes, commonDataService) {
         $scope.leagueData = AttendanceDataRes; // aggregate data for the new directive format
+        $scope.commonData = commonDataService(AttendanceDataRes);
         $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
         if (!$scope.noData) {
             $state.current.data.pageTitle = AttendanceDataRes.leagueData.title + ' - Ice Hockey Attendance Stats';
-            $scope.ligueData = AttendanceDataRes.leagueData;
-            if (AttendanceDataRes.leagueData.chartsby)
-                $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData, $scope.ligueData[AttendanceDataRes.leagueData.chartsby]);
-            else
-                $scope.ligueStats = ligueStats(AttendanceDataRes.attendanceData, $scope.ligueData);
-
-            $scope.homeRecordSwitch = [];
-            $scope.homeLowSwitch = [];
-            $scope.awayRecordSwitch = [];
-            $scope.awayLowSwitch = [];
         }
     }])
 
