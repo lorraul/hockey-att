@@ -10,7 +10,7 @@ angular.module('molApp').directive('attendanceDate', function () {
         },
         controller: ['$scope', 'chartOptions', function ($scope, chartOptions) {
             var series, chartData = [],
-                colors, options, seriesBy;
+                colors, options, seriesBy, defaultSeries = $scope.data.leagueData.title;
 
             colors = [
                 {
@@ -48,7 +48,7 @@ angular.module('molApp').directive('attendanceDate', function () {
                     };
                 });
             } else {
-                series = [];
+                series = [defaultSeries];
             }
             options = {
                 scales: chartOptions.scales(),
@@ -62,7 +62,7 @@ angular.module('molApp').directive('attendanceDate', function () {
                     mode: 'single'
                 },
                 legend: {
-                    display: (series.length > 0) ? true : false
+                    display: true
                 },
                 annotation: chartOptions.annotation($scope.commonData.totalAverage, 'solid', true /*noText*/ , 'below' /*placement*/ ),
                 animation: {
@@ -85,12 +85,8 @@ angular.module('molApp').directive('attendanceDate', function () {
 
             var dataSeries = [];
             //initialize datasets with keys in the same order as 'series' to match the colors
-            if (series.length > 0) {
-                for (var i in series) {
-                    dataSeries[series[i]] = [];
-                }
-            } else {
-                dataSeries[0] = [];
+            for (var i in series) {
+                dataSeries[series[i]] = [];
             }
 
             $scope.data.attendanceData.dataArray.map(function (dataRow) {
@@ -102,13 +98,13 @@ angular.module('molApp').directive('attendanceDate', function () {
                     team2: dataRow.team2,
                 };
 
-                if (series.length > 0) {
-                    var seriesByPropertyValue = _.find($scope.data.leagueData.teams, {
-                        'long': dataRow.team1
-                    })[seriesBy];
+                var seriesByPropertyValue = _.find($scope.data.leagueData.teams, {
+                    'long': dataRow.team1
+                })[seriesBy];
+                if (seriesByPropertyValue) {
                     dataSeries[seriesByPropertyValue].push(bubble);
                 } else {
-                    dataSeries[0].push(bubble);
+                    dataSeries[defaultSeries].push(bubble); //only default series
                 }
             });
 
