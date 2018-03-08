@@ -1,0 +1,440 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "13",
+    "chartsby": "division",
+    "image": "khl.png",
+    "title": "KHL 2016/17",
+    "map": {
+        "region": "russia",
+        "offset": [25, 5]
+    },
+    "teamColors": {
+        "by": "country",
+        "default": "#cd0000"
+    },
+    "country": [
+        {
+            "name": "Belarus",
+            "two": "by",
+            "three": "BLR",
+            "color": "#8db600"
+        },
+        {
+            "name": "China",
+            "two": "cn",
+            "three": "CHN",
+            "color": "#093c8e"
+        },
+        {
+            "name": "Finland",
+            "two": "fi",
+            "three": "FIN",
+            "color": "#0066ff"
+        },
+        {
+            "name": "Kazakhstan",
+            "two": "kz",
+            "three": "KAZ",
+            "color": "#098cb5"
+        },
+        {
+            "name": "Latvia",
+            "two": "lt",
+            "three": "LAT",
+            "color": "#740d09"
+        },
+        {
+            "name": "Russia",
+            "two": "ru",
+            "three": "RUS",
+            "color": "#db0404"
+        },
+        {
+            "name": "Slovakia",
+            "two": "sk",
+            "three": "SVK",
+            "color": "#098cb5"
+        }
+    ],
+    "months": ["August", "September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "CQF",
+            "long": "Conference Quarter Finals"
+        },
+        {
+            "short": "CSF",
+            "long": "Conference Semifinals"
+        },
+        {
+            "short": "CF",
+            "long": "Conference Finals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "conference": [
+        {
+            "short": "Eastern",
+            "long": "Eastern Conference"
+		},
+        {
+            "short": "Western",
+            "long": "Western Conference"
+		}
+	],
+    "division": [
+        {
+            "short": "Bobrov",
+            "long": "Bobrov Division"
+		},
+        {
+            "short": "Tarasov",
+            "long": "Tarasov Division"
+		},
+        {
+            "short": "Kharlamov",
+            "long": "Kharlamov Division"
+		},
+        {
+            "short": "Chernyshev",
+            "long": "Chernyshev Division"
+		}
+	],
+    "teams": [
+        {
+            "short": "Adm",
+            "long": "Admiral Vladivostok",
+            "label": "Admiral",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "RUS",
+            "location": {
+                "lat": "43.1738709",
+                "lon": "131.8957545"
+            }
+        },
+        {
+            "short": "Akb",
+            "long": "Ak Bars Kazan",
+            "label": "Ak Bars",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.7956149",
+                "lon": "48.9332218"
+            }
+        },
+        {
+            "short": "Amu",
+            "long": "Amur Khabarovsk",
+            "label": "Amur",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "RUS",
+            "location": {
+                "lat": "48.474472",
+                "lon": "135.0675094"
+            }
+        },
+        {
+            "short": "Avan",
+            "long": "Avangard Omsk",
+            "label": "Avangard",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "RUS",
+            "location": {
+                "lat": "54.9859925",
+                "lon": "73.2160577"
+            }
+        },
+        {
+            "short": "Avt",
+            "long": "Avtomobilist Yekaterinburg",
+            "label": "Avtomobilist",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "56.8140005",
+                "lon": "60.5148524"
+            }
+        },
+        {
+            "short": "Bar",
+            "long": "Barys Astana",
+            "label": "Barys",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "KAZ",
+            "location": {
+                "lat": "51.1480774",
+                "lon": "71.3393079"
+            }
+        },
+        {
+            "short": "Cska",
+            "long": "CSKA Moscow",
+            "label": "CSKA",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.794631",
+                "lon": "37.538233"
+            }
+        },
+        {
+            "short": "Dnmn",
+            "long": "Dinamo Minsk",
+            "label": "Minsk",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "BLR",
+            "location": {
+                "lat": "53.8840092",
+                "lon": "27.5796476"
+            }
+        },
+        {
+            "short": "Dnm",
+            "long": "Dynamo Moscow",
+            "label": "Dynamo Mo",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.7016409",
+                "lon": "37.6417556"
+            }
+        },
+        {
+            "short": "Dnr",
+            "long": "Dinamo Riga",
+            "label": "Riga",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "LAT",
+            "location": {
+                "lat": "56.9715833",
+                "lon": "23.9890814"
+            }
+        },
+        {
+            "short": "Soc",
+            "long": "HC Sochi",
+            "label": "Sochi",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "43.6018244",
+                "lon": "39.6550894"
+            }
+        },
+        {
+            "short": "Jok",
+            "long": "Jokerit Helsinki",
+            "label": "Jokerit",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "FIN",
+            "location": {
+                "lat": "60.11021",
+                "lon": "24.7385099"
+            }
+        },
+        {
+            "short": "Kun",
+            "long": "Kunlun Red Star",
+            "label": "Kunlun",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "CHN",
+            "location": {
+                "lat": "39.9390731",
+                "lon": "116.1172786"
+            }
+        },
+        {
+            "short": "Lad",
+            "long": "Lada Togliatti",
+            "label": "Lada",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "53.5219926",
+                "lon": "49.3650532"
+            }
+        },
+        {
+            "short": "Lok",
+            "long": "Lokomotiv Yaroslavl",
+            "label": "Lokomotiv",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "57.6525648",
+                "lon": "39.7244361"
+            }
+        },
+        {
+            "short": "Met",
+            "long": "Metallurg Magnitogorsk",
+            "label": "Metallurg",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "53.4181752",
+                "lon": "58.8899681"
+            }
+        },
+        {
+            "short": "Nef",
+            "long": "Neftekhimik Nizhnekamsk",
+            "label": "Neftekhimik",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.6147375",
+                "lon": "51.8225462"
+            }
+        },
+        {
+            "short": "Sal",
+            "long": "Salavat Yulaev Ufa",
+            "label": "Salavat Yulaev",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "RUS",
+            "location": {
+                "lat": "54.8088967",
+                "lon": "55.8807923"
+            }
+        },
+        {
+            "short": "Sev",
+            "long": "Severstal Cherepovets",
+            "label": "Severstal",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "59.1290863",
+                "lon": "37.7802558"
+            }
+        },
+        {
+            "short": "Sib",
+            "long": "Sibir Novosibirsk",
+            "label": "Sibir",
+            "conference": "Eastern",
+            "division": "Chernyshev",
+            "country": "RUS",
+            "location": {
+                "lat": "54.9700936",
+                "lon": "82.8093237"
+            }
+        },
+        {
+            "short": "Ska",
+            "long": "SKA Saint Petersburg",
+            "label": "SKA",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "RUS",
+            "location": {
+                "lat": "59.9174925",
+                "lon": "30.0448869"
+            }
+        },
+        {
+            "short": "Slo",
+            "long": "Slovan Bratislava",
+            "label": "Slovan",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "SVK",
+            "location": {
+                "lat": "48.1359244",
+                "lon": "16.9758349"
+            }
+        },
+        {
+            "short": "Spa",
+            "long": "Spartak Moscow",
+            "label": "Spartak",
+            "conference": "Western",
+            "division": "Bobrov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.7016409",
+                "lon": "38.6417556"
+            }
+        },
+        {
+            "short": "Tor",
+            "long": "Torpedo Nizhny Novgorod",
+            "label": "Torpedo",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "56.2928515",
+                "lon": "43.786664"
+            }
+        },
+        {
+            "short": "Tra",
+            "long": "Traktor Chelyabinsk",
+            "label": "Traktor",
+            "conference": "Eastern",
+            "division": "Kharlamov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.1521249",
+                "lon": "61.2684892"
+            }
+        },
+        {
+            "short": "Vit",
+            "long": "Vityaz Podolsk",
+            "label": "Vityaz",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "55.4367209",
+                "lon": "37.467369"
+            }
+        },
+        {
+            "short": "Yug",
+            "long": "Yugra Khanty-Mansiysk",
+            "label": "Yugra",
+            "conference": "Western",
+            "division": "Tarasov",
+            "country": "RUS",
+            "location": {
+                "lat": "61.0052241",
+                "lon": "68.9941334"
+            }
+        }
+    ],
+    "sources": [
+        "KHL Game Reports: http://en.khl.ru"
+    ]
+}

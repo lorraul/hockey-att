@@ -179,6 +179,12 @@ angular.module('molApp')
                 seasons: ['2016/17', '2017/18']
             },
             {
+                img: 'img/khl.png',
+                text: 'Kontinental Hockey League',
+                leagueabbr: 'khl',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/chl.png',
                 text: 'Champions Hockey League',
                 leagueabbr: 'chl',
