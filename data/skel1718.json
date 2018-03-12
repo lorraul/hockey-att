@@ -1,0 +1,129 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "14",
+    "image": "skel.png",
+    "title": "Slovenská Extraliga 2017/18",
+    "map": {
+        "region": "slovakia",
+        "offset": [1, 1]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#098cb5"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Hbb",
+            "long": "HC 05 Banská Bystrica",
+            "label": "Banská Bystrica",
+            "location": {
+                "lat": "48.7394021",
+                "lon": "19.0609307"
+            }
+		},
+        {
+            "short": "Det",
+            "long": "HC 07 Detva",
+            "label": "Detva",
+            "location": {
+                "lat": "48.5548552",
+                "lon": "19.3481877"
+            }
+		},
+        {
+            "short": "Kos",
+            "long": "HC Košice",
+            "label": "Košice",
+            "location": {
+                "lat": "48.7167",
+                "lon": "21.2500"
+            }
+		},
+        {
+            "short": "NZa",
+            "long": "HC Nové Zámky",
+            "label": "Nové Zámky",
+            "location": {
+                "lat": "47.9858315",
+                "lon": "18.1774644"
+            }
+		},
+        {
+            "short": "Tre",
+            "long": "HK Dukla Trenčín",
+            "label": "Trenčín",
+            "location": {
+                "lat": "48.8984047",
+                "lon": "18.0227278"
+            }
+		},
+        {
+            "short": "Nit",
+            "long": "HK Nitra",
+            "label": "Nitra",
+            "location": {
+                "lat": "48.3167",
+                "lon": "18.0833"
+            }
+		},
+        {
+            "short": "Pop",
+            "long": "HK Poprad",
+            "label": "Poprad",
+            "location": {
+                "lat": "49.0606077",
+                "lon": "20.3090681"
+            }
+		},
+        {
+            "short": "Zvo",
+            "long": "HKM Zvolen",
+            "label": "Zvolen",
+            "location": {
+                "lat": "48.5582383",
+                "lon": "19.1098673"
+            }
+		},
+        {
+            "short": "Lip",
+            "long": "MHK 32 Liptovský Mikuláš",
+            "label": "Liptovský Mikuláš",
+            "location": {
+                "lat": "49.0881517",
+                "lon": "19.5066676"
+            }
+		},
+        {
+            "short": "Zil",
+            "long": "MsHK Žilina",
+            "label": "Žilina",
+            "location": {
+                "lat": "49.2292507",
+                "lon": "18.7405619"
+            }
+		}
+    ],
+    "sources": [
+        "Official game sheets: https://www.hockeyslovakia.sk/"
+    ]
+}

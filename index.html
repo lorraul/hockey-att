@@ -115,6 +115,11 @@
                             <img src="img/ebel.png"> EBEL 2017/18
                         </a>
                     </li>
+                    <li ng-class="{ active: isActive('/league/skel/1718')}">
+                        <a ui-sref="league({leagueabbr: 'skel', season: '1718'})">
+                            <img src="img/skel.png"> SKEL 2017/18
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/league/vc/1718')}">
                         <a ui-sref="league({leagueabbr: 'vc', season: '1718'})">
                             <img src="img/vc.png"> VC 2017/18

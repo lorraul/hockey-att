@@ -204,6 +204,12 @@ angular.module('molApp')
                 seasons: ['2016/17', '2017/18']
             },
             {
+                img: 'img/skel.png',
+                text: 'Slovenská Extraliga',
+                leagueabbr: 'skel',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/el.png',
                 text: 'Erste Liga',
                 leagueabbr: 'el',
