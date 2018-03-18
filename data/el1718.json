@@ -39,12 +39,12 @@
             "fixed": true
         },
         {
-            "short": "LS",
-            "long": "Loosers stage"
+            "short": "QR",
+            "long": "Qualification round"
         },
         {
-            "short": "WS",
-            "long": "Winners stage"
+            "short": "PR",
+            "long": "Placement round"
         },
         {
             "short": "QF",
