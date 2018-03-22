@@ -1,0 +1,169 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "15",
+    "image": "czel.jpg",
+    "title": "Czech Extraliga 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [1, 2]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#0086b3"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "R16",
+            "long": "Round 16"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bkmb",
+            "long": "BK Mladá Boleslav",
+            "label": "Mladá Boleslav",
+            "location": {
+                "lat": "50.4191798",
+                "lon": "14.8695903"
+            }
+		},
+        {
+            "short": "Btl",
+            "long": "Bílí Tygři Liberec",
+            "label": "Liberec",
+            "location": {
+                "lat": "50.766202",
+                "lon": "14.9794586"
+            }
+		},
+        {
+            "short": "Duk",
+            "long": "Dukla Jihlava",
+            "label": "Jihlava",
+            "location": {
+                "lat": "49.4045043",
+                "lon": "15.5104078"
+            }
+		},
+        {
+            "short": "Par",
+            "long": "Dynamo Pardubice",
+            "label": "Pardubice",
+            "location": {
+                "lat": "50.0347805",
+                "lon": "15.6879592"
+            }
+		},
+        {
+            "short": "Hcl",
+            "long": "HC Litvínov",
+            "label": "Litvínov",
+            "location": {
+                "lat": "50.5837306",
+                "lon": "13.5482421"
+            }
+		},
+        {
+            "short": "Hco",
+            "long": "HC Olomouc",
+            "label": "Olomouc",
+            "location": {
+                "lat": "49.5952378",
+                "lon": "17.2093241"
+            }
+		},
+        {
+            "short": "Hcp",
+            "long": "HC Plzeň",
+            "label": "Plzeň",
+            "location": {
+                "lat": "49.7417869",
+                "lon": "13.301712"
+            }
+		},
+        {
+            "short": "Hcv",
+            "long": "HC Vítkovice",
+            "label": "Vítkovice",
+            "location": {
+                "lat": "49.810729",
+                "lon": "18.2458691"
+            }
+		},
+        {
+            "short": "Hcz",
+            "long": "HC Zlín",
+            "label": "Zlín",
+            "location": {
+                "lat": "49.2311333",
+                "lon": "17.6062956"
+            }
+		},
+        {
+            "short": "Hkhk",
+            "long": "HK Hradec Králové",
+            "label": "Hradec Králové",
+            "location": {
+                "lat": "50.2140081",
+                "lon": "15.7709315"
+            }
+		},
+        {
+            "short": "Brno",
+            "long": "Kometa Brno",
+            "label": "Brno",
+            "location": {
+                "lat": "49.2022093",
+                "lon": "16.4375344"
+            }
+		},
+        {
+            "short": "Oct",
+            "long": "Oceláři Třinec",
+            "label": "Třinec",
+            "location": {
+                "lat": "49.6470514",
+                "lon": "18.5747899"
+            }
+		},
+        {
+            "short": "Pic",
+            "long": "Piráti Chomutov",
+            "label": "Chomutov",
+            "location": {
+                "lat": "50.4640158",
+                "lon": "13.3652744"
+            }
+		},
+        {
+            "short": "Spr",
+            "long": "Sparta Praha",
+            "label": "Sparta",
+            "location": {
+                "lat": "50.1047923",
+                "lon": "14.4915808"
+            }
+		}
+    ],
+    "sources": [
+        "Official game sheets: http://www.hokej.cz"
+    ]
+}
