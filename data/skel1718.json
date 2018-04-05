@@ -4,8 +4,8 @@
     "image": "skel.png",
     "title": "Slovenská Extraliga 2017/18",
     "map": {
-        "region": "slovakia",
-        "offset": [1, 1]
+        "region": "europe",
+        "offset": [0.5, 1.5]
     },
     "teamColors": {
         "by": "",

@@ -4,8 +4,8 @@
     "image": "shl.png",
     "title": "SHL 2015/16",
     "map": {
-        "region": "sweden",
-        "offset": [2, 5]
+        "region": "europe",
+        "offset": [0.5, 13]
     },
     "teamColors": {
         "by": "",
