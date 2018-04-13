@@ -228,6 +228,12 @@ angular.module('molApp')
                 seasons: ['2015/16', '2016/17', '2017/18']
             },
             {
+                img: 'img/sml.png',
+                text: 'SM-liiga',
+                leagueabbr: 'sml',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/mol.png',
                 text: 'MOL Liga',
                 leagueabbr: 'mol',

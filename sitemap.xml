@@ -217,5 +217,13 @@
         <changefreq>weekly</changefreq>
 
     </url>
+    
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/sml/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
 
 </urlset>

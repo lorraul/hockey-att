@@ -115,6 +115,11 @@
                             <img src="img/skel.png"> SKEL 2017/18
                         </a>
                     </li>
+                    <li ng-class="{ active: isActive('/league/sml/1718')}">
+                        <a ui-sref="league({leagueabbr: 'sml', season: '1718'})">
+                            <img src="img/sml.png"> Liiga 2017/18
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/league/el/1718')}">
                         <a ui-sref="league({leagueabbr: 'el', season: '1718'})">
                             <img src="img/el.png"> Erste Liga 2017/18

@@ -1,0 +1,178 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "16",
+    "image": "sml.png",
+    "title": "Liiga 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 5]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#0086b3"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "R16",
+            "long": "Round 16"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Äss",
+            "long": "Ässät",
+            "label": "Ässät",
+            "location": {
+                "lat": "61.473611",
+                "lon": "21.765278"
+            }
+		},
+        {
+            "short": "Hifk",
+            "long": "IFK Helsinki",
+            "label": "HIFK",
+            "location": {
+                "lat": "60.6000",
+                "lon": "21.4333"
+            }
+		},
+        {
+            "short": "Hpk",
+            "long": "HPK",
+            "label": "HPK",
+            "location": {
+                "lat": "60.995",
+                "lon": "24.431944"
+            }
+		},
+        {
+            "short": "Ilv",
+            "long": "Ilves",
+            "label": "Ilves",
+            "location": {
+                "lat": "61.495833",
+                "lon": "24"
+            }
+		},
+        {
+            "short": "Juk",
+            "long": "Jukurit",
+            "label": "Jukurit",
+            "location": {
+                "lat": "61.705",
+                "lon": "27.243069"
+            }
+		},
+        {
+            "short": "Jyp",
+            "long": "JYP Jyväskylä",
+            "label": "JYP",
+            "location": {
+                "lat": "62.2333",
+                "lon": "25.7333"
+            }
+		},
+        {
+            "short": "Kal",
+            "long": "KalPa",
+            "label": "KalPa",
+            "location": {
+                "lat": "62.9000",
+                "lon": "27.6833"
+            }
+		},
+        {
+            "short": "Kar",
+            "long": "Kärpät Oulu",
+            "label": "Kärpät",
+            "location": {
+                "lat": "65.0167",
+                "lon": "25.4667"
+            }
+		},
+        {
+            "short": "Kok",
+            "long": "KooKoo",
+            "label": "KooKoo",
+            "location": {
+                "lat": "60.8725",
+                "lon": "26.7108"
+            }
+		},
+        {
+            "short": "Pel",
+            "long": "Lahti Pelicans",
+            "label": "Pelicans",
+            "location": {
+                "lat": "60.981667",
+                "lon": "25.638889"
+            }
+		},
+        {
+            "short": "Luk",
+            "long": "Lukko Rauma",
+            "label": "Lukko",
+            "location": {
+                "lat": "61.1333",
+                "lon": "21.5000"
+            }
+		},
+        {
+            "short": "Sai",
+            "long": "SaiPa",
+            "label": "SaiPa",
+            "location": {
+                "lat": "61.0667",
+                "lon": "28.1833"
+            }
+		},
+        {
+            "short": "Tap",
+            "long": "Tappara Tampere",
+            "label": "Tappara",
+            "location": {
+                "lat": "61.5000",
+                "lon": "23.7500"
+            }
+		},
+        {
+            "short": "Tps",
+            "long": "TPS Turku",
+            "label": "TPS",
+            "location": {
+                "lat": "60.4500",
+                "lon": "22.2833"
+            }
+		},
+        {
+            "short": "Spo",
+            "long": "Vaasan Sport",
+            "label": "Sport",
+            "location": {
+                "lat": "63.079722",
+                "lon": "21.641667"
+            }
+		}
+    ],
+    "sources": [
+        "Official game reports: http://liiga.fi/ottelut/"
+    ]
+}
