@@ -1,8 +1,8 @@
 {
-    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
-    "sheetnr": "16",
+    "spreadsheet": "1Ynj30uLsj2Vqy4remy593UE6tv2cKxqhkWNHCpfgFos",
+    "sheetnr": "4",
     "image": "sml.png",
-    "title": "Liiga 2017/18",
+    "title": "Liiga 2015/16",
     "map": {
         "region": "europe",
         "offset": [0.5, 5]
@@ -50,6 +50,15 @@
             }
 		},
         {
+            "short": "Blu",
+            "long": "Espoo Blues",
+            "label": "Blues",
+            "location": {
+                "lat": "60.177778",
+                "lon": "24.785833"
+            }
+		},
+        {
             "short": "Hifk",
             "long": "IFK Helsinki",
             "label": "HIFK",
@@ -74,15 +83,6 @@
             "location": {
                 "lat": "61.495833",
                 "lon": "24"
-            }
-		},
-        {
-            "short": "Juk",
-            "long": "Jukurit",
-            "label": "Jukurit",
-            "location": {
-                "lat": "61.705",
-                "lon": "27.243069"
             }
 		},
         {

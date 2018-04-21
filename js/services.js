@@ -170,7 +170,7 @@ angular.module('molApp')
                 img: 'img/ahl.png',
                 text: 'American Hockey League',
                 leagueabbr: 'ahl',
-                seasons: ['2016/17', '2017/18']
+                seasons: ['2015/16', '2016/17', '2017/18']
             },
             {
                 img: 'img/echl.png',
@@ -231,7 +231,7 @@ angular.module('molApp')
                 img: 'img/sml.png',
                 text: 'SM-liiga',
                 leagueabbr: 'sml',
-                seasons: ['2017/18']
+                seasons: ['2015/16', '2016/17', '2017/18']
             },
             {
                 img: 'img/mol.png',

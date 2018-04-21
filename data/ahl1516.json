@@ -1,0 +1,446 @@
+{
+    "spreadsheet": "1Ynj30uLsj2Vqy4remy593UE6tv2cKxqhkWNHCpfgFos",
+    "sheetnr": "1",
+    "chartsby": "division",
+    "image": "ahl.png",
+    "title": "AHL 2015/16",
+    "map": {
+        "region": "north america",
+        "offset": [2, 1]
+    },
+    "teamColors": {
+        "by": "country",
+        "default": "#cd0000"
+    },
+    "country": [
+        {
+            "name": "Canada",
+            "two": "ca",
+            "three": "CAN",
+            "color": "#db0404"
+        },
+        {
+            "name": "United States",
+            "two": "us",
+            "three": "USA",
+            "color": "#093c8e"
+        }
+    ],
+    "months": ["October", "November", "December", "January", "February", "March", "April", "May", "June"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "DS",
+            "long": "Division semifinals"
+        },
+        {
+            "short": "DF",
+            "long": "Division finals"
+        },
+        {
+            "short": "CF",
+            "long": "Conference Finals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "conference": [
+        {
+            "short": "Eastern",
+            "long": "Eastern Conference"
+		},
+        {
+            "short": "Western",
+            "long": "Western Conference"
+		}
+	],
+    "division": [
+        {
+            "short": "Atlantic",
+            "long": "Atlantic Division"
+		},
+        {
+            "short": "North",
+            "long": "North Division"
+		},
+        {
+            "short": "Central",
+            "long": "Central Division"
+		},
+        {
+            "short": "Pacific",
+            "long": "Pacific Division"
+		}
+	],
+    "teams": [
+        {
+            "short": "Alb",
+            "long": "Albany Devils",
+            "label": "Albany",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "31.5486",
+                "lon": "-84.1789"
+            }
+        },
+        {
+            "short": "Bak",
+            "long": "Bakersfield Condors",
+            "label": "Bakersfield",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "35.2944",
+                "lon": "-118.9052"
+            }
+        },
+        {
+            "short": "Bin",
+            "long": "Binghamton Senators",
+            "label": "Binghamton",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "42.0509",
+                "lon": "-75.8891"
+            }
+        },
+        {
+            "short": "Bri",
+            "long": "Bridgeport Sound Tigers",
+            "label": "Bridgeport",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "43.1615",
+                "lon": "-75.9480"
+            }
+        },
+        {
+            "short": "Cha",
+            "long": "Charlotte Checkers",
+            "label": "Charlotte",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "35.2247",
+                "lon": "-80.8453"
+            }
+        },
+        {
+            "short": "Chi",
+            "long": "Chicago Wolves",
+            "label": "Chicago",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.8194",
+                "lon": "-87.6079"
+            }
+        },
+        {
+            "short": "Lem",
+            "long": "Lake Erie Monsters",
+            "label": "Lake Erie",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.4789",
+                "lon": "-81.6473"
+            }
+        },
+        {
+            "short": "Gra",
+            "long": "Grand Rapids Griffins",
+            "label": "Grand Rapids",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "43.0314",
+                "lon": "-85.5503"
+            }
+        },
+        {
+            "short": "Har",
+            "long": "Hartford Wolf Pack",
+            "label": "Hartford",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "41.7918",
+                "lon": "-72.7188"
+            }
+        },
+        {
+            "short": "Her",
+            "long": "Hershey Bears",
+            "label": "Hershey",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "40.2667",
+                "lon": "-76.6381"
+            }
+        },
+        {
+            "short": "Iow",
+            "long": "Iowa Wild",
+            "label": "Iowa",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "41.6727",
+                "lon": "-93.5722"
+            }
+        },
+        {
+            "short": "Leh",
+            "long": "Lehigh Valley Phantoms",
+            "label": "Lehigh Valley",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "40.6934",
+                "lon": "-75.4712"
+            }
+        },
+        {
+            "short": "Man",
+            "long": "Manitoba Moose",
+            "label": "Manitoba",
+            "conference": "Western",
+            "division": "Central",
+            "country": "CAN",
+            "location": {
+                "lat": "49.8833",
+                "lon": "-97.1667"
+            }
+        },
+        {
+            "short": "Mil",
+            "long": "Milwaukee Admirals",
+            "label": "Milwaukee",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "42.9967",
+                "lon": "-87.9879"
+            }
+        },
+        {
+            "short": "Ont",
+            "long": "Ontario Reign",
+            "label": "Ontario",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "34.8400",
+                "lon": "-115.9671"
+            }
+        },
+        {
+            "short": "Por",
+            "long": "Portland Pirates",
+            "label": "Portland",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "43.655556",
+                "lon": "-70.259167"
+            }
+        },
+        {
+            "short": "Pro",
+            "long": "Providence Bruins",
+            "label": "Providence",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "37.4348",
+                "lon": "-77.0559"
+            }
+        },
+        {
+            "short": "Roa",
+            "long": "Rochester Americans",
+            "label": "Rochester",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "43.1113",
+                "lon": "-77.4942"
+            }
+        },
+        {
+            "short": "Roi",
+            "long": "Rockford IceHogs",
+            "label": "Rockford",
+            "conference": "Western",
+            "division": "Central",
+            "country": "USA",
+            "location": {
+                "lat": "42.2711",
+                "lon": "-89.0593"
+            }
+        },
+        {
+            "short": "Saa",
+            "long": "San Antonio Rampage",
+            "label": "San Antonio",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "29.4375",
+                "lon": "-98.4616"
+            }
+        },
+        {
+            "short": "Sad",
+            "long": "San Diego Gulls",
+            "label": "San Diego",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "33.0169",
+                "lon": "-116.8460"
+            }
+        },
+        {
+            "short": "Saj",
+            "long": "San Jose Barracuda",
+            "label": "San Jose",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "37.3239",
+                "lon": "-121.9144"
+            }
+        },
+        {
+            "short": "Spr",
+            "long": "Springfield Falcons",
+            "label": "Springfield",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "42.1210",
+                "lon": "-72.4896"
+            }
+        },
+        {
+            "short": "Stj",
+            "long": "St. John's IceCaps",
+            "label": "St. John's",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "location": {
+                "lat": "47.5675",
+                "lon": "-52.707222"
+            }
+        },
+        {
+            "short": "Sto",
+            "long": "Stockton Heat",
+            "label": "Stockton",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "37.9011",
+                "lon": "-121.3995"
+            }
+        },
+        {
+            "short": "Syr",
+            "long": "Syracuse Crunch",
+            "label": "Syracuse",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "43.1065",
+                "lon": "-76.1043"
+            }
+        },
+        {
+            "short": "Tex",
+            "long": "Texas Stars",
+            "label": "Texas",
+            "conference": "Western",
+            "division": "Pacific",
+            "country": "USA",
+            "location": {
+                "lat": "30.4998",
+                "lon": "-97.8082"
+            }
+        },
+        {
+            "short": "Tor",
+            "long": "Toronto Marlies",
+            "label": "Toronto Marlies",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "CAN",
+            "location": {
+                "lat": "43.6667",
+                "lon": "-79.4167"
+            }
+        },
+        {
+            "short": "Uti",
+            "long": "Utica Comets",
+            "label": "Utica",
+            "conference": "Eastern",
+            "division": "North",
+            "country": "USA",
+            "location": {
+                "lat": "43.1146",
+                "lon": "-75.1771"
+            }
+        },
+        {
+            "short": "Wil",
+            "long": "Wilkes-Barre/Scranton Penguins",
+            "label": "Wilkes-Barre",
+            "conference": "Eastern",
+            "division": "Atlantic",
+            "country": "USA",
+            "location": {
+                "lat": "41.2366",
+                "lon": "-75.8557"
+            }
+        }
+    ],
+    "sources": [
+        "AHL Game Reports: http://theahl.com"
+    ]
+}
