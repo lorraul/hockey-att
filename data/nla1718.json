@@ -1,0 +1,156 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "17",
+    "image": "nla.png",
+    "title": "NLA 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 1]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#f44242"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March", "April"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "RR",
+            "long": "Ranking Round"
+        },
+        {
+            "short": "PF",
+            "long": "Playout Final"
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bib",
+            "long": "EHC Biel-Bienne",
+            "label": "Biel-Bienne",
+            "location": {
+                "lat": "47.1559785",
+                "lon": "7.2809989"
+            }
+        },
+        {
+            "short": "Klo",
+            "long": "EHC Kloten",
+            "label": "Kloten",
+            "location": {
+                "lat": "47.4403427",
+                "lon": "8.5726876"
+            }
+        },
+        {
+            "short": "Zug",
+            "long": "EV Zug",
+            "label": "Zug",
+            "location": {
+                "lat": "47.1724",
+                "lon": "8.5174"
+            }
+        },
+        {
+            "short": "Fbg",
+            "long": "Fribourg-Gottéron",
+            "label": "Fribourg-Gottéron",
+            "country": "SUI",
+            "location": {
+                "lat": "46.7957",
+                "lon": "7.1547"
+            }
+		},
+        {
+            "short": "Gsh",
+            "long": "Genève-Servette HC",
+            "label": "Genève-Servette",
+            "location": {
+                "lat": "46.1963587",
+                "lon": "6.1276265"
+            }
+        },
+        {
+            "short": "Amb",
+            "long": "HC Ambri-Piotta",
+            "label": "Ambri-Piotta",
+            "location": {
+                "lat": "46.5092437",
+                "lon": "8.6897023"
+            }
+		},
+        {
+            "short": "Dav",
+            "long": "HC Davos",
+            "label": "Davos",
+            "location": {
+                "lat": "46.8040",
+                "lon": "9.8353"
+            }
+		},
+        {
+            "short": "Lug",
+            "long": "HC Lugano",
+            "label": "Lugano",
+            "location": {
+                "lat": "46.0062",
+                "lon": "8.9511"
+            }
+		},
+        {
+            "short": "Lhc",
+            "long": "Lausanne HC",
+            "label": "Lausanne",
+            "location": {
+                "lat": "46.5262937",
+                "lon": "6.6028323"
+            }
+		},
+        {
+            "short": "Ber",
+            "long": "SC Bern",
+            "label": "Bern",
+            "location": {
+                "lat": "46.9167",
+                "lon": "7.4667"
+            }
+		},
+        {
+            "short": "Tig",
+            "long": "SCL Tigers",
+            "label": "Tigers",
+            "location": {
+                "lat": "46.9360893",
+                "lon": "7.7860936"
+            }
+		},
+        {
+            "short": "ZSC",
+            "long": "ZSC Lions",
+            "label": "Zürich",
+            "location": {
+                "lat": "47.3667",
+                "lon": "8.5500"
+            }
+		}
+    ],
+    "sources": [
+        "Official game reports: https://www.sihf.ch/de/game-center/"
+    ]
+}

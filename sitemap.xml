@@ -25,7 +25,7 @@
         <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
         <loc>http://sigmagfx.com/hockey/league/ahl/1516</loc>
@@ -225,7 +225,7 @@
         <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
         <loc>http://sigmagfx.com/hockey/league/sml/1516</loc>
@@ -233,7 +233,7 @@
         <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
         <loc>http://sigmagfx.com/hockey/league/sml/1617</loc>
@@ -241,10 +241,18 @@
         <changefreq>weekly</changefreq>
 
     </url>
-    
+
     <url>
 
         <loc>http://sigmagfx.com/hockey/league/sml/1718</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/nla/1718</loc>
 
         <changefreq>weekly</changefreq>
 
