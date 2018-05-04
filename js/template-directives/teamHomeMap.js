@@ -27,7 +27,7 @@ angular.module('molApp').directive('teamHomeMap', function () {
 
             if ($scope.competitionType == 'tournament') {
                 labels = $scope.stages.map(function (stage) {
-                    return stage.location.label + ' (' + $scope.long + ')';
+                    return stage.location.label + ' (' + stage.long + ')';
                 });
                 latitudes = $scope.stages.map(function (stage) {
                     return stage.location.location.lat;
