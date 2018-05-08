@@ -11,12 +11,16 @@ angular.module('molApp').directive('teamHomeMap', function () {
             $scope.teams = $scope.data.leagueData.teams;
             $scope.averageatt = $scope.commonData.totalAverage;
             $scope.map = $scope.data.leagueData.map;
-            $scope.stages = $scope.data.leagueData.stages;
 
             if ($scope.competitionType == 'league') {
                 $scope.attendance = $scope.commonData.teamSeries.homeAverage;
             } else if ($scope.competitionType == 'tournament') {
-                $scope.attendance = $scope.commonData.averageByStage.values;
+                var averageByLocation = [];
+                for (var i in $scope.data.leagueData.locations) {
+                    var filteredColumn = getColumnFiltered($scope.data.attendanceData.dataArray, null, 'attendance', 'location', null, $scope.data.leagueData.locations[i].label);
+                    averageByLocation.push(getAverage(filteredColumn));
+                }
+                $scope.attendance = averageByLocation;
             }
 
             var attendances = $scope.attendance;
@@ -26,14 +30,19 @@ angular.module('molApp').directive('teamHomeMap', function () {
                 scale = $scope.averageatt / 250;
 
             if ($scope.competitionType == 'tournament') {
-                labels = $scope.stages.map(function (stage) {
-                    return stage.location.label + ' (' + stage.long + ')';
+                labels = $scope.data.leagueData.locations.map(function (location) {
+                    var locationLabel = location.label;
+                    var stage = _.find($scope.data.leagueData.stages, {
+                        'location': location.label
+                    });
+                    locationLabel += stage ? ' (' + stage.long + ')' : '';
+                    return locationLabel;
                 });
-                latitudes = $scope.stages.map(function (stage) {
-                    return stage.location.location.lat;
+                latitudes = $scope.data.leagueData.locations.map(function (location) {
+                    return location.location.lat;
                 });
-                longitudes = $scope.stages.map(function (stage) {
-                    return stage.location.location.lon;
+                longitudes = $scope.data.leagueData.locations.map(function (location) {
+                    return location.location.lon;
                 });
             } else {
                 labels = $scope.teams.map(function (team) {

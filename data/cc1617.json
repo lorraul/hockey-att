@@ -121,76 +121,76 @@
         {
             "short": "Group A",
             "long": "Group A",
-            "location": {
-                "label": "Sofia",
-                "country": "BUL",
-                "location": {
-                    "lat": "42.6442824",
-                    "lon": "23.340953"
-                }
-            }
-},
+            "location": "Sofia"
+        },
         {
             "short": "Group B",
             "long": "Group B",
-            "location": {
-                "label": "Jaca",
-                "country": "ESP",
-                "location": {
-                    "lat": "42.5655127",
-                    "lon": "-0.5495657"
-                }
-            }
-},
+            "location": "Jaca"
+        },
         {
             "short": "Group C",
             "long": "Group C",
-            "location": {
-                "label": "Tychy",
-                "country": "POL",
-                "location": {
-                    "lat": "50.1079801",
-                    "lon": "18.9991762"
-                }
-            }
-},
+            "location": "Tychy"
+        },
         {
             "short": "Group D",
             "long": "Group D",
-            "location": {
-                "label": "Odense",
-                "country": "DEN",
-                "location": {
-                    "lat": "55.4002375",
-                    "lon": "10.3500154"
-                }
-            }
-},
+            "location": "Odense"
+        },
         {
             "short": "Group E",
             "long": "Group E",
-            "location": {
-                "label": "Ritten",
-                "country": "ITA",
-                "location": {
-                    "lat": "46.538382",
-                    "lon": "11.4525392"
-                }
-            }
-},
+            "location": "Ritten"
+        },
         {
             "short": "FIN",
             "long": "Final",
+            "location": "Ritten"
+        }
+    ],
+    "locations": [
+        {
+            "label": "Jaca",
+            "country": "ESP",
             "location": {
-                "label": "Ritten",
-                "country": "ITA",
-                "location": {
-                    "lat": "46.538382",
-                    "lon": "12.4525392"
-                }
+                "lat": "42.5655127",
+                "lon": "-0.5495657"
             }
-}
-],
+        },
+        {
+            "label": "Odense",
+            "country": "DEN",
+            "location": {
+                "lat": "55.4002375",
+                "lon": "10.3500154"
+            }
+        },
+        {
+            "label": "Ritten",
+            "country": "ITA",
+            "location": {
+                "lat": "46.538382",
+                "lon": "11.4525392"
+            }
+        },
+        {
+            "label": "Sofia",
+            "country": "BUL",
+            "location": {
+                "lat": "42.6442824",
+                "lon": "23.340953"
+            }
+        },
+        {
+            "label": "Tychy",
+            "country": "POL",
+            "location": {
+                "lat": "50.1079801",
+                "lon": "18.9991762"
+            }
+        }
+    ],
     "teams": [
         {
             "short": "Jes",

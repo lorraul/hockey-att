@@ -1,7 +1,7 @@
 <div class="row" id="team-home-away">
     <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
-        Teams with the <b>highest</b> average attendance (home and away games combined):<br>
-        <span class="translation">Legnagyobb nézőszámú csapatok (hazai és idegen pályán)</span>
+        Teams with the <b>highest</b> average attendance <span ng-if="data.leagueData.competitionType != 'tournament'">(home and away games combined)</span>:<br>
+        <span class="translation">Legnagyobb nézőszámú csapatok <span ng-if="data.leagueData.competitionType != 'tournament'">(hazai és idegen pályán)</span></span>
     </div>
 
     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
@@ -24,8 +24,8 @@
     <div class="col-xs-12 divider-space">&nbsp;</div>
 
     <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
-        Teams with the <b>lowest</b> average attendance (home and away games combined):<br>
-        <span class="translation">Legalacsonyabb nézőszámú csapatok (hazai és idegen pályán)</span>
+        Teams with the <b>lowest</b> average attendance <span ng-if="data.leagueData.competitionType != 'tournament'">(home and away games combined)</span>:<br>
+        <span class="translation">Legalacsonyabb nézőszámú csapatok <span ng-if="data.leagueData.competitionType != 'tournament'">(hazai és idegen pályán)</span></span>
     </div>
 
     <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
@@ -48,8 +48,8 @@
     <div class="col-xs-12 divider-space">&nbsp;</div>
 
     <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
-        Average attendance by team (home and away games combined):<br>
-        <span class="translation">Átlag nézőszám csapatok szerint (hazai és idegen pályán)</span>
+        Average attendance by team <span ng-if="data.leagueData.competitionType != 'tournament'">(home and away games combined)</span>:<br>
+        <span class="translation">Átlag nézőszám csapatok szerint <span ng-if="data.leagueData.competitionType != 'tournament'">(hazai és idegen pályán)</span></span>
     </div>
 
     <div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">

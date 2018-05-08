@@ -121,73 +121,81 @@
         {
             "short": "Group A",
             "long": "Group A",
-            "location": {
-                "label": "Belgrade",
-                "country": "SRB",
-                "location": {
-                    "lat": "44.8186",
-                    "lon": "20.4681"
-                }
-            }
+            "location": "Belgrade"
         },
         {
             "short": "Group B",
             "long": "Group B",
-            "location": {
-                "label": "Riga",
-                "country": "LAT",
-                "location": {
-                    "lat": "56.8909715",
-                    "lon": "24.2053596"
-                }
-            }
+            "location": "Riga"
         },
         {
             "short": "Group C",
             "long": "Group C",
-            "location": {
-                "label": "Brasov",
-                "country": "ROM",
-                "location": {
-                    "lat": "45.6333",
-                    "lon": "25.5833"
-                }
-            }
+            "location": "Brasov"
         },
         {
             "short": "Group D",
             "long": "Group D",
-            "location": {
-                "label": "Rungsted",
-                "country": "DEN",
-                "location": {
-                    "lat": "55.8958323",
-                    "lon": "12.5159274"
-                }
-            }
+            "location": "Rungsted"
         },
         {
             "short": "Group E",
             "long": "Group E",
-            "location": {
-                "label": "Ritten",
-                "country": "ITA",
-                "location": {
-                    "lat": "46.538382",
-                    "lon": "11.4525392"
-                }
-            }
+            "location": "Ritten"
         },
         {
             "short": "FIN",
             "long": "Final",
+            "location": "Minsk"
+        }
+    ],
+    "locations": [
+        {
+            "label": "Belgrade",
+            "country": "SRB",
             "location": {
-                "label": "Minsk",
-                "country": "BLR",
-                "location": {
-                    "lat": "53.9000",
-                    "lon": "27.5667"
-                }
+                "lat": "44.8186",
+                "lon": "20.4681"
+            }
+        },
+        {
+            "label": "Brasov",
+            "country": "ROM",
+            "location": {
+                "lat": "45.6333",
+                "lon": "25.5833"
+            }
+        },
+        {
+            "label": "Minsk",
+            "country": "BLR",
+            "location": {
+                "lat": "53.9000",
+                "lon": "27.5667"
+            }
+        },
+        {
+            "label": "Riga",
+            "country": "LAT",
+            "location": {
+                "lat": "56.8909715",
+                "lon": "24.2053596"
+            }
+        },
+        {
+            "label": "Ritten",
+            "country": "ITA",
+            "location": {
+                "lat": "46.538382",
+                "lon": "11.4525392"
+            }
+        },
+        {
+            "label": "Rungsted",
+            "country": "DEN",
+            "location": {
+                "lat": "55.8958323",
+                "lon": "12.5159274"
             }
         }
     ],
