@@ -1,0 +1,146 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "18",
+    "image": "iihf.png",
+    "title": "World Championship 2018",
+    "competitionType": "tournament",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 1]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#f44242"
+    },
+    "stages": [
+        {
+            "short": "Group A",
+            "long": "Group A",
+            "fixed": true
+        },
+        {
+            "short": "Group B",
+            "long": "Group B",
+            "fixed": true
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "BM",
+            "long": "Bronze Match"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "locations": [
+        {
+            "label": "Copenhagen",
+            "country": "DEN",
+            "location": {
+                "lat": "55.624",
+                "lon": "12.574"
+            }
+        },
+        {
+            "label": "Herning",
+            "country": "DEN",
+            "location": {
+                "lat": "56.118022",
+                "lon": "8.9525"
+            }
+        }
+    ],
+    "teams": [
+        {
+            "label": "Austria",
+            "long": "Austria",
+            "short": "AUT"
+        },
+        {
+            "label": "Belarus",
+            "long": "Belarus",
+            "short": "BLR"
+        },
+        {
+            "label": "Canada",
+            "long": "Canada",
+            "short": "CAN"
+        },
+        {
+            "label": "Czech Republic",
+            "long": "Czech Republic",
+            "short": "CZE"
+        },
+        {
+            "label": "Denmark",
+            "long": "Denmark",
+            "short": "DEN"
+        },
+        {
+            "label": "Finland",
+            "long": "Finland",
+            "short": "FIN"
+        },
+        {
+            "label": "France",
+            "long": "France",
+            "short": "FRA"
+        },
+        {
+            "label": "Germany",
+            "long": "Germany",
+            "short": "GER"
+        },
+        {
+            "label": "Korea",
+            "long": "Korea",
+            "short": "KOR"
+        },
+        {
+            "label": "Latvia",
+            "long": "Latvia",
+            "short": "LAT"
+        },
+        {
+            "label": "Norway",
+            "long": "Norway",
+            "short": "NOR"
+        },
+        {
+            "label": "Russia",
+            "long": "Russia",
+            "short": "RUS"
+        },
+        {
+            "label": "Slovakia",
+            "long": "Slovakia",
+            "short": "SVK"
+        },
+        {
+            "label": "Sweden",
+            "long": "Sweden",
+            "short": "SWE"
+        },
+        {
+            "label": "Switzerland",
+            "long": "Switzerland",
+            "short": "SUI"
+        },
+        {
+            "label": "United States",
+            "long": "United States",
+            "short": "USA"
+        }
+    ],
+    "sources": [
+        "Official game reports: https://www.new-iihf.com/en/events/2018/wm/"
+    ]
+}

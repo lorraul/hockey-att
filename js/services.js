@@ -178,6 +178,13 @@ angular.module('molApp')
                 seasons: ['2016/17', '2017/18']
             },
             {
+                img: 'img/iihf.png',
+                text: 'World Championship',
+                leagueabbr: 'wc',
+                competitionType: 'tournament',
+                seasons: ['2018']
+            },
+            {
                 img: 'img/khl.png',
                 text: 'Kontinental Hockey League',
                 leagueabbr: 'khl',
@@ -270,7 +277,11 @@ angular.module('molApp')
             }
         ];
         returnObject.getSeasonParam = function (season) {
-            return season.substring(2).replace('/', '');
+            if (season.indexOf('/') > -1) {
+                return season.substring(2).replace('/', '');
+            } else {
+                return season;
+            }
         };
 
         return returnObject;

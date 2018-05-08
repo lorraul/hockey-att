@@ -80,6 +80,11 @@
                             <img src="img/echl.png"> ECHL 2017/18
                         </a>
                     </li>
+                    <li ng-class="{ active: isActive('/tournament/wc/2018')}">
+                        <a ui-sref="tournament({leagueabbr: 'wc', season: '2018'})">
+                            <img src="img/iihf.png"> WC 2018
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/league/khl/1718')}">
                         <a ui-sref="league({leagueabbr: 'khl', season: '1718'})">
                             <img src="img/khl.png"> KHL 2017/18
