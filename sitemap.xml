@@ -260,6 +260,14 @@
 
     <url>
 
+        <loc>http://sigmagfx.com/hockey/tournament/wc/2017</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
+
+    <url>
+
         <loc>http://sigmagfx.com/hockey/tournament/wc/2018</loc>
 
         <changefreq>weekly</changefreq>

@@ -182,7 +182,7 @@ angular.module('molApp')
                 text: 'World Championship',
                 leagueabbr: 'wc',
                 competitionType: 'tournament',
-                seasons: ['2018']
+                seasons: ['2017', '2018']
             },
             {
                 img: 'img/khl.png',
