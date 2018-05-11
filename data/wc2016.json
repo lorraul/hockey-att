@@ -1,0 +1,146 @@
+{
+    "spreadsheet": "1Ynj30uLsj2Vqy4remy593UE6tv2cKxqhkWNHCpfgFos",
+    "sheetnr": "5",
+    "image": "iihf.png",
+    "title": "World Championship 2016",
+    "competitionType": "tournament",
+    "map": {
+        "region": "europe",
+        "offset": [3, 12]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#f44242"
+    },
+    "stages": [
+        {
+            "short": "Group A",
+            "long": "Group A",
+            "fixed": true
+        },
+        {
+            "short": "Group B",
+            "long": "Group B",
+            "fixed": true
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "BM",
+            "long": "Bronze Match"
+        },
+        {
+            "short": "FIN",
+            "long": "Final"
+        }
+    ],
+    "locations": [
+        {
+            "label": "Moscow",
+            "country": "RUS",
+            "location": {
+                "lat": "55.7014",
+                "lon": "37.6449"
+            }
+        },
+        {
+            "label": "Saint Petersburg",
+            "country": "RUS",
+            "location": {
+                "lat": "59.950278",
+                "lon": "30.291944"
+            }
+        }
+    ],
+    "teams": [
+        {
+            "label": "Belarus",
+            "long": "Belarus",
+            "short": "BLR"
+        },
+        {
+            "label": "Canada",
+            "long": "Canada",
+            "short": "CAN"
+        },
+        {
+            "label": "Czech Republic",
+            "long": "Czech Republic",
+            "short": "CZE"
+        },
+        {
+            "label": "Denmark",
+            "long": "Denmark",
+            "short": "DEN"
+        },
+        {
+            "label": "Finland",
+            "long": "Finland",
+            "short": "FIN"
+        },
+        {
+            "label": "France",
+            "long": "France",
+            "short": "FRA"
+        },
+        {
+            "label": "Germany",
+            "long": "Germany",
+            "short": "GER"
+        },
+        {
+            "label": "Hungary",
+            "long": "Hungary",
+            "short": "HUN"
+        },
+        {
+            "label": "Kazakhstan",
+            "long": "Kazakhstan",
+            "short": "KAZ"
+        },
+        {
+            "label": "Latvia",
+            "long": "Latvia",
+            "short": "LAT"
+        },
+        {
+            "label": "Norway",
+            "long": "Norway",
+            "short": "NOR"
+        },
+        {
+            "label": "Russia",
+            "long": "Russia",
+            "short": "RUS"
+        },
+        {
+            "label": "Slovakia",
+            "long": "Slovakia",
+            "short": "SVK"
+        },
+        {
+            "label": "Sweden",
+            "long": "Sweden",
+            "short": "SWE"
+        },
+        {
+            "label": "Switzerland",
+            "long": "Switzerland",
+            "short": "SUI"
+        },
+        {
+            "label": "United States",
+            "long": "United States",
+            "short": "USA"
+        }
+    ],
+    "sources": [
+        "Official game reports: http://www.iihfworlds2016.com/en/statistics/#iihf-documents-pdf"
+    ]
+}
