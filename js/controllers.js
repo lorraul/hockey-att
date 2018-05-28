@@ -18,9 +18,9 @@ angular.module('molApp')
 
     .controller("CompCtrl", ['$scope', '$state', 'AttendanceDataRes', 'commonDataService', function ($scope, $state, AttendanceDataRes, commonDataService) {
         $scope.leagueData = AttendanceDataRes; // aggregate data for the new directive format
-        $scope.commonData = commonDataService(AttendanceDataRes);
         $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
         if (!$scope.noData) {
+            $scope.commonData = commonDataService(AttendanceDataRes);
             $state.current.data.pageTitle = AttendanceDataRes.leagueData.title + ' - Ice Hockey Attendance Stats';
         }
     }])
