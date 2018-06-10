@@ -1,0 +1,9 @@
+<div class="row" id="title">
+    <div class="col-xs-12 col-sm-8 pagetitle">{{title}}</div>
+    <div class="col-xs-12 col-sm-4 pagemeta">
+        <a ng-href="{{dataSourceLink}}">Attendances by competition</a>
+    </div>
+</div>
+<div class="alert alert-info" ng-if="notStarted">
+    <strong>{{title}}</strong> season not started yet.
+</div>

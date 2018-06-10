@@ -29,4 +29,10 @@ angular.module('molApp')
         $scope.isActive = function (viewLocation) {
             return $location.path().indexOf(viewLocation) === 0;
         };
+    }])
+
+    .controller("SeasonCtrl", ['$scope', '$state', 'AttendanceDataRes', function ($scope, $state, AttendanceDataRes) {
+        $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
+        $scope.allData = AttendanceDataRes;
+        $state.current.data.pageTitle = AttendanceDataRes.entityData.title + ' - Ice Hockey Attendance Stats';
     }]);

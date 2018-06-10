@@ -15,6 +15,21 @@ angular.module('molApp')
         };
     }])
 
+    .factory('EntityData', ['$resource', function ($resource) {
+        return function (entity, fileName) {
+            var datafile = 'data/' + entity + '/' + fileName + '.json';
+            var apiRequest = $resource(datafile);
+            return apiRequest.get().$promise.then(
+                function (data) {
+                    return data;
+                },
+                function (error) {
+                    return 'error';
+                }
+            );
+        };
+    }])
+
     .factory('AttendanceRawData', ['$resource', function ($resource) {
         var apiRequest = $resource("https://spreadsheets.google.com/feeds/list/:spreedsheatid/:sheetnr/public/values?alt=json");
         return function (spreedsheatid, sheetnr) {
@@ -67,6 +82,54 @@ angular.module('molApp')
                             returnObject.attendanceData.dataArray = dataArray;
                             returnObject.attendanceData.metaData = metaData;
                             returnObject.leagueData = leagueData;
+                            return returnObject;
+                        },
+                        function (error) {
+                            return 'error';
+                        }
+                    );
+                },
+                function (error) {
+                    return 'error';
+                }
+            );
+        };
+    }])
+
+    .factory('AttendanceData2', ['AttendanceRawData', 'EntityData', function (AttendanceRawData, EntityData) {
+        return function (entity, fileName) {
+            return EntityData(entity, fileName).then(
+                function (entityData) {
+                    if (!entityData.spreadsheet) return null;
+                    return AttendanceRawData(entityData.spreadsheet, entityData.sheetnr).then(
+                        function (data) {
+                            if (data == 'error') return 'error';
+                            var i, j;
+                            var dataArray = [];
+                            var dataObject = {};
+                            var dataObjectElements;
+                            for (i in data.entry) {
+                                dataObject = {};
+                                dataObjectElements = [];
+                                dataObjectElements = data.entry[i].content.$t.split(", ");
+                                for (j in dataObjectElements) {
+                                    dataObjectElements[j].split(": ");
+                                    dataObject[dataObjectElements[j].split(": ")[0]] = dataObjectElements[j].split(": ")[1];
+                                }
+                                dataArray.push(dataObject);
+                            }
+
+                            var metaData = {};
+                            metaData.updated = data.updated.$t;
+                            metaData.dataSourceLink = data.link[0].href;
+
+                            var returnObject = {
+                                attendanceData: {},
+                                entityData: {}
+                            };
+                            returnObject.attendanceData.dataArray = dataArray;
+                            returnObject.attendanceData.metaData = metaData;
+                            returnObject.entityData = entityData;
                             return returnObject;
                         },
                         function (error) {

@@ -1,0 +1,13 @@
+<div class="container" ng-if="noData">
+    No data for this page.
+</div>
+
+<div class="container" ng-if="!noData">
+
+    <general-page-title data="allData"></general-page-title>
+
+    <competition-ranking data="allData"></competition-ranking>
+
+    <competition-chart data="allData"></competition-chart>
+
+</div>

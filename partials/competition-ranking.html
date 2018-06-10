@@ -1,0 +1,11 @@
+<div class="row" id="competition-ranking">
+    <div class="col-xs-12 col-sm-offset-1 col-sm-11 col-md-offset-2 col-md-10 subtitle">
+        Competition ranking by average attendance:<br>
+    </div>
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+        <div class="row" ng-repeat="competitionAverage in data.attendanceData.dataArray | orderBy : 'average': true">
+            <div class="col-xs-7">{{competitionAverage.competition}}</div>
+            <div class="col-xs-5">{{competitionAverage.average}}</div>
+        </div>
+    </div>
+</div>
