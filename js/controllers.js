@@ -11,9 +11,13 @@ angular.module('molApp')
         }
     }])
 
-    .controller('HomeCtrl', ['$scope', 'homeFactory', function ($scope, homeFactory) {
+    .controller('HomeCtrl', ['$scope', '$state', 'homeFactory', function ($scope, $state, homeFactory) {
         $scope.homeGrid = homeFactory.homeGrid;
+        $scope.seasonGrid = homeFactory.seasonGrid;
         $scope.getSeasonParam = homeFactory.getSeasonParam;
+        $scope.goTo = function (state, params) {
+            $state.go(state, params);
+        };
     }])
 
     .controller("CompCtrl", ['$scope', '$state', 'AttendanceDataRes', 'commonDataService', function ($scope, $state, AttendanceDataRes, commonDataService) {

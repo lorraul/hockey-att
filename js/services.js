@@ -345,6 +345,7 @@ angular.module('molApp')
                 seasons: ['2016/17', '2017/18']
             }
         ];
+        returnObject.seasonGrid = ['2015/16', '2016/17', '2017/18'];
         returnObject.getSeasonParam = function (season) {
             if (season.indexOf('/') > -1) {
                 return season.substring(2).replace('/', '');
