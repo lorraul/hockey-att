@@ -1,0 +1,135 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "19",
+    "image": "eihl.png",
+    "title": "EIHL 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 6]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#818c09"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        }
+    ],
+    "teams": [
+        {
+            "short": "Bel",
+            "long": "Belfast Giants",
+            "label": "Belfast",
+            "location": {
+                "lat": "54.603643",
+                "lon": "-5.914228"
+            }
+        },
+        {
+            "short": "Bra",
+            "long": "Braehead Clan",
+            "label": "Braehead",
+            "location": {
+                "lat": "55.8767805",
+                "lon": "-4.365161"
+            }
+        },
+        {
+            "short": "Car",
+            "long": "Cardiff Devils",
+            "label": "Cardiff",
+            "location": {
+                "lat": "51.4505785",
+                "lon": "-3.1817868"
+            }
+        },
+        {
+            "short": "Cov",
+            "long": "Coventry Blaze",
+            "label": "Coventry",
+            "location": {
+                "lat": "52.4067433",
+                "lon": "-1.5176188"
+            }
+        },
+        {
+            "short": "Dun",
+            "long": "Dundee Stars",
+            "label": "Dundee",
+            "location": {
+                "lat": "56.4816567",
+                "lon": "-3.0247539"
+            }
+        },
+        {
+            "short": "Edi",
+            "long": "Edinburgh Capitals",
+            "label": "Edinburgh",
+            "location": {
+                "lat": "55.943312",
+                "lon": "-3.2438419"
+            }
+        },
+        {
+            "short": "Fif",
+            "long": "Fife Flyers",
+            "label": "Fife",
+            "location": {
+                "lat": "56.132863",
+                "lon": "-3.1341381"
+            }
+        },
+        {
+            "short": "Gui",
+            "long": "Guildford Flames",
+            "label": "Guildford",
+            "location": {
+                "lat": "51.2491989",
+                "lon": "-0.5630312"
+            }
+        },
+        {
+            "short": "Man",
+            "long": "Manchester Storm",
+            "label": "Manchester",
+            "location": {
+                "lat": "53.387125",
+                "lon": "-2.345755"
+            }
+        },
+        {
+            "short": "Mil",
+            "long": "Milton Keynes Lightning",
+            "label": "Milton Keynes",
+            "location": {
+                "lat": "52.0324971",
+                "lon": "-0.7717972"
+            }
+        },
+        {
+            "short": "Not",
+            "long": "Nottingham Panthers",
+            "label": "Nottingham",
+            "location": {
+                "lat": "52.951899",
+                "lon": "-1.139696"
+            }
+        },
+        {
+            "short": "Shf",
+            "long": "Sheffield Steelers",
+            "label": "Sheffield",
+            "location": {
+                "lat": "53.4000161",
+                "lon": "-1.4189068"
+            }
+        }
+    ],
+    "sources": [
+        "Official game sheets: http://elite.wttstats.pointstreak.com/scoreboard.html?leagueid=2115"
+    ]
+}

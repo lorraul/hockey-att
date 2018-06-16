@@ -333,6 +333,12 @@ angular.module('molApp')
                 seasons: ['2017/18']
             },
             {
+                img: 'img/eihl.png',
+                text: 'EIHL',
+                leagueabbr: 'eihl',
+                seasons: ['2017/18']
+            },
+            {
                 img: 'img/mjsz.png',
                 text: 'Magyar Kupa',
                 leagueabbr: 'mk',
