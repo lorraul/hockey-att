@@ -4,7 +4,7 @@
     </div>
     <div class="col-xs-12 col-sm-offset-3 col-sm-6">
         <div class="row" ng-repeat="competitionAverage in data.attendanceData.dataArray | orderBy : 'average': true">
-            <div class="col-xs-7">{{competitionAverage.competition}}</div>
+            <div class="col-xs-7 inline-anchor" ng-click="openDetails(competitionAverage)">{{competitionAverage.competition}}</div>
             <div class="col-xs-5">{{competitionAverage.average}}</div>
         </div>
     </div>

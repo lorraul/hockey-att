@@ -5,10 +5,15 @@ angular.module('molApp').directive('competitionRanking', function () {
         scope: {
             data: '='
         },
-        controller: ['$scope', function ($scope) {
-            angular.forEach($scope.data.attendanceData.dataArray, function (data) {
-                data.average = parseInt(data.average);
-            });
+        controller: ['$scope', '$state', function ($scope, $state) {
+            $scope.openDetails = function (competition) {
+                if (competition.type && competition.abbr && competition.season) {
+                    $state.go(competition.type, {
+                        leagueabbr: competition.abbr,
+                        season: competition.season
+                    });
+                }
+            }
         }]
     };
 });

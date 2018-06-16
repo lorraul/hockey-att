@@ -158,6 +158,13 @@ footer .row {
 .datacheck-section .glyphicon-remove {
   color: #ea3a3a;
 }
+.inline-anchor {
+  color: #579bd6;
+  cursor: pointer;
+}
+.inline-anchor:hover {
+  text-decoration: underline;
+}
 /*
 Loading spin 
 Source: http://bootsnipp.com/snippets/featured/glyphicon-animate-rotation-and-flip

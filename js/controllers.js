@@ -33,6 +33,23 @@ angular.module('molApp')
 
     .controller("SeasonCtrl", ['$scope', '$state', 'AttendanceDataRes', function ($scope, $state, AttendanceDataRes) {
         $scope.noData = !AttendanceDataRes || AttendanceDataRes === 'error' ? true : false;
-        $scope.allData = AttendanceDataRes;
-        $state.current.data.pageTitle = AttendanceDataRes.entityData.title + ' - Ice Hockey Attendance Stats';
+        if (!$scope.noData) {
+            angular.forEach(AttendanceDataRes.attendanceData.dataArray, function (data) {
+                data.average = parseInt(data.average);
+            });
+            $scope.allData = angular.copy(AttendanceDataRes);
+            $state.current.data.pageTitle = AttendanceDataRes.entityData.title + ' - Ice Hockey Attendance Stats';
+            $scope.compSwitch = {
+                value: false
+            };
+            $scope.switchChange = function () {
+                if ($scope.compSwitch.value) {
+                    $scope.allData.attendanceData.dataArray = _.filter($scope.allData.attendanceData.dataArray, {
+                        type: 'league'
+                    });
+                } else {
+                    $scope.allData = angular.copy(AttendanceDataRes);
+                }
+            };
+        }
     }]);
