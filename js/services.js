@@ -44,6 +44,30 @@ angular.module('molApp')
         };
     }])
 
+    .factory('AttendanceRawDataFindBySheet', ['AttendanceRawDataBySheet', '$resource', '$q', function (AttendanceRawDataBySheet, $resource, $q) {
+        var sheetNr = 1;
+        return function(spreadsheetId, sheetTitle){
+            var defer = $q.defer();
+            recursiveAtt(defer, spreadsheetId, 1, sheetTitle);
+            return defer.promise;
+            
+            function recursiveAtt(defer, spreadsheetId, sheetNr, sheetTitle){
+                AttendanceRawDataBySheet(spreadsheetId, sheetNr).then(
+                function(data){
+                    if (data.title.$t === sheetTitle){
+                        defer.resolve(data);
+                    } else {
+                        recursiveAtt(defer, spreadsheetId, sheetNr+1, sheetTitle);
+                    }
+                },
+                function (error) {
+                    return 'No data found fot' + sheetTitle;
+                }
+            ); 
+            }
+        };
+    }])
+
     .factory('AttendanceData', ['AttendanceRawData', 'LeagueData', function (AttendanceRawData, LeagueData) {
         return function (leagueabbr, season) {
             return LeagueData(leagueabbr, season).then(
