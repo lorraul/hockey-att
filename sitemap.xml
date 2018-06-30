@@ -9,6 +9,14 @@
         <changefreq>monthly</changefreq>
 
     </url>
+    
+    <url>
+
+        <loc>http://sigmagfx.com/hockey/league/nhl/1516</loc>
+
+        <changefreq>weekly</changefreq>
+
+    </url>
 
     <url>
 

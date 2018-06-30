@@ -250,7 +250,7 @@ angular.module('molApp')
                 img: 'img/nhl.png',
                 text: 'National Hockey League',
                 leagueabbr: 'nhl',
-                seasons: ['2016/17', '2017/18']
+                seasons: ['2015/16', '2016/17', '2017/18']
             },
             {
                 img: 'img/ahl.png',
