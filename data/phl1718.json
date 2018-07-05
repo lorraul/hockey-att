@@ -1,0 +1,152 @@
+{
+    "spreadsheet": "1iRcB9DkeMfF2QH1msZr_jKxeemtbHyZIZpQYjeKpSLk",
+    "sheetnr": "21",
+    "image": "phl.png",
+    "title": "Polish Hockey League 2017/18",
+    "map": {
+        "region": "europe",
+        "offset": [0.5, 6.5]
+    },
+    "teamColors": {
+        "by": "",
+        "default": "#bf3535"
+    },
+    "months": ["September", "October", "November", "December", "January", "February", "March"],
+    "stages": [
+        {
+            "short": "RS",
+            "long": "Regular Season",
+            "fixed": true
+        },
+        {
+            "short": "PQR",
+            "long": "Pre-Qualifying Round",
+            "fixed": true
+        },
+        {
+            "short": "POUT",
+            "long": "Play-out",
+            "fixed": true
+        },
+        {
+            "short": "QF",
+            "long": "Quarterfinals"
+        },
+        {
+            "short": "SF",
+            "long": "Semifinals"
+        },
+        {
+            "short": "BM",
+            "long": "Bronze Match"
+        },
+        {
+            "short": "FIN",
+            "long": "Finals"
+        }
+    ],
+    "teams": [
+        {
+            "short": "Cra",
+            "long": "Comarch Cracovia",
+            "label": "Cracovia",
+            "location": {
+                "lat": "50.0833",
+                "lon": "19.9167"
+            }
+		},
+        {
+            "short": "Tyc",
+            "long": "GKS Tychy",
+            "label": "Tychy",
+            "location": {
+                "lat": "50.1079801",
+                "lon": "18.9991762"
+            }
+        },
+        {
+            "short": "Spk",
+            "long": "SMS PZHL Katowice",
+            "label": "SMS PZHL Kat",
+            "location": {
+                "lat": "50.2846978",
+                "lon": "19.1440786"
+            }
+		},
+        {
+            "short": "Byt",
+            "long": "Polonia Bytom",
+            "label": "Bytom",
+            "location": {
+                "lat": "50.3490797",
+                "lon": "18.9115419"
+            }
+		},
+        {
+            "short": "Jan",
+            "long": "Naprzód Janów",
+            "label": "Janów",
+            "location": {
+                "lat": "50.2453977",
+                "lon": "19.0799429"
+            }
+		},
+        {
+            "short": "Nta",
+            "long": "Podhale Nowy Targ",
+            "label": "Nowy Targ",
+            "location": {
+                "lat": "49.4841718",
+                "lon": "20.0240423"
+            }
+		},
+        {
+            "short": "Gda",
+            "long": "MH Automatyka Gdańsk",
+            "label": "Gdańsk",
+            "location": {
+                "lat": "54.4015975",
+                "lon": "18.5703145"
+            }
+		},
+        {
+            "short": "Jas",
+            "long": "JKH GKS Jastrzębie",
+            "label": "Jastrzębie",
+            "location": {
+                "lat": "49.9462036",
+                "lon": "18.5754024"
+            }
+		},
+        {
+            "short": "Osw",
+            "long": "Unia Oświęcim",
+            "label": "Oświęcim",
+            "location": {
+                "lat": "50.0366365",
+                "lon": "19.2508049"
+            }
+		},
+        {
+            "short": "Opo",
+            "long": "Orlik Opole",
+            "label": "Opole",
+            "location": {
+                "lat": "50.6656556",
+                "lon": "17.9143286"
+            }
+		},
+        {
+            "short": "Kat",
+            "long": "KH GKS Katowice",
+            "label": "Katowice",
+            "location": {
+                "lat": "50.2660565",
+                "lon": "19.0231759"
+            }
+		}
+    ],
+    "sources": [
+        "Game sheets at: http://hokej.net/pl/phl/terminarz-wyniki/100/"
+    ]
+}

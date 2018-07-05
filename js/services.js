@@ -363,6 +363,12 @@ angular.module('molApp')
                 seasons: ['2017/18']
             },
             {
+                img: 'img/phl.png',
+                text: 'PHL',
+                leagueabbr: 'phl',
+                seasons: ['2015/16', '2016/17', '2017/18']
+            },
+            {
                 img: 'img/mjsz.png',
                 text: 'Magyar Kupa',
                 leagueabbr: 'mk',

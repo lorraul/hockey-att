@@ -147,6 +147,11 @@
                             <img src="img/vc.png"> VC 2017/18
                         </a>
                     </li>
+                    <li ng-class="{ active: isActive('/league/phl/1718')}">
+                        <a ui-sref="league({leagueabbr: 'phl', season: '1718'})">
+                            <img src="img/phl.png"> PHL 2017/18
+                        </a>
+                    </li>
                     <li ng-class="{ active: isActive('/league/eihl/1718')}">
                         <a ui-sref="league({leagueabbr: 'eihl', season: '1718'})">
                             <img src="img/eihl.png"> EIHL 2017/18
